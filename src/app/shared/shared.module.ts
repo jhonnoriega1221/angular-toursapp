@@ -8,6 +8,7 @@ import { AppLayoutComponent } from './layouts/app-layout/app-layout.component';
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatRippleModule } from '@angular/material/core';
+import { AppToolbarSearchBarComponent } from './components/app-toolbar-search-bar/app-toolbar-search-bar.component';
 
 
 
@@ -16,7 +17,8 @@ import { MatRippleModule } from '@angular/material/core';
     AppToolbarComponent,
     AppNavbarComponent,
     AppNavbarButtonComponent,
-    AppLayoutComponent
+    AppLayoutComponent,
+    AppToolbarSearchBarComponent
   ],
   imports: [
     CommonModule,
