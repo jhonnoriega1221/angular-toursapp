@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-export interface navigationButtonType {
+export interface navigationButton {
     icon:string;
     text:string;
+    route:string;
 }
 
 @Component({
@@ -13,9 +14,9 @@ export interface navigationButtonType {
 
 export class AppNavbarComponent implements OnInit {
 
-  public navigationButtons:navigationButtonType[] = [
-      {icon: 'home', text: 'Inicio'},
-      {icon: 'map', text: 'Mapa'},
+  public navigationButtons:navigationButton[] = [
+      {icon: 'home', text: 'Inicio', route: '/'},
+      {icon: 'map', text: 'Mapa', route: '/map'}
   ];
 
   constructor() { }

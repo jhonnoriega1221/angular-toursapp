@@ -6,7 +6,8 @@ import { AppNavbarComponent } from './components/app-navbar/app-navbar.component
 import { AppNavbarButtonComponent } from './components/app-navbar-button/app-navbar-button.component';
 import { AppLayoutComponent } from './layouts/app-layout/app-layout.component';
 
-import { MatIconModule } from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
+import { MatRippleModule } from '@angular/material/core';
 
 
 
@@ -20,7 +21,8 @@ import { MatIconModule } from '@angular/material/icon'
   imports: [
     CommonModule,
     RouterModule,
-    MatIconModule
+    MatIconModule,
+    MatRippleModule
   ]
 })
 export class SharedModule { }
