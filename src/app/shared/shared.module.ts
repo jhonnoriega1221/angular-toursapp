@@ -7,7 +7,9 @@ import { AppNavbarButtonComponent } from './components/app-navbar-button/app-nav
 import { AppLayoutComponent } from './layouts/app-layout/app-layout.component';
 
 import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip'; 
 import { MatRippleModule } from '@angular/material/core';
+import { MatButtonModule } from '@angular/material/button';
 import { AppToolbarSearchBarComponent } from './components/app-toolbar-search-bar/app-toolbar-search-bar.component';
 
 
@@ -23,6 +25,8 @@ import { AppToolbarSearchBarComponent } from './components/app-toolbar-search-ba
   imports: [
     CommonModule,
     RouterModule,
+    MatButtonModule,
+    MatTooltipModule,
     MatIconModule,
     MatRippleModule
   ]
