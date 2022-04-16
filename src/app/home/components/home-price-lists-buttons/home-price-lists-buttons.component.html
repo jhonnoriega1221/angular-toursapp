@@ -1,0 +1,9 @@
+<div class="home-buttons-container">
+	<app-home-price-lists-button
+		class="home-button-container" 
+		[text]=priceListButton.text
+		[color]=priceListButton.color
+		[route]=priceListButton.route
+		*ngFor="let priceListButton of priceListButtons">
+	</app-home-price-lists-button>
+</div>
