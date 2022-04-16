@@ -1,3 +1,30 @@
+.greeting-text{
+	text-align: center;
+	height: 56px;
+	margin: 0;
+}
+
+.tips-container {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	background-color: #fff9c4;
+	padding: 8px;
+	border-radius: 12px;
+}
+
+.lightbulb-icon {
+	color: #c6a700;
+}
+
 .tips-text {
 	text-align: center;
+	margin: 0;
+	color: #c6a700;
+}
+
+.white-space {
+	height: 56px;
+	position: relative;
+	background-color: red;
 }

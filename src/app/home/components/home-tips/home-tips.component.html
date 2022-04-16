@@ -1,4 +1,7 @@
+<h2 class="greeting-text" *ngIf="isShowingGreeting" [@outAnimation]>¡Bienvenido turista!</h2>
 
-<div class="tips-container">
+
+<div class="tips-container" *ngIf="isShowingTips" [@inAnimation]>
+	<mat-icon class="lightbulb-icon">lightbulb</mat-icon>
 	<p class="tips-text">Antes de consumir un producto o servicio, consulte aquí su precio.</p>
 </div>
