@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, style, animate, transition } from '@angular/animations';
+import { trigger, style, animate, transition, AnimationEvent } from '@angular/animations';
 
 @Component({
   selector: 'app-home-tips',
@@ -13,7 +13,7 @@ import { trigger, style, animate, transition } from '@angular/animations';
           ':enter',
           [
             style({ opacity: 0}),
-            animate('0.1s ease-out',
+            animate('0.3s ease-out',
                       style({ opacity: 1 }))
           ]
         )
@@ -26,7 +26,7 @@ import { trigger, style, animate, transition } from '@angular/animations';
           ':leave',
           [
             style({ opacity: 1 }),
-            animate('0.2s ease-in',
+            animate('0.3s ease-in',
                     style({ opacity: 0}))
           ],
         )
@@ -49,14 +49,13 @@ export class HomeTipsComponent implements OnInit {
   hideGreeting() {
     setTimeout( () => {
       this.isShowingGreeting = !this.isShowingGreeting;
-      this.showTips();
     }, 1500 )
   }
 
-  showTips() {
-    setTimeout( () => {
+  animacionFinalizada(event: AnimationEvent) {
+    if(event.toState === "void"){
       this.isShowingTips = !this.isShowingTips;
-    }, 210 )
+    }
   }
 
 }
