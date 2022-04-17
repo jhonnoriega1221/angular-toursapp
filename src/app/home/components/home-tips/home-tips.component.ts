@@ -48,7 +48,7 @@ export class HomeTipsComponent implements OnInit {
   hideGreeting() {
     setTimeout( () => {
       this.isShowingGreeting = !this.isShowingGreeting;
-    }, 1500 )
+    }, 1000 )
   }
 
   //Los consejos se muestran cuando finaliza la animación de ocultar el saludo

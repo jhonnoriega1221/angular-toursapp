@@ -5,12 +5,14 @@ import { ProductsListPageComponent } from './pages/products-list-page/products-l
 import { ProductDetailsPageComponent } from './pages/product-details-page/product-details-page.component';
 import { ProductsListComponent } from './components/products-list/products-list.component';
 import { SharedModule } from '../shared/shared.module';
+import { ProductInfoComponent } from './components/product-info/product-info.component';
 
 @NgModule({
   declarations: [
     ProductsListPageComponent,
     ProductDetailsPageComponent,
     ProductsListComponent,
+    ProductInfoComponent,
   ],
   imports: [
     CommonModule,
