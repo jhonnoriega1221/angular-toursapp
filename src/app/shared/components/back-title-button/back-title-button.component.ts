@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { NavigationService } from '../../services/navigation.service';
 
 @Component({
   selector: 'app-back-title-button',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BackTitleButtonComponent implements OnInit {
 
-  constructor() { }
+  @Input() viewTitle = '';
+
+  constructor( private navigation: NavigationService) { }
 
   ngOnInit(): void {
+  }
+
+  back(): void {
+    this.navigation.back();
   }
 
 }
