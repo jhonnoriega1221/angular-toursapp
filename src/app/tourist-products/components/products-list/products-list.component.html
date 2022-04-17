@@ -1,0 +1,8 @@
+<app-list-item
+	*ngFor="let productItem of productsList"
+	[urlItem]=productItem.productRoute
+	[urlImage]=productItem.productUrlImage
+	[rowOneText]=productItem.productName
+	[rowTwoText]=productItem.productPrice
+	[rowThreeText]=productItem.productAltPrice
+></app-list-item>

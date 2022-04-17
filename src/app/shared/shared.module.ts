@@ -11,6 +11,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatRippleModule } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
 import { AppToolbarSearchBarComponent } from './components/app-toolbar-search-bar/app-toolbar-search-bar.component';
+import { BackTitleButtonComponent } from './components/back-title-button/back-title-button.component';
+import { ListItemComponent } from './components/list-item/list-item.component';
 
 
 
@@ -20,7 +22,9 @@ import { AppToolbarSearchBarComponent } from './components/app-toolbar-search-ba
     AppNavbarComponent,
     AppNavbarButtonComponent,
     AppLayoutComponent,
-    AppToolbarSearchBarComponent
+    AppToolbarSearchBarComponent,
+    BackTitleButtonComponent,
+    ListItemComponent
   ],
   imports: [
     CommonModule,
@@ -29,6 +33,10 @@ import { AppToolbarSearchBarComponent } from './components/app-toolbar-search-ba
     MatTooltipModule,
     MatIconModule,
     MatRippleModule
+  ],
+  exports: [
+    BackTitleButtonComponent,
+    ListItemComponent
   ]
 })
 export class SharedModule { }

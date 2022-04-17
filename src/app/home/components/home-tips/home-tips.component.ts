@@ -38,7 +38,6 @@ export class HomeTipsComponent implements OnInit {
 
   public isShowingTips = false;
   public isShowingGreeting = true;
-  public isShowingWhiteSpace = false;
 
   constructor() { }
 
@@ -52,7 +51,8 @@ export class HomeTipsComponent implements OnInit {
     }, 1500 )
   }
 
-  animacionFinalizada(event: AnimationEvent) {
+  //Los consejos se muestran cuando finaliza la animación de ocultar el saludo
+  showTips(event: AnimationEvent) {
     if(event.toState === "void"){
       this.isShowingTips = !this.isShowingTips;
     }

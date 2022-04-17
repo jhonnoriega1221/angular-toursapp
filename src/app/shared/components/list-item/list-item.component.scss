@@ -1,0 +1,49 @@
+.list-item-body {
+	background-color: white;
+	display: flex;
+	height: 82px;
+	padding: 6px;
+	box-sizing: border-box;
+	gap: 6px;
+	text-decoration: none;
+	margin-top: 12px;
+	border-radius: 6px;
+
+	.item-image {
+		width: 70px;
+		height: 70px;
+	}
+
+	.item-data {
+		display: inherit;
+		justify-content: space-between;
+		flex-direction: column;
+		width: 100%;
+
+		p, h3{
+			margin: 0;
+		}
+
+		.row1-and-row2{
+			.row-1 {
+				color: black;
+				font-weight: 500;
+				line-height: 16px;
+			}
+
+			.row-2 {
+				font-weight: 600;
+				font-size: 16px;
+				color: blue;
+			}
+		}
+
+		.row-3 {
+			font-size: 11px;
+			text-align: right;
+			color: gray;
+			line-height: 12px;
+		}
+	}
+
+}
