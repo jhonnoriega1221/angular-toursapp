@@ -6,6 +6,15 @@ import { ProductDetailsPageComponent } from './pages/product-details-page/produc
 import { ProductsListComponent } from './components/products-list/products-list.component';
 import { SharedModule } from '../shared/shared.module';
 import { ProductInfoComponent } from './components/product-info/product-info.component';
+import { ProductAltPricesButtonComponent } from './components/product-alt-prices-button/product-alt-prices-button.component';
+import { ProductAltPricesListComponent } from './components/product-alt-prices-list/product-alt-prices-list.component';
+
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
+import { ProductPriceDialogComponent } from './components/product-price-dialog/product-price-dialog.component';
 
 @NgModule({
   declarations: [
@@ -13,9 +22,16 @@ import { ProductInfoComponent } from './components/product-info/product-info.com
     ProductDetailsPageComponent,
     ProductsListComponent,
     ProductInfoComponent,
+    ProductAltPricesButtonComponent,
+    ProductAltPricesListComponent,
+    ProductPriceDialogComponent,
   ],
   imports: [
     CommonModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
     TouristProductsRoutingModule,
     SharedModule
   ]

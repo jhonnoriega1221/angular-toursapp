@@ -9,13 +9,12 @@ const routes: Routes = [
             { path: 'map', loadChildren: () => import ('./map/map.module').then( m => m.MapModule)},
             { path: 'products', loadChildren: () => import ('./tourist-products/tourist-products.module').then( m => m.TouristProductsModule)},
             { path: 'services', loadChildren: () => import ('./tourist-services/tourist-services.module').then( m => m.TouristServicesModule)}
-
         ]
     }
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
     exports: [RouterModule]
 })
 export class AppRoutingModule {

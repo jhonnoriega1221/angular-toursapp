@@ -1,0 +1,42 @@
+.product-info-container {
+	margin-top: 8px;
+	display: flex;
+	flex-direction: column;
+
+	.product-image {
+		min-width: 100%;
+	    margin: 0 auto;
+	    display: block;
+	    margin-bottom: 20px;
+	    padding: 16px;
+	    box-sizing: border-box;
+	}
+
+	.product-data {
+
+		margin-bottom: 36px;
+
+		p {
+			text-align: center;
+			margin: 0;
+		}
+
+		.product-name {
+			margin-bottom: 12px;
+			font-weight: 600;
+			font-size: 16px;
+		}
+
+		.info-text {
+			color: gray;
+			font-size: 12px;
+		}
+
+		.product-price {
+			color: blue;
+			font-size: 18px;
+			font-weight: 600;
+		}
+
+	}
+}
