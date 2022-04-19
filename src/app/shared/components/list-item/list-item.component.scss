@@ -1,17 +1,17 @@
 .list-item-body {
-	background-color: white;
 	display: flex;
 	height: 82px;
 	padding: 6px;
 	box-sizing: border-box;
 	gap: 6px;
 	text-decoration: none;
-	margin-top: 12px;
-	border-radius: 6px;
+	margin-bottom: 12px;
+	border-radius: 10px;
 
 	.item-image {
 		width: 70px;
 		height: 70px;
+		border-radius: 6px;
 	}
 
 	.item-data {
@@ -26,15 +26,14 @@
 
 		.row1-and-row2{
 			.row-1 {
-				color: black;
 				font-weight: 500;
-				line-height: 16px;
+				line-height: 20px;
 			}
 
 			.row-2 {
-				font-weight: 600;
-				font-size: 16px;
-				color: blue;
+				font-weight: 500;
+				font-size: 12px;
+				color: var(--toursapp-primary-app);
 			}
 		}
 

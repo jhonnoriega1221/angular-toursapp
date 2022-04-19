@@ -4,20 +4,19 @@
 	flex-direction: column;
 
 	.product-image {
-		min-width: 100%;
+		width: 100%;
 	    margin: 0 auto;
 	    display: block;
 	    margin-bottom: 20px;
-	    padding: 16px;
 	    box-sizing: border-box;
+	    border-radius: 12px;
 	}
 
 	.product-data {
-
 		margin-bottom: 36px;
+		text-align: center;
 
 		p {
-			text-align: center;
 			margin: 0;
 		}
 
@@ -27,16 +26,22 @@
 			font-size: 16px;
 		}
 
-		.info-text {
-			color: gray;
-			font-size: 12px;
+		.product-price-container {
+			gap: 6px;
+
+			.info-text {
+				color: gray;
+				font-size: 12px;
+			}
+
+			.product-price {
+				color: var(--toursapp-primary-app);
+				font-size: 14px;
+				font-weight: 500;
+			}
 		}
 
-		.product-price {
-			color: blue;
-			font-size: 18px;
-			font-weight: 600;
-		}
+		
 
 	}
 }

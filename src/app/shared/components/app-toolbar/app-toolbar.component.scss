@@ -1,14 +1,11 @@
 .toolbar-body {
 	display: flex;
 	align-items: center;
-	width: 96%;
-	height: 46px;
-	border-radius: 30px;
+	width: 100%;
+	height: 56px;
 	position: fixed;
-	background: white;
-	top: 8px;
-	transform: translate(calc(50vw - 50%));
-	padding: 0px 8px;
+	top: 0px;
+	padding: 0px 12px;
 	box-sizing: border-box;
 	z-index: 1;
 

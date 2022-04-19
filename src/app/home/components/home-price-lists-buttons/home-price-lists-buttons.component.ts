@@ -14,8 +14,8 @@ export interface homeButton {
 export class HomePriceListsButtonsComponent implements OnInit {
 
   public priceListButtons: homeButton[] = [
-    { color: 'primary', text: 'Productos', route: '/products' },
-    { color: 'accent', text: 'Servicios', route: '/services' }
+    { color: 'accent', text: 'Productos', route: '/products' },
+    { color: 'primary', text: 'Servicios', route: '/services' }
   ];
 
   constructor() {}
