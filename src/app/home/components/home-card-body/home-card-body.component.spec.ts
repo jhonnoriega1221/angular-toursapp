@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeExchangeRateComponent } from './home-exchange-rate.component';
+import { HomeCardBodyComponent } from './home-card-body.component';
 
-describe('HomeExchangeRateComponent', () => {
-  let component: HomeExchangeRateComponent;
-  let fixture: ComponentFixture<HomeExchangeRateComponent>;
+describe('HomeCardBodyComponent', () => {
+  let component: HomeCardBodyComponent;
+  let fixture: ComponentFixture<HomeCardBodyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HomeExchangeRateComponent ]
+      declarations: [ HomeCardBodyComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeExchangeRateComponent);
+    fixture = TestBed.createComponent(HomeCardBodyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

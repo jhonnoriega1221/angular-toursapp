@@ -1,0 +1,40 @@
+.home-currency-exchange-body {
+	border-radius: 18px;
+	min-height: 212px;
+	box-sizing: border-box;
+}
+
+p, label {
+	margin-bottom: 6px;
+	display: block;
+}
+
+.currency-quantity {
+	font-size: 26px;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+.separator {
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+
+	.line {
+		background-color: black;
+		height: 2px;
+		width: 100%;
+	}
+
+	p {
+		font-size: 36px;
+		margin: 0;
+		width: 100px;
+		text-align: center;
+	}
+}
+
+.updated-at-text{
+	text-align: right;
+	color: gray;
+}
