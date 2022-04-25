@@ -17,6 +17,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatRippleModule } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
+import { SkeletonLoaderComponent } from './components/skeleton-loader/skeleton-loader.component';
+
+//Directivas
+import { SkeletonLoaderDirective } from './directives/skeleton-loader.directive';
 
 
 
@@ -28,7 +32,9 @@ import { MatButtonModule } from '@angular/material/button';
         AppNavbarComponent,
         AppNavbarButtonComponent,
         BackTitleButtonComponent,
-        AppLayoutComponent
+        AppLayoutComponent,
+        SkeletonLoaderComponent,
+        SkeletonLoaderDirective
     ],
     imports: [
         CommonModule,
@@ -39,7 +45,9 @@ import { MatButtonModule } from '@angular/material/button';
         MatRippleModule
     ],
     exports: [
-        BackTitleButtonComponent
+        BackTitleButtonComponent,
+        SkeletonLoaderComponent,
+        SkeletonLoaderDirective
     ]
 })
 export class SharedModule {}

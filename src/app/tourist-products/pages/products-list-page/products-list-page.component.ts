@@ -10,9 +10,12 @@ import { FakeStoreService } from '../../services/fake-store.service';
 export class ProductsListPageComponent implements OnInit {
 
   public fakeProducts:FakeProduct[] = [];
+  public isLoading:boolean = false;
 
     private getFakeProducts(limit:Number): void {
+      this.isLoading = true;
         this.fakeStoreService.getProducts(limit).subscribe(products => {
+          this.isLoading = false;
             this.fakeProducts = products;
         });
     }
