@@ -9,6 +9,7 @@ import { ProductDetailsPageComponent } from './pages/product-details-page/produc
 
 //Componentes
 import { ProductsListComponent } from './components/products-list/products-list.component';
+import { ProductListItemComponent } from './components/product-list-item/product-list-item.component';
 import { ProductInfoComponent } from './components/product-info/product-info.component';
 import { ProductAltPricesButtonComponent } from './components/product-alt-prices-button/product-alt-prices-button.component';
 import { ProductAltPricesListComponent } from './components/product-alt-prices-list/product-alt-prices-list.component';
@@ -29,6 +30,7 @@ import { MatInputModule } from '@angular/material/input';
         ProductAltPricesButtonComponent,
         ProductAltPricesListComponent,
         ProductPriceDialogComponent,
+        ProductListItemComponent,
     ],
     imports: [
         CommonModule,

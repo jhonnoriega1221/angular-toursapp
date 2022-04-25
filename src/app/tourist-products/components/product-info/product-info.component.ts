@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FakeStoreService } from '../../services/fake-store.service';
+import { Component, OnInit, Input } from '@angular/core';
 import { FakeProduct } from '../../models/fake-product';
-import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -11,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductInfoComponent implements OnInit {
 
-  public fakeProduct:FakeProduct = {
+  @Input() fakeProduct:FakeProduct = {
     id: 0,
     title: '',
     price: 0,
@@ -24,17 +22,9 @@ export class ProductInfoComponent implements OnInit {
     }
   };
 
-  constructor( private fakeStoreService: FakeStoreService, private activatedRoute: ActivatedRoute) { }
+  constructor( ) { }
 
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe( params => {
-      const id = params['id'];
-      this.fakeStoreService.getProduct(id).subscribe( product => {
-        this.fakeProduct = product;
-      })
-    })
   }
-
-
 
 }

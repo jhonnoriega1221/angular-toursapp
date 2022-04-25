@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FakeProduct } from '../../models/fake-product';
+import { FakeStoreService } from '../../services/fake-store.service';
 
 @Component({
   selector: 'app-products-list-page',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsListPageComponent implements OnInit {
 
-  constructor() { }
+  public fakeProducts:FakeProduct[] = [];
 
-  ngOnInit(): void {
-  }
+    private getFakeProducts(limit:Number): void {
+        this.fakeStoreService.getProducts(limit).subscribe(products => {
+            this.fakeProducts = products;
+        });
+    }
+
+    constructor(public fakeStoreService:FakeStoreService) { }
+
+    ngOnInit(): void {
+        this.getFakeProducts(15);
+    }
 
 }

@@ -8,7 +8,6 @@ import { AppToolbarSearchBarComponent } from './components/app-toolbar-search-ba
 import { AppNavbarComponent } from './components/app-navbar/app-navbar.component';
 import { AppNavbarButtonComponent } from './components/app-navbar-button/app-navbar-button.component';
 import { BackTitleButtonComponent } from './components/back-title-button/back-title-button.component';
-import { ListItemComponent } from './components/list-item/list-item.component';
 
 //Layouts
 import { AppLayoutComponent } from './layouts/app-layout/app-layout.component';
@@ -29,7 +28,6 @@ import { MatButtonModule } from '@angular/material/button';
         AppNavbarComponent,
         AppNavbarButtonComponent,
         BackTitleButtonComponent,
-        ListItemComponent,
         AppLayoutComponent
     ],
     imports: [
@@ -41,8 +39,7 @@ import { MatButtonModule } from '@angular/material/button';
         MatRippleModule
     ],
     exports: [
-        BackTitleButtonComponent,
-        ListItemComponent
+        BackTitleButtonComponent
     ]
 })
 export class SharedModule {}

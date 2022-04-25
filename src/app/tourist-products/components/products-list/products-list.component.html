@@ -1,8 +1,9 @@
-<app-list-item
-	*ngFor="let fakeProduct of fakeProducts"
-	[itemUrl]="['/products', fakeProduct.id]"
-	[urlImage]=fakeProduct.image
-	[rowOneText]=fakeProduct.title
-	[rowTwoText]=fakeProduct.price
-	[rowThreeText]=fakeProduct.price
-></app-list-item>
+<app-product-list-item 
+*ngFor="let fakeProduct of fakeProducts" 
+[itemUrl]="['/products', fakeProduct.id]" 
+[urlImage]=fakeProduct.image 
+[rowOneText]=fakeProduct.title 
+[rowTwoText]=fakeProduct.price 
+[rowThreeText]=fakeProduct.price
+>
+</app-product-list-item>

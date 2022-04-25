@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-list-item',
-  templateUrl: './list-item.component.html',
-  styleUrls: ['./list-item.component.scss']
+  selector: 'app-product-list-item',
+  templateUrl: './product-list-item.component.html',
+  styleUrls: ['./product-list-item.component.scss']
 })
-export class ListItemComponent implements OnInit {
+export class ProductListItemComponent implements OnInit {
 
   @Input() itemUrl = ['',0];
   @Input() urlImage = '';
