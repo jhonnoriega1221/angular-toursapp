@@ -9,9 +9,11 @@
 	border-radius: 10px;
 
 	.item-image {
-		width: 70px;
-		height: 70px;
-		border-radius: 6px;
+		min-width: 70px;
+	    max-width: 70px;
+	    height: 70px;
+	    border-radius: 6px;
+	    object-fit: contain;
 	}
 
 	.item-data {
@@ -26,8 +28,10 @@
 
 		.row1-and-row2{
 			.row-1 {
-				font-weight: 500;
-				line-height: 20px;
+			    max-height: 40px;
+			    font-weight: 500;
+			    line-height: 20px;
+			    overflow: hidden;
 			}
 
 			.row-2 {

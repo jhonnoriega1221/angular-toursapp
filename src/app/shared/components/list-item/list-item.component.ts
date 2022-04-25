@@ -7,11 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ListItemComponent implements OnInit {
 
-  @Input() urlItem = '';
+  @Input() itemUrl = ['',0];
   @Input() urlImage = '';
   @Input() rowOneText = '';
-  @Input() rowTwoText = '';
-  @Input() rowThreeText = '';
+  @Input() rowTwoText = 0;
+  @Input() rowThreeText = 0;
 
   constructor() { }
 

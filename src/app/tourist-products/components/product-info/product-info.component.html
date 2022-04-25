@@ -1,10 +1,10 @@
-<div class="product-info-container">
-	<img src="https://vixark.b-cdn.net/lp-i-i-g/agua-brisa-1000ml.jpg" class="product-image">
+<div *ngIf="fakeProduct" class="product-info-container">
+	<img [src]=fakeProduct.image class="product-image">
 	<div class="product-data">
-		<p class="product-name">Agua Brisa 1.000 ml</p>
+		<p class="product-name">{{fakeProduct.title}}</p>
 		<div class="product-price-container">
 			<p class="info-text">Precio estándar</p>
-			<p class="product-price">$1.000 COP</p>
+			<p class="product-price">${{fakeProduct.price}}</p>
 		</div>
 	</div>
 </div>
