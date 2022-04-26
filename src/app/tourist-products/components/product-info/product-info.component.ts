@@ -1,6 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { FakeProduct } from '../../models/fake-product';
-
 
 @Component({
   selector: 'app-product-info',
@@ -9,18 +7,8 @@ import { FakeProduct } from '../../models/fake-product';
 })
 export class ProductInfoComponent implements OnInit {
 
-  @Input() fakeProduct:FakeProduct = {
-    id: 0,
-    title: '',
-    price: 0,
-    description: '',
-    category: '',
-    image: '',
-    rating: {
-      rate: 0,
-      count: 0
-    }
-  };
+  @Input() fakeProductTitle:string = '';
+  @Input() fakeProductPrice:number = 0;
 
   constructor( ) { }
 

@@ -21,6 +21,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatRippleModule } from '@angular/material/core';
+import { ProductImageComponent } from './components/product-image/product-image.component';
 
 @NgModule({
     declarations: [
@@ -32,6 +33,7 @@ import { MatRippleModule } from '@angular/material/core';
         ProductAltPricesListComponent,
         ProductPriceDialogComponent,
         ProductListItemComponent,
+        ProductImageComponent,
     ],
     imports: [
         CommonModule,

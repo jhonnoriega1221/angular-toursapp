@@ -1,10 +1,9 @@
-<div *ngIf="fakeProduct" class="product-info-container">
-	<img [src]=fakeProduct.image class="product-image">
+<div class="product-info-container">
 	<div class="product-data">
-		<p class="product-name">{{fakeProduct.title}}</p>
+		<p class="product-name">{{fakeProductTitle}}</p>
 		<div class="product-price-container">
 			<p class="info-text">Precio estándar</p>
-			<p class="product-price">${{fakeProduct.price}}</p>
+			<p class="product-price">${{fakeProductPrice}}</p>
 		</div>
 	</div>
 </div>
