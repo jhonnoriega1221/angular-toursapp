@@ -10,6 +10,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductDetailsPageComponent implements OnInit {
 
+    public isLoading:boolean = false;
+
     public fakeProduct:FakeProduct = {
     id: 0,
     title: '',
@@ -28,7 +30,9 @@ export class ProductDetailsPageComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe( params => {
       const id = params['id'];
+      this.isLoading = true;
       this.fakeStoreService.getProduct(id).subscribe( product => {
+        this.isLoading = false;
         this.fakeProduct = product;
       })
     })

@@ -12,6 +12,12 @@ export class ProductsListPageComponent implements OnInit {
   public fakeProducts:FakeProduct[] = [];
   public isLoading:boolean = false;
 
+    constructor(public fakeStoreService:FakeStoreService) { }
+
+    ngOnInit(): void {
+        this.getFakeProducts(10);
+    }
+
     private getFakeProducts(limit:Number): void {
       this.isLoading = true;
         this.fakeStoreService.getProducts(limit).subscribe(products => {
@@ -19,11 +25,4 @@ export class ProductsListPageComponent implements OnInit {
             this.fakeProducts = products;
         });
     }
-
-    constructor(public fakeStoreService:FakeStoreService) { }
-
-    ngOnInit(): void {
-        this.getFakeProducts(15);
-    }
-
 }
