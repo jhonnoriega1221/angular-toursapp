@@ -11,6 +11,7 @@ export class ProductsListPageComponent implements OnInit {
 
   public fakeProducts:FakeProduct[] = [];
   public isLoading:boolean = false;
+  public isError:boolean = false;
 
     constructor(public fakeStoreService:FakeStoreService) { }
 
@@ -20,9 +21,17 @@ export class ProductsListPageComponent implements OnInit {
 
     private getFakeProducts(limit:Number): void {
       this.isLoading = true;
-        this.fakeStoreService.getProducts(limit).subscribe(products => {
-          this.isLoading = false;
+        this.fakeStoreService.getProducts(limit)
+        .subscribe(
+          (products) => {
+            this.isLoading = false;
             this.fakeProducts = products;
-        });
+          },
+          (error) => {
+            this.isLoading = false;
+            this.isError = true;
+            console.log(error)
+          }
+        );
     }
 }

@@ -8,6 +8,7 @@ import { AppToolbarSearchBarComponent } from './components/app-toolbar-search-ba
 import { AppNavbarComponent } from './components/app-navbar/app-navbar.component';
 import { AppNavbarButtonComponent } from './components/app-navbar-button/app-navbar-button.component';
 import { BackTitleButtonComponent } from './components/back-title-button/back-title-button.component';
+import { ErrorMessageComponent } from './components/error-message/error-message.component';
 
 //Layouts
 import { AppLayoutComponent } from './layouts/app-layout/app-layout.component';
@@ -32,6 +33,7 @@ import { SkeletonLoaderDirective } from './directives/skeleton-loader.directive'
         AppNavbarComponent,
         AppNavbarButtonComponent,
         BackTitleButtonComponent,
+        ErrorMessageComponent,
         AppLayoutComponent,
         SkeletonLoaderComponent,
         SkeletonLoaderDirective
@@ -47,7 +49,8 @@ import { SkeletonLoaderDirective } from './directives/skeleton-loader.directive'
     exports: [
         BackTitleButtonComponent,
         SkeletonLoaderComponent,
-        SkeletonLoaderDirective
+        SkeletonLoaderDirective,
+        ErrorMessageComponent
     ]
 })
 export class SharedModule {}
