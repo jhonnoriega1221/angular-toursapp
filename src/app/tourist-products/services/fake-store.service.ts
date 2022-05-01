@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { catchError, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { FakeProduct } from '../models/fake-product';
 
 @Injectable({
@@ -12,7 +12,7 @@ export class FakeStoreService {
   url:String = 'https://fakestoreapi.com/';
 
   getProducts(limit:Number):Observable<FakeProduct[]> {
-    return this.http.get<FakeProduct[]>(`${this.url}productas?limit=${limit}`);
+    return this.http.get<FakeProduct[]>(`${this.url}products?limit=${limit}`);
   };
 
   getProduct(id:Number):Observable<FakeProduct> {

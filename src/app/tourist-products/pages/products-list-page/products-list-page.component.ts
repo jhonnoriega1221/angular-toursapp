@@ -10,7 +10,7 @@ import { FakeStoreService } from '../../services/fake-store.service';
 export class ProductsListPageComponent implements OnInit {
 
   public fakeProducts:FakeProduct[] = [];
-  public isLoading:boolean = false;
+  public isLoading:boolean = true;
   public isError:boolean = false;
 
     constructor(public fakeStoreService:FakeStoreService) { }
@@ -19,19 +19,18 @@ export class ProductsListPageComponent implements OnInit {
         this.getFakeProducts(10);
     }
 
-    private getFakeProducts(limit:Number): void {
-      this.isLoading = true;
-        this.fakeStoreService.getProducts(limit)
-        .subscribe(
-          (products) => {
-            this.isLoading = false;
-            this.fakeProducts = products;
+    public getFakeProducts(limit:Number): void {
+      this.isError = false;
+      this.fakeStoreService.getProducts(limit)
+      .subscribe(
+        {
+          next: (v) => this.fakeProducts = v,
+          error: (e) => { 
+            this.isError = true; 
+            console.error(e)
           },
-          (error) => {
-            this.isLoading = false;
-            this.isError = true;
-            console.log(error)
-          }
-        );
+          complete: () => this.isLoading = false
+        }
+      );
     }
 }

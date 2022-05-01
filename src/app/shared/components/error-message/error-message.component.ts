@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-error-message',
@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./error-message.component.scss']
 })
 export class ErrorMessageComponent implements OnInit {
+
+  @Output() reload: EventEmitter<any> = new EventEmitter();
+
+  reloadInfo(){
+    this.reload.emit();
+  }
 
   constructor() { }
 

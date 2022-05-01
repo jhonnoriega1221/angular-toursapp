@@ -2,4 +2,4 @@
 <div *ngIf="!isError" >
 	<app-products-list *skeleton="isLoading; height: '82px'; repeat: 10; width: '100%';" [fakeProducts]="fakeProducts" ></app-products-list>
 </div>
-<app-error-message *ngIf="isError"></app-error-message>
+<app-error-message (reload)="getFakeProducts(10)" *ngIf="isError"></app-error-message>
