@@ -1,7 +1,10 @@
 <app-back-title-button viewTitle="Detalles del producto"></app-back-title-button>
-<app-product-image *skeleton="isLoading; height: '300px'; width: '100%';" [fakeProductImage]="fakeProduct.image"></app-product-image>
-<app-product-info *skeleton="isLoading; height: '20px'; repeat: 2; width: '100%';" [fakeProductTitle]="fakeProduct.title" [fakeProductPrice]="fakeProduct.price" class="page-component"></app-product-info>
-<app-product-alt-prices-button *skeleton="isLoading; height: '40px'; width: '100%';" class="page-component"></app-product-alt-prices-button>
-<!--
-<app-product-alt-prices-list class="page-component"></app-product-alt-prices-list>
--->
+<div *ngIf="!isError">
+	<app-product-image *skeleton="isLoading; height: '300px'; width: '100%';" [fakeProductImage]="fakeProduct.image"></app-product-image>
+	<app-product-info *skeleton="isLoading; height: '20px'; repeat: 2; width: '100%';" [fakeProductTitle]="fakeProduct.title" [fakeProductPrice]="fakeProduct.price" class="page-component"></app-product-info>
+	<app-product-alt-prices-button *skeleton="isLoading; height: '40px'; width: '100%';" class="page-component"></app-product-alt-prices-button>
+	<!--
+	<app-product-alt-prices-list class="page-component"></app-product-alt-prices-list>
+	-->
+</div>
+<app-error-message (reload)="getProductInfo()" *ngIf="isError"></app-error-message>
