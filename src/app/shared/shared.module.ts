@@ -19,6 +19,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatRippleModule } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
 import { SkeletonLoaderComponent } from './components/skeleton-loader/skeleton-loader.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 //Directivas
 import { SkeletonLoaderDirective } from './directives/skeleton-loader.directive';
@@ -44,7 +45,8 @@ import { SkeletonLoaderDirective } from './directives/skeleton-loader.directive'
         MatButtonModule,
         MatTooltipModule,
         MatIconModule,
-        MatRippleModule
+        MatRippleModule,
+        MatProgressBarModule
     ],
     exports: [
         BackTitleButtonComponent,
