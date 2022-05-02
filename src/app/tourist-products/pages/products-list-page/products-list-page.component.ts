@@ -11,6 +11,7 @@ export class ProductsListPageComponent implements OnInit {
 
   public fakeProducts:FakeProduct[] = [];
   public isLoading:boolean = true;
+  public isLoadingMore:boolean = false;
   public isError:boolean = false;
 
     constructor(public fakeStoreService:FakeStoreService) { }
@@ -32,5 +33,19 @@ export class ProductsListPageComponent implements OnInit {
           complete: () => this.isLoading = false
         }
       );
+    }
+
+    public loadMoreFakeProducts() {
+      this.isLoadingMore = true;
+      this.fakeStoreService.getProducts(this.fakeProducts.length + 5)
+      .subscribe(
+        {
+          next: (v) => this.fakeProducts = v,
+          error: (e) => { 
+            console.error(e)
+          },
+          complete: () => this.isLoadingMore = false
+        }
+      )
     }
 }
