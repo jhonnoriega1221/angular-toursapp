@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-home-card-body',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-card-body.component.scss']
 })
 export class HomeCardBodyComponent implements OnInit {
+
+  @Input() homeCardTitle:string = '';
 
   constructor() { }
 

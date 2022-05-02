@@ -1,8 +1,4 @@
-.home-currency-exchange-body {
-	border-radius: 18px;
-	min-height: 212px;
-	box-sizing: border-box;
-}
+
 
 p, label {
 	margin-bottom: 6px;
@@ -37,4 +33,6 @@ p, label {
 .updated-at-text{
 	text-align: right;
 	color: gray;
+	margin-bottom: 0px;
+	opacity: 0;
 }

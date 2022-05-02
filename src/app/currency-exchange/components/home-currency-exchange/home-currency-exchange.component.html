@@ -1,12 +1,10 @@
-<mat-card class="home-currency-exchange-body">
-	<label>USD - United States Dollar</label>
-	<p class="currency-quantity">$ 1</p>
-	<div class="separator">
-		<div class="line"></div>
-		<p>=</p>
-		<div class="line"></div>
-	</div>
-	<label>COP - Colombian Peso</label>
-	<p class="currency-quantity">$ {{conversion.value}}</p>
-	<p class="updated-at-text mat-small">Actualizado el {{conversion.date}}</p>
-</mat-card>
+<label>USD - United States Dollar</label>
+<p class="currency-quantity">$ 1</p>
+<div class="separator">
+	<div class="line"></div>
+	<p>=</p>
+	<div class="line"></div>
+</div>
+<label>COP - Colombian Peso</label>
+<p *skeleton="isLoading; height: '24px'; width: '180px';" class="currency-quantity">$ {{conversion.value}}</p>
+<p class="updated-at-text mat-small" [@showUpdateDate]=updateDateState>Actualizado el {{conversion.date}}</p>
