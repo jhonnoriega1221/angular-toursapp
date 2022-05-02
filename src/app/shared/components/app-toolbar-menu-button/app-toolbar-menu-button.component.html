@@ -1,0 +1,6 @@
+<button [matMenuTriggerFor]='more_options_menu' mat-icon-button matTooltip="Más opciones">
+  <mat-icon>more_vert</mat-icon>
+</button>
+<mat-menu #more_options_menu="matMenu">
+  <a routerLink='/options' mat-menu-item>Ajustes</a>
+</mat-menu>

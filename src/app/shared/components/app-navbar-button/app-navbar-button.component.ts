@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-app-navbar-button',
+  selector: 'app-navbar-button',
   templateUrl: './app-navbar-button.component.html',
   styleUrls: ['./app-navbar-button.component.scss']
 })

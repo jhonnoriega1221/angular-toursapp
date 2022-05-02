@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 
 //Componentes
 import { AppToolbarComponent } from './components/app-toolbar/app-toolbar.component';
-import { AppToolbarSearchBarComponent } from './components/app-toolbar-search-bar/app-toolbar-search-bar.component';
+import { AppToolbarMenuButtonComponent } from './components/app-toolbar-menu-button/app-toolbar-menu-button.component';
 import { AppNavbarComponent } from './components/app-navbar/app-navbar.component';
 import { AppNavbarButtonComponent } from './components/app-navbar-button/app-navbar-button.component';
 import { BackTitleButtonComponent } from './components/back-title-button/back-title-button.component';
@@ -20,9 +20,11 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
 import { SkeletonLoaderComponent } from './components/skeleton-loader/skeleton-loader.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatMenuModule } from '@angular/material/menu';
 
 //Directivas
 import { SkeletonLoaderDirective } from './directives/skeleton-loader.directive';
+import { AppToolbarProgressBarComponent } from './components/app-toolbar-progress-bar/app-toolbar-progress-bar.component';
 
 
 
@@ -30,14 +32,15 @@ import { SkeletonLoaderDirective } from './directives/skeleton-loader.directive'
 @NgModule({
     declarations: [
         AppToolbarComponent,
-        AppToolbarSearchBarComponent,
+        AppToolbarMenuButtonComponent,
         AppNavbarComponent,
         AppNavbarButtonComponent,
         BackTitleButtonComponent,
         ErrorMessageComponent,
         AppLayoutComponent,
         SkeletonLoaderComponent,
-        SkeletonLoaderDirective
+        SkeletonLoaderDirective,
+        AppToolbarProgressBarComponent,
     ],
     imports: [
         CommonModule,
@@ -46,7 +49,8 @@ import { SkeletonLoaderDirective } from './directives/skeleton-loader.directive'
         MatTooltipModule,
         MatIconModule,
         MatRippleModule,
-        MatProgressBarModule
+        MatProgressBarModule,
+        MatMenuModule
     ],
     exports: [
         BackTitleButtonComponent,
