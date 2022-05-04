@@ -3,6 +3,18 @@
     display: flex;
     flex-direction: column;
     border-radius: 18px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+}
+
+span {
+    display: block;
+}
+
+.icon {
+    display: block;
+}
+
+.text {
+    height: 25px; 
 }

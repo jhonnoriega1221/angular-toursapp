@@ -9,6 +9,7 @@ export class HomePriceListsButtonComponent implements OnInit {
 
   @Input() color = '';
   @Input() text = '';
+  @Input() icon = '';
   @Input() route = '';
 
   constructor() { }
