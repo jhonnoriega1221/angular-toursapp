@@ -1,0 +1,17 @@
+.setting-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.setting-title{
+	margin: 0;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.setting-description{
+	color: gray;
+	font-size: 12px;
+	margin: 0;
+}

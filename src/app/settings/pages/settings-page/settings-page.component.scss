@@ -1,0 +1,29 @@
+.settings-page-layout {
+	display: flex;
+	height: 100vh;
+	padding: 56px 0 0 0;
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 1500px;
+}
+
+.settings-list, .setting-view {
+	width: 100%;
+	position: sticky;
+	overflow-y: auto;
+	height: 100%
+}
+
+.setting-view {
+	padding: 0 12px;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+@media(min-width: 600px){
+	.settings-list {
+		min-width: 300px;
+		max-width: 360px;
+		box-shadow: 1px 0px 1px 0px rgb(0 0 0 / 12%);
+	}
+}

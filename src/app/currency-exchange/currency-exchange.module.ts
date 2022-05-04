@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeCurrencyExchangeComponent } from './components/home-currency-exchange/home-currency-exchange.component';
 
 import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
@@ -12,6 +13,7 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     MatCardModule,
+    MatDividerModule,
     SharedModule
   ],
   exports: [
