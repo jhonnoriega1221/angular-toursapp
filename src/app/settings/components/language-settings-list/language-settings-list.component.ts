@@ -8,6 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class LanguageSettingsListComponent implements OnInit {
 
+  public appLanguage = localStorage.getItem('app_language');
+
   constructor (
     public translate:TranslateService
   ){
@@ -17,7 +19,12 @@ export class LanguageSettingsListComponent implements OnInit {
   }
 
   public translateLanguageTo(lang: string){
-    this.translate.use(lang);
+    if(lang === 'auto'){
+      this.translate.use(navigator.language)
+    } else{
+      this.translate.use(lang);
+    }
+    localStorage.setItem('app_language', lang);
   }
 
 }

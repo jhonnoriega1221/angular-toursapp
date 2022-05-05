@@ -32,7 +32,12 @@
     {
       "TITLE": "Idioma",
       "LANGUAGE_OPTION_TITLE": "Idioma",
-      "LANGUAGE_OPTION_SUBTITLE": "Elige tu idioma"
+      "LANGUAGE_OPTION_SUBTITLE": "Elige tu idioma",
+      "LANGUAGES_LIST":{
+        "AUTO": "Predeterminado",
+        "ENGLISH": "Inglés",
+        "SPANISH": "Español"
+      }
     },
     "ABOUT":
     {

@@ -5,8 +5,10 @@
     <p class="setting-description">{{"SETTINGS.LANGUAGE.LANGUAGE_OPTION_SUBTITLE" | translate}}</p>
   </div>
   <mat-form-field appearance="outline">
-    <mat-select #selLang (selectionChange)="translateLanguageTo(selLang.value)" value='es'>
-      <mat-option *ngFor="let language of translate.getLangs()" [value]="language">{{ language }}</mat-option>
+    <mat-select #selLang (selectionChange)="translateLanguageTo(selLang.value)" [value]=appLanguage>
+      <mat-option value="auto">{{"SETTINGS.LANGUAGE.LANGUAGES_LIST.AUTO" | translate}}</mat-option>
+      <mat-option value="es">{{"SETTINGS.LANGUAGE.LANGUAGES_LIST.SPANISH" | translate}}</mat-option>
+      <mat-option value="en">{{"SETTINGS.LANGUAGE.LANGUAGES_LIST.ENGLISH" | translate}}</mat-option>
     </mat-select>
   </mat-form-field>
 </div>
