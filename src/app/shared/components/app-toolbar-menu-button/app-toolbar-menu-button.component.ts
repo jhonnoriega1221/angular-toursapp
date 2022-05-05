@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-toolbar-menu-button',
@@ -7,7 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppToolbarMenuButtonComponent implements OnInit {
 
-  constructor() { }
+  public tooltipsList:string[] = [
+    'MORE_OPTIONS.TITLE'
+  ]
+
+  constructor( public translate:TranslateService) {
+    translate.get("TOOLBAR")
+    .subscribe({
+      next: (v) => {
+        this.tooltipsList[0] = v.MORE_OPTIONS.TITLE;
+      }
+    })
+  }
 
   ngOnInit(): void {
   }

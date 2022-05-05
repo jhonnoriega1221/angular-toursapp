@@ -1,20 +1,12 @@
 
 <div class="setting-container">
   <div>
-    <p class="setting-title">Idioma</p>
-    <p class="setting-description">Elige tu idioma</p>
+    <p class="setting-title">{{"SETTINGS.LANGUAGE.LANGUAGE_OPTION_TITLE" | translate}}</p>
+    <p class="setting-description">{{"SETTINGS.LANGUAGE.LANGUAGE_OPTION_SUBTITLE" | translate}}</p>
   </div>
   <mat-form-field appearance="outline">
-    <mat-select value='español'>
-      <mat-option value='español' selected>
-        Español
-      </mat-option>
-      <mat-option value='español'>
-        Inglés
-      </mat-option>
-      <mat-option value='español'>
-        Alemán
-      </mat-option>
+    <mat-select #selLang (selectionChange)="translateLanguageTo(selLang.value)" value='es'>
+      <mat-option *ngFor="let language of translate.getLangs()" [value]="language">{{ language }}</mat-option>
     </mat-select>
   </mat-form-field>
 </div>

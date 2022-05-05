@@ -7,4 +7,4 @@
 </div>
 <label>COP - Colombian Peso</label>
 <p *skeleton="isLoading; height: '24px'; width: '180px';" class="currency-quantity">$ {{conversion.value}}</p>
-<p class="updated-at-text mat-small" [@showUpdateDate]=updateDateState>Actualizado el {{conversion.date}}</p>
+<p class="updated-at-text mat-small" [@showUpdateDate]=updateDateState>{{"HOME.EXCHANGE_RATE.UPDATED_AT" | translate}} {{conversion.date}}</p>

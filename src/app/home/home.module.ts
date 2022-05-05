@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { CurrencyExchangeModule } from '../currency-exchange/currency-exchange.module';
 import { HomeCardBodyComponent } from './components/home-card-body/home-card-body.component';
 import { MatCardModule } from '@angular/material/card';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MatCardModule } from '@angular/material/card';
     MatIconModule,
     MatCardModule,
     CurrencyExchangeModule,
-    SharedModule
+    SharedModule,
+    CoreModule
   ]
 })
 export class HomeModule { }

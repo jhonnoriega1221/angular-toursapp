@@ -1,0 +1,49 @@
+{
+  "TOOLBAR":
+  {
+    "MORE_OPTIONS":
+    {
+      "TITLE": "Más opciones",
+      "SETTINGS": "Ajustes"
+    }
+  },
+
+  "HOME":
+  {
+    "GREETINGS": "¡Bienvenido turista!",
+    "TIP": "Antes de consumir un producto o servicio, consulte aquí su precio.",
+    "PRICES_LIST":
+    {
+      "TITLE": "Listas de precios",
+      "PRODUCTS_BUTTON": "Productos",
+      "SERVICES_BUTTON": "Servicios"
+    },
+    "EXCHANGE_RATE":
+    {
+      "TITLE": "Cambio de divisa",
+      "UPDATED_AT": "Actualizado el "
+    }
+  },
+
+  "SETTINGS":
+  {
+    "TITLE": "Ajustes",
+    "LANGUAGE":
+    {
+      "TITLE": "Idioma",
+      "LANGUAGE_OPTION_TITLE": "Idioma",
+      "LANGUAGE_OPTION_SUBTITLE": "Elige tu idioma"
+    },
+    "ABOUT":
+    {
+      "TITLE": "Acerca de",
+      "CREATED_BY": "Creado por: Jhon Noriega"
+    }
+  },
+
+  "NAVBAR":
+  {
+    "HOME": "Inicio",
+    "MAP": "Mapa"
+  }
+}

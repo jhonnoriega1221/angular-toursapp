@@ -1,6 +1,6 @@
-<button [matMenuTriggerFor]='more_options_menu' mat-icon-button matTooltip="Más opciones">
+<button [matMenuTriggerFor]='more_options_menu' mat-icon-button [matTooltip]=tooltipsList[0]>
   <mat-icon>more_vert</mat-icon>
 </button>
 <mat-menu #more_options_menu="matMenu">
-  <a routerLink='/settings' mat-menu-item>Ajustes</a>
+  <a routerLink='/settings' mat-menu-item>{{"TOOLBAR.MORE_OPTIONS.SETTINGS" | translate}}</a>
 </mat-menu>

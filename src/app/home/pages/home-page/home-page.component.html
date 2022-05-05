@@ -3,11 +3,11 @@
 </div>
 
 <div class="home-section">
-	<h2 class="home-section-title">Listas de precios</h2>
+	<h2 class="home-section-title">{{ 'HOME.PRICES_LIST.TITLE' | translate }}</h2>
 	<app-home-price-lists-buttons></app-home-price-lists-buttons>
 </div>
 
 <!-- Widgets -->
-<app-home-card-body homeCardTitle="Cambio de divisa">
+<app-home-card-body [homeCardTitle]=homeWidgetsTitle[0]>
 	<app-home-currency-exchange homeCardContent></app-home-currency-exchange>
 </app-home-card-body>

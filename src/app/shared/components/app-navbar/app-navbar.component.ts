@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 export interface navigationButton {
     icon:string;
@@ -19,7 +20,17 @@ export class AppNavbarComponent implements OnInit {
       {icon: 'map', text: 'Mapa', route: '/map'}
   ];
 
-  constructor() { }
+  constructor( public translate:TranslateService) {
+    translate.get("NAVBAR")
+    .subscribe ({
+      next: (v) => { 
+        this.navigationButtons[0].text = v.HOME;
+        this.navigationButtons[1].text = v.MAP;
+      },
+      error: (e) => { console.log(e)},
+      complete: () => {}
+    })
+  }
 
   ngOnInit(): void {
   }

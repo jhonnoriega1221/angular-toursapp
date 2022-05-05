@@ -26,6 +26,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { SkeletonLoaderDirective } from './directives/skeleton-loader.directive';
 import { AppToolbarProgressBarComponent } from './components/app-toolbar-progress-bar/app-toolbar-progress-bar.component';
 
+import { CoreModule } from '../core/core.module';
 
 
 
@@ -50,7 +51,8 @@ import { AppToolbarProgressBarComponent } from './components/app-toolbar-progres
         MatIconModule,
         MatRippleModule,
         MatProgressBarModule,
-        MatMenuModule
+        MatMenuModule,
+        CoreModule
     ],
     exports: [
         BackTitleButtonComponent,

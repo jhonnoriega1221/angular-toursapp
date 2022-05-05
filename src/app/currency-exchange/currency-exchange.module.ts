@@ -5,6 +5,7 @@ import { HomeCurrencyExchangeComponent } from './components/home-currency-exchan
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { SharedModule } from '../shared/shared.module';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
     MatCardModule,
     MatDividerModule,
-    SharedModule
+    SharedModule,
+    CoreModule
   ],
   exports: [
     HomeCurrencyExchangeComponent
