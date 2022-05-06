@@ -16,7 +16,6 @@ export class ServiceCategoryButtonComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.background)
   }
 
 }
