@@ -19,18 +19,27 @@
 @media(min-width: 600px){
 	.button-body {
 		flex-direction: row;
-		gap: 10px;
-				transition: 0.3s;
+		transition: 0.3s;
+		padding: 0 20px;
+	}
 
-
+	.text{
+		overflow: hidden;
+		transition: 0.3s;
+		width: 0;
+		text-align: center;
 	}
 
 	.button-body:hover {
-		background-color: #00000005;
+		background-color: #0000000d;
 	}
 
 	.button-body-active{
 		transition: 0.3s;
 		box-shadow: inset 0px -4px 0px 0px var(--toursapp-primary-app);
+		.text{
+			transition: 0.3s;
+			width: 60px;
+		}
 	}
 }
