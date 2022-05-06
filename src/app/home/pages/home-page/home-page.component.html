@@ -1,13 +1,17 @@
-<div class="home-section">
-	<app-home-tips></app-home-tips>
-</div>
+<div class="home-container">
+	<div>
+	<div class="home-section">
+		<app-home-tips></app-home-tips>
+	</div>
 
-<div class="home-section">
-	<h2 class="home-section-title">{{ 'HOME.PRICES_LIST.TITLE' | translate }}</h2>
-	<app-home-price-lists-buttons></app-home-price-lists-buttons>
-</div>
+	<div class="home-section">
+		<h2 class="home-section-title">{{ 'HOME.PRICES_LIST.TITLE' | translate }}</h2>
+		<app-home-price-lists-buttons></app-home-price-lists-buttons>
+	</div>
+	</div>
 
-<!-- Widgets -->
-<app-home-card-body [homeCardTitle]=homeWidgetsTitle[0]>
-	<app-home-currency-exchange homeCardContent></app-home-currency-exchange>
-</app-home-card-body>
+	<!-- Widgets -->
+	<app-home-card-body [homeCardTitle]=homeWidgetsTitle[0]>
+		<app-home-currency-exchange homeCardContent></app-home-currency-exchange>
+	</app-home-card-body>
+</div>
