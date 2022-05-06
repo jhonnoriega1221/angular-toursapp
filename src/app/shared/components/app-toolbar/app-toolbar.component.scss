@@ -1,31 +1,47 @@
 .toolbar-body {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	height: 56px;
-	position: fixed;
-	top: 0px;
-	padding: 0px 12px;
-	box-sizing: border-box;
-	z-index: 1;
-	border-radius: 0px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: fixed;
+  top: 0px;
+  padding: 0px 12px;
+  box-sizing: border-box;
+  z-index: 1;
+  border-radius: 0px;
+  width: 100%;
 
-	.left-side {
-		display: inherit;
-		gap: 6px;
-		width: 100%;
+  overflow: hidden;
 
-		.brand-logo{
-			width: 36px;
-		}
+  .left-side {
+    display: inherit;
+    gap: 6px;
+    width: 100%;
 
-		input {
-			width: 100%;
-			border: none;
-		}
-	}
+    .brand-logo {
+      width: 36px;
+    }
 
-	.right-side {
-		display: flex;
-	}
+    input {
+      width: 100%;
+      border: none;
+    }
+  }
+
+  .right-side {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+ .center-side {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
+@media(min-width: 600px){
+  .center-side {
+    display: block;
+  }
 }

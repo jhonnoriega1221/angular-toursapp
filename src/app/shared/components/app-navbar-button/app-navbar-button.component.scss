@@ -12,5 +12,25 @@
 }
 
 .button-body-active{
+	
 	color: var(--toursapp-primary-app);
+}
+
+@media(min-width: 600px){
+	.button-body {
+		flex-direction: row;
+		gap: 10px;
+				transition: 0.3s;
+
+
+	}
+
+	.button-body:hover {
+		background-color: #00000005;
+	}
+
+	.button-body-active{
+		transition: 0.3s;
+		box-shadow: inset 0px -4px 0px 0px var(--toursapp-primary-app);
+	}
 }
