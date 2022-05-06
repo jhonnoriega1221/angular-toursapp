@@ -1,0 +1,11 @@
+<div class="wrapper">
+	<app-service-category-button
+	*ngFor = "let categoryButton of categoriesListButtons"
+	[text] = "categoryButton.text"
+	[background] = "categoryButton.background"
+	[icon] = "categoryButton.icon"
+	[color] = "categoryButton.color"
+	[route] = "categoryButton.route"
+
+	></app-service-category-button>
+</div>
