@@ -9,12 +9,14 @@ import { ServiceCategoriesListComponent } from './components/service-categories-
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { TransportServicePageComponent } from './pages/transport-service-page/transport-service-page.component';
 
 @NgModule({
   declarations: [
     ServicesCategoriesPageComponent,
     ServiceCategoryButtonComponent,
-    ServiceCategoriesListComponent
+    ServiceCategoriesListComponent,
+    TransportServicePageComponent
   ],
   imports: [
     CommonModule,
