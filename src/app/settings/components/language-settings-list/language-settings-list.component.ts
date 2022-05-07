@@ -20,7 +20,7 @@ export class LanguageSettingsListComponent implements OnInit {
 
   public translateLanguageTo(lang: string){
     if(lang === 'auto'){
-      this.translate.use(navigator.language)
+      this.translate.use(navigator.language.substring(0,2))
     } else{
       this.translate.use(lang);
     }

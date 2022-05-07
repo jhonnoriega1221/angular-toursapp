@@ -18,10 +18,10 @@ export class AppComponent {
 
   private configDefaultLanguage(appLanguage: string | null) {
     if (appLanguage === null || appLanguage === undefined) {
-      this.translate.setDefaultLang(navigator.language);
+      this.translate.setDefaultLang(navigator.language.substring(0,2));
       localStorage.setItem('app_language', 'auto');
     } else if (localStorage.getItem('app_language') === 'auto') {
-      this.translate.setDefaultLang(navigator.language);
+      this.translate.setDefaultLang(navigator.language.substring(0,2));
     } else {
       this.translate.setDefaultLang(appLanguage)
     }
