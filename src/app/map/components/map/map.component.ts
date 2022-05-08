@@ -41,6 +41,8 @@ export class MapComponent implements AfterViewInit, OnDestroy{
   ngOnDestroy(): void {
     clearInterval(this.locationIconAnimationInterval);
     this.map.stopLocate();
+    this.map.off();
+    L.DomUtil.get('map')!.remove();
   }
 
   private initLocate() {
@@ -69,13 +71,10 @@ export class MapComponent implements AfterViewInit, OnDestroy{
         this.locationIcon = "location_disabled";
         this.locateError = true;
         this.map.stopLocate();
-
-        
-
       });
   }
 
-  public getLocation() {
+  public focusLocation() {
     if(this.locateError) {
       this.initLocate();
     } else if(!this.isMarkerSet){
@@ -84,7 +83,6 @@ export class MapComponent implements AfterViewInit, OnDestroy{
     else {
       this.map.flyTo(this.locationMarker.getLatLng())  
     }
-    
   }
 
   private locationIconAnimation() {

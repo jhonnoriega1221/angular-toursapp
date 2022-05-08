@@ -16,6 +16,8 @@ import { MatIconModule } from '@angular/material/icon';
     MapRoutingModule,
     MatButtonModule,
     MatIconModule
+  ], exports: [
+    MapComponent
   ]
 })
 export class MapModule { }

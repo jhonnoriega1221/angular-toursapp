@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ServicesCategoriesPageComponent } from './pages/services-categories-page/services-categories-page.component';
 import { SharedModule } from '../shared/shared.module';
+import { MapModule } from '../map/map.module';
 
 import { TouristServicesRoutingModule } from './tourist-services-routing.module';
 import { ServiceCategoryButtonComponent } from './components/service-category-button/service-category-button.component';
@@ -23,7 +24,8 @@ import { TransportServicePageComponent } from './pages/transport-service-page/tr
     TouristServicesRoutingModule,
     SharedModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MapModule
   ]
 })
 export class TouristServicesModule { }
