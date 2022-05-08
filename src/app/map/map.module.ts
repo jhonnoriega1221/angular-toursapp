@@ -5,11 +5,13 @@ import { MapRoutingModule } from './map-routing.module';
 import { MapComponent } from './components/map/map.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { LocationButtonComponent } from './components/location-button/location-button.component';
 
 @NgModule({
   declarations: [
     MapPageComponent,
-    MapComponent
+    MapComponent,
+    LocationButtonComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatIconModule
   ], exports: [
-    MapComponent
+    MapComponent,
+    LocationButtonComponent
   ]
 })
 export class MapModule { }
