@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnDestroy } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import * as L from 'leaflet';
 
 @Component({
@@ -30,7 +31,7 @@ export class MapComponent implements AfterViewInit, OnDestroy{
     }).addTo(this.map);
   }
 
-  constructor() {}
+  constructor( private matSnackBar:MatSnackBar) {}
 
   ngAfterViewInit(): void {
     this.initMap();
@@ -59,6 +60,12 @@ export class MapComponent implements AfterViewInit, OnDestroy{
       })
       .on('locationerror', (e:L.ErrorEvent) => {
         clearInterval(this.locationIconAnimationInterval);
+        this.matSnackBar.open('No se pudo encontrar su ubicación','',{
+          verticalPosition: 'bottom',
+          horizontalPosition: 'start',
+          duration: 2000,
+          panelClass: 'app-snack-bar'
+        })
         this.locationIcon = "location_disabled";
         this.locateError = true;
         this.map.stopLocate();
