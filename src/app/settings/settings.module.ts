@@ -16,7 +16,6 @@ import { SettingsToolbarComponent } from './components/settings-toolbar/settings
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
-import { CoreModule } from '../core/core.module';
 
 
 @NgModule({
@@ -37,8 +36,7 @@ import { CoreModule } from '../core/core.module';
     SharedModule,
     MatToolbarModule,
     MatButtonModule,
-    MatSelectModule,
-    CoreModule
+    MatSelectModule
   ]
 })
 export class SettingsModule { }

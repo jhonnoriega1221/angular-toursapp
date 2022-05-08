@@ -21,14 +21,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { SkeletonLoaderComponent } from './components/skeleton-loader/skeleton-loader.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatMenuModule } from '@angular/material/menu';
+import { TranslateModule } from '@ngx-translate/core';
+
 
 //Directivas
 import { SkeletonLoaderDirective } from './directives/skeleton-loader.directive';
 import { AppToolbarProgressBarComponent } from './components/app-toolbar-progress-bar/app-toolbar-progress-bar.component';
-
-import { CoreModule } from '../core/core.module';
-
-
 
 @NgModule({
     declarations: [
@@ -52,13 +50,14 @@ import { CoreModule } from '../core/core.module';
         MatRippleModule,
         MatProgressBarModule,
         MatMenuModule,
-        CoreModule
+        TranslateModule
     ],
     exports: [
         BackTitleButtonComponent,
         SkeletonLoaderComponent,
         SkeletonLoaderDirective,
-        ErrorMessageComponent
+        ErrorMessageComponent,
+        TranslateModule
     ]
 })
 export class SharedModule {}
