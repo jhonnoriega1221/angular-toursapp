@@ -36,8 +36,6 @@ export class LocationButtonComponent implements AfterViewInit, OnDestroy {
   private initLocate() {
     this.locateError = false;
     this.locationButtonIconAnimation();
-
-    console.log('localizar')
     this.mapService.getMapInstance().locate({
         watch: true
       }).on('locationfound', (e: L.LocationEvent) => {
