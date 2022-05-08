@@ -1,5 +1,4 @@
 import { AfterViewInit, Component, OnDestroy } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
 import * as L from 'leaflet';
 import { MapService } from '../../services/map.service';
 
@@ -10,25 +9,19 @@ import { MapService } from '../../services/map.service';
 })
 export class MapComponent implements AfterViewInit, OnDestroy {
 
-
-
-  constructor(private mapService: MapService, private matSnackBar: MatSnackBar) {}
-
+  constructor(private mapService: MapService) {}
 
   ngAfterViewInit(): void {
     this.initMap();
-    //this.initLocate();
   }
 
   ngOnDestroy(): void {
-    /*clearInterval(this.locationIconAnimationInterval);
-    this.map.stopLocate();
-    this.map.off();
-    L.DomUtil.get('map')!.remove();*/
+    this.mapService.getMapInstance().stopLocate();
+    this.mapService.getMapInstance().off();
+    L.DomUtil.get('map')!.remove();
   }
 
   private initMap(): void {
-    console.log('inicializar')
     this.mapService.setMapInstance(
       L.map('map', {
         center: [10.416066331203975, -75.5189895629883],
@@ -42,11 +35,4 @@ export class MapComponent implements AfterViewInit, OnDestroy {
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(this.mapService.getMapInstance());
   }
-  /*
-    
-
-
-
-
-  */
 }
