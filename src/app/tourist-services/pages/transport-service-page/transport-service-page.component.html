@@ -1,4 +1,34 @@
-<app-back-title-button viewTitle="Transporte"></app-back-title-button>
-<p>transport-service-page works!</p>
-<app-map class="map-container"></app-map>
-<app-location-button></app-location-button>
+<app-back-title-button *ngIf="!isSelectMode" viewTitle="Transporte"></app-back-title-button>
+<app-taxi-price-calculator *ngIf="!isSelectMode" [isOrigin]=true [placeName]=originPlace (selectLocation)="setPlace($event)" class="taxi-price-calculator-container">
+</app-taxi-price-calculator>
+<app-taxi-price-calculator *ngIf="!isSelectMode" [isOrigin]=false [placeName]=destinationPlace (selectLocation)="setPlace($event)" class="taxi-price-calculator-container">
+</app-taxi-price-calculator>
+
+
+
+<div class="taxi-price-calculator-container" *ngIf="!isSelectMode && !isCalculatingPrice">
+	<img class="taxi-icon" src="../../../../assets/taxi-calculator.svg">
+	<p class="taxi-text">Selecciona los lugares de origen y destino para visualizar su precio.</p>
+</div>
+
+<div class="taxi-price-calculator-container" *ngIf="!isSelectMode && isCalculatingPrice">
+	<p class="taxi-price-title">El precio de la carrera de {{originPlace}} a {{destinationPlace}} es de </p>
+	<p class="taxi-price-text">$ 3.000</p>
+</div>
+
+<div class="taxi-price-calculator-container" *ngIf="isSelectMode">
+	<p class="select-place-title">Selecciona un lugar.</p>
+	<p class="select-place-subtitle">Lugar seleccionado</p>
+	<div class="select-place-name-icon">
+		<mat-icon>share_location</mat-icon>
+	 	<p class="select-place-name">{{locationName}}</p>
+	</div>
+	<div class="action-buttons">
+		<button mat-raised-button (click)="setPlace({place: 'cancel'})">Cancelar</button>
+		<button mat-raised-button (click)="acceptPlace()" color="primary" [disabled]=isAcceptButtonDisabled>Aceptar</button>
+	</div>
+</div>
+<app-map *ngIf="isSelectMode || !isMobile" class="map-container"></app-map>
+<app-neighborhoods (selectNeigborhood)="getNeighborhood($event)" *ngIf="isSelectMode"></app-neighborhoods>
+<app-click-marker *ngIf="isSelectMode"></app-click-marker>
+<app-location-button *ngIf="isSelectMode || !isMobile" class="map-location-container"></app-location-button>

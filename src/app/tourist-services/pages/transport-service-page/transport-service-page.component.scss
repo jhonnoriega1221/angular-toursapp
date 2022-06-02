@@ -4,12 +4,76 @@
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 56px 0 56px 0;
+  margin: 224px 0 56px 0;
   z-index: 0;
+}
+
+.select-place-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.select-place-subtitle {
+  color: gray;
+  margin-bottom: 6px;
+}
+
+.select-place-name-icon {
+  display: flex;
+  margin-bottom: 12px;
+  gap: 6px;
+  align-items: center;
+}
+
+.select-place-name {
+  margin: 0;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  button {
+  width: 100%;
+  }
+}
+
+.error-container {
+  min-width: 260px
+}
+
+.taxi-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px
+}
+
+.taxi-text {
+  text-align: center;
+  color: gray;
+  margin-bottom: 30px;
+
+}
+
+.taxi-icon {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 120px;
+}
+
+.taxi-price-text{
+  color: var(--toursapp-primary-app);
 }
 
 @media(min-width: 600px) {
   .map-container {
-    margin: 56px 0 0 0;
+    margin: 56px 0 0 320px;
+  }
+
+  .taxi-price-calculator-container{
+    display: block;
+    width: 296px;
   }
 }

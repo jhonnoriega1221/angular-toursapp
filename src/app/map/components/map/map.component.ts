@@ -16,8 +16,6 @@ export class MapComponent implements AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.mapService.getMapInstance().stopLocate();
-    this.mapService.getMapInstance().off();
     L.DomUtil.get('map')!.remove();
   }
 
@@ -34,5 +32,6 @@ export class MapComponent implements AfterViewInit, OnDestroy {
       minZoom: 3,
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(this.mapService.getMapInstance());
+
   }
 }

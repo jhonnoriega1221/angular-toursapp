@@ -1,0 +1,13 @@
+
+  <mat-form-field class="location-input" appearance="outline">
+    <mat-label>{{locationInputLabel}}</mat-label>
+    <input id="locationSelected" [matAutocomplete]="autocompletePlaces" matInput [(ngModel)]="place">
+  </mat-form-field>
+
+<mat-autocomplete (optionSelected)=changePlace() class="autocomplete" #autocompletePlaces="matAutocomplete">
+  <mat-option value='marker'>
+    <mat-icon>pin_drop</mat-icon>Seleccionar un punto en el mapa
+  </mat-option>
+  <mat-divider></mat-divider>
+  <mat-option *ngFor="let place of places" [value]=place.name>{{place.name}}</mat-option>
+</mat-autocomplete>

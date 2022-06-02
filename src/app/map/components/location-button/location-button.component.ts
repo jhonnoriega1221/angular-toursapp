@@ -31,6 +31,7 @@ export class LocationButtonComponent implements AfterViewInit, OnDestroy {
 
   ngOnDestroy(): void {
     clearInterval(this.locationButtonIconAnimationInterval);
+    this.mapService.getMapInstance().stopLocate();
   }
 
   private initLocate() {
