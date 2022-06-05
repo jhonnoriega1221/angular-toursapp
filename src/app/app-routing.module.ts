@@ -8,7 +8,7 @@ const routes: Routes = [
             { path: '', loadChildren: () => import ('./home/home.module').then( m => m.HomeModule)},
             { path: 'map', loadChildren: () => import ('./map/map.module').then( m => m.MapModule)},
             { path: 'products', loadChildren: () => import ('./tourist-products/tourist-products.module').then( m => m.TouristProductsModule)},
-            { path: 'services', loadChildren: () => import ('./tourist-services/tourist-services.module').then( m => m.TouristServicesModule)}
+            { path: 'services/transport', loadChildren: () => import ('./tourist-services/tourist-services.module').then( m => m.TouristServicesModule)}
         ]
     }, {
         path: 'settings', loadChildren: () => import ('./settings/settings.module').then(  m => m.SettingsModule )
