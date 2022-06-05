@@ -6,14 +6,14 @@ interface inputParameters {
 }
 
 @Component({
-  selector: 'app-transport-service-page',
-  templateUrl: './transport-service-page.component.html',
-  styleUrls: ['./transport-service-page.component.scss']
+  selector: 'taxi-price-service-page',
+  templateUrl: './taxi-price-page.component.html',
+  styleUrls: ['./taxi-price-page.component.scss']
 })
 
 
 
-export class TransportServicePageComponent implements OnInit {
+export class TaxiPricePageComponent implements OnInit {
 
   public isSelectMode: boolean = false;
   public isMobile: boolean = this.setIsMobile(window.innerWidth);
