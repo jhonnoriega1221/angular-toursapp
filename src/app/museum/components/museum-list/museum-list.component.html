@@ -1,0 +1,12 @@
+<div class="wrapper">
+	<app-museum-list-item
+		*ngFor="let museum of museums"
+		[name]=museum.name
+		[url]="['/services/museum', museum.id]"
+		[imageUrl]=museum.imageUrl
+		[rating]=museum.rating
+		[location]=museum.location
+		[distance]=museum.distance
+		[exhibitions]=museum.exhibitions>
+	</app-museum-list-item>
+</div>

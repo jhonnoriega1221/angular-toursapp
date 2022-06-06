@@ -1,0 +1,15 @@
+<a [routerLink]=url class="mat-card list-item-body" matRipple>
+	<img [src]=imageUrl class="museum-image">
+	<div class="museum-info">
+		<p class="museum-name">{{name}}</p>
+		<span class="museum-location mat-caption">{{location}}, {{distance}}m</span>
+		<div class="museum-rate">
+			<mat-icon class="icon-small" color="primary">star</mat-icon>
+			<mat-icon class="icon-small" color="primary">star</mat-icon>
+			<mat-icon class="icon-small" color="primary">star</mat-icon>
+			<mat-icon class="icon-small" color="primary">star</mat-icon>
+			<mat-icon class="icon-small" color="primary">star</mat-icon>
+		</div>
+		<span class="museum-exhibition mat-caption">{{exhibitions}} exhibiciones</span>
+	</div>
+</a>

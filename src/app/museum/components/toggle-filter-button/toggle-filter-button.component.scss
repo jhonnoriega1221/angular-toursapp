@@ -1,0 +1,13 @@
+.filter-button{
+	border-radius: 20px;
+}
+
+.filter-button-active{
+	background-color: var(--toursapp-primary-app);
+	color: white;
+}
+
+.filter-button-disabled{
+	border: 1px solid #00000025;
+	background-color: #00000010;
+}
