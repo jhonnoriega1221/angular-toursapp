@@ -49,7 +49,7 @@ export class MuseumDetailsPageComponent implements OnInit {
     this.isError = false;
     this.museumService.getMuseum(this.museumId)
       .subscribe({
-        next: (v) => {this.museum = v; console.log(this.museum);},
+        next: (v) => this.museum = v,
         error: (e) => {
           this.isError = true;
           console.error(e);
@@ -72,7 +72,7 @@ export class MuseumDetailsPageComponent implements OnInit {
         console.log(e);
       },
       complete: () => this.isLoading = false
-    })
+    });
 
     
 

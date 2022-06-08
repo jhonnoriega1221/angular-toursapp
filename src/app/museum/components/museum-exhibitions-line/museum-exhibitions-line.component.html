@@ -5,7 +5,7 @@
 
 <div *ngIf="exhibitions.length > 0; else no_exhibitions" class="pictures">
 	<img class="picture" *ngFor="let exhibition of exhibitions" [src]=exhibition.image>
-	<a [routerLink]="['/services/museum', exhibitions[0].museum_id,'exhibitions']" *ngIf="exhibitions.length > 2" class="see-more-link">Ver todas <br> <mat-icon>arrow_forward</mat-icon> </a>
+	<a matRipple [routerLink]="['/services/museum', exhibitions[0].museum_id,'exhibitions']" *ngIf="exhibitions.length === 3" class="see-more-link">Ver todas <br> <mat-icon>arrow_forward</mat-icon> </a>
 </div>
 
 <ng-template #no_exhibitions>

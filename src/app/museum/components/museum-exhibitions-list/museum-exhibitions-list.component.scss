@@ -1,0 +1,21 @@
+.wrapper{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 12px;
+}
+
+.exhibition-card-item {
+	padding:0;
+	.exhibition-card-image{
+		object-fit: cover;
+		max-width: 100%;
+		min-width: 100%;
+		aspect-ratio: 1;
+
+	}
+
+	.exhibition-card-title{
+		padding:8px;
+		margin: 0;
+	}
+}
