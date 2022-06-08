@@ -10,12 +10,12 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class MuseumExhibitionsPageComponent implements OnInit {
 
-  private museumId:number = 0;
-  public exhibitions:Exhibition[] = [];
-  public isError:boolean = false;
-  public isLoading:boolean = true;
+  private museumId: number = 0;
+  public exhibitions: Exhibition[] = [];
+  public isError: boolean = false;
+  public isLoading: boolean = true;
 
-  constructor(private exhibitionService:ExhibitionService, private activatedRoute:ActivatedRoute) { }
+  constructor(private exhibitionService: ExhibitionService, private activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
@@ -24,17 +24,19 @@ export class MuseumExhibitionsPageComponent implements OnInit {
     })
   }
 
-  public getExhibitions():void {
+  public getExhibitions(): void {
     this.isLoading = true;
+    this.isError = false;
     this.exhibitionService.getMuseumExhibitions(this.museumId)
-    .subscribe({
-      next: (v) => this.exhibitions = v,
-      error: (e) => {
-        this.isError = true;
-        console.error(e);
-      },
-      complete: () => this.isLoading = false
-    });
+      .subscribe({
+        next: (v) => this.exhibitions = v,
+        error: (e) => {
+          console.error(e);
+          this.isError = true;
+          this.isLoading = false;
+        },
+        complete: () => this.isLoading = false
+      });
   }
 
 }

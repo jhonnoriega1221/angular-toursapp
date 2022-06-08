@@ -1,6 +1,6 @@
 <app-back-title-button viewTitle="Información del museo"></app-back-title-button>
-<app-museum-header-details [name]=museum.name [rate]=museum.rating [location]=museum.location [distance]=museum.distance [description]=loremDescription></app-museum-header-details>
-<app-museum-picture [imageUrl]=museum.imageUrl></app-museum-picture>
-<app-museum-info-line title='Horario' [info]=tempDate [isPrices]=false></app-museum-info-line>
-<app-museum-info-line title='Tickets' [info]=museum.adult_price [info2]=museum.child_price [isPrices]=true></app-museum-info-line>
-<app-museum-exhibitions-line [exhibitions]=exhibitions></app-museum-exhibitions-line>
+<app-museum-header-details *skeleton="isLoading; height: ''; repeat: 1; width: '100%';" [name]=museum.name [rate]=museum.rating [location]=museum.location [distance]=museum.distance [description]=loremDescription></app-museum-header-details>
+<app-museum-picture *skeleton="isLoading; height: '200px'; repeat: 1; width: '100%';" [imageUrl]=museum.imageUrl></app-museum-picture>
+<app-museum-info-line *skeleton="isLoading; height: '60px'; repeat: 1; width: '100%';" title='Horario' [info]=tempDate [isPrices]=false></app-museum-info-line>
+<app-museum-info-line *skeleton="isLoading; height: '60px'; repeat: 1; width: '100%';" title='Tickets' [info]=museum.adult_price [info2]=museum.child_price [isPrices]=true></app-museum-info-line>
+<app-museum-exhibitions-line *skeleton="isLoading; height: '128px'; repeat: 1; width: '100%';" [exhibitions]=exhibitions></app-museum-exhibitions-line>
