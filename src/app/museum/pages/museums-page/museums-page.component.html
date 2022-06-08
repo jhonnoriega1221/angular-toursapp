@@ -1,3 +1,4 @@
 <app-back-title-button viewTitle="Museos"></app-back-title-button>
 <app-filter-buttons-group></app-filter-buttons-group>
-<app-museum-list [museums]=museums></app-museum-list>
+<app-museum-list *skeleton="isLoading; height: '104px'; repeat: 10; width: '100%';" [museums]=museums></app-museum-list>
+<app-error-message (reload)="getMuseums()" *ngIf="isError"></app-error-message>

@@ -12,6 +12,11 @@ import { MatRippleModule } from '@angular/material/core';
 import { FilterButtonsGroupComponent } from './components/filter-buttons-group/filter-buttons-group.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MuseumDetailsPageComponent } from './pages/museum-details-page/museum-details-page.component';
+import { MuseumHeaderDetailsComponent } from './components/museum-header-details/museum-header-details.component';
+import { MuseumPictureComponent } from './components/museum-picture/museum-picture.component';
+import { MuseumInfoLineComponent } from './components/museum-info-line/museum-info-line.component';
+import { MatDividerModule } from '@angular/material/divider';
+import { MuseumExhibitionsLineComponent } from './components/museum-exhibitions-line/museum-exhibitions-line.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,11 @@ import { MuseumDetailsPageComponent } from './pages/museum-details-page/museum-d
     MuseumListComponent,
     ToggleFilterButtonComponent,
     FilterButtonsGroupComponent,
-    MuseumDetailsPageComponent
+    MuseumDetailsPageComponent,
+    MuseumHeaderDetailsComponent,
+    MuseumPictureComponent,
+    MuseumInfoLineComponent,
+    MuseumExhibitionsLineComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +38,8 @@ import { MuseumDetailsPageComponent } from './pages/museum-details-page/museum-d
     MatIconModule,
     MatCardModule,
     MatRippleModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDividerModule
   ]
 })
 export class MuseumModule { }

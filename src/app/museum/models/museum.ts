@@ -6,4 +6,7 @@ export interface Museum {
 	distance:number;
 	rating:number;
 	exhibitions: number;
+	adult_price:string;
+	child_price:string;
+	schedule:string;
 }

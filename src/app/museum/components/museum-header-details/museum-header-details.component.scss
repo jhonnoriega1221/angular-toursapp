@@ -1,0 +1,30 @@
+.icon-small{
+	height: 16px;
+	width: 16px;
+	font-size: 16px;
+}
+
+.title-and-rating{
+	display: flex;
+	.museum-name{
+		width: 100%;
+		max-height: 64px;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		margin: 0;
+		line-height: 25px
+	}
+
+	.museum-rate {
+		width: 110px;
+		margin-top: 4px;
+	}
+}
+
+.museum-location, .museum-distance{
+	font-size: 12px;
+}
+
+.museum-description {
+	margin: 6px 0;
+}
