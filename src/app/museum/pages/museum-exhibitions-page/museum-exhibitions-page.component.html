@@ -1,3 +1,5 @@
 <app-back-title-button viewTitle="Exhibiciones"></app-back-title-button>
-<app-museum-exhibitions-list *skeleton="isLoading; height: '180px'; repeat: 2; width: '100%';" [exhibitions]=exhibitions></app-museum-exhibitions-list>
+<div *ngIf="!isError">
+	<app-museum-exhibitions-list *skeleton="isLoading; height: '180px'; repeat: 2; width: '100%';" [exhibitions]=exhibitions></app-museum-exhibitions-list>
+</div>
 <app-error-message (reload)="getExhibitions()" *ngIf="isError"></app-error-message>
