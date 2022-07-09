@@ -331,7 +331,8 @@
   "child_price": "$6872.81",
   "schedule": "Duobam"
 }],
-"exhibitions":[{
+  "exhibitions":[
+  {
   "id": 1,
   "museum_id": 3,
   "image": "http://dummyimage.com/246x100.png/dddddd/000000",
