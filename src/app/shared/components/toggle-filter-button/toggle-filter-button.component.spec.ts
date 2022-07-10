@@ -11,9 +11,7 @@ describe('ToggleFilterButtonComponent', () => {
       declarations: [ ToggleFilterButtonComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(ToggleFilterButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

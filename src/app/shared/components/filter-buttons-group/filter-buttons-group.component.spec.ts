@@ -11,9 +11,7 @@ describe('FilterButtonsGroupComponent', () => {
       declarations: [ FilterButtonsGroupComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(FilterButtonsGroupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

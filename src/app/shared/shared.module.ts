@@ -23,10 +23,11 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatMenuModule } from '@angular/material/menu';
 import { TranslateModule } from '@ngx-translate/core';
 
-
 //Directivas
 import { SkeletonLoaderDirective } from './directives/skeleton-loader.directive';
 import { AppToolbarProgressBarComponent } from './components/app-toolbar-progress-bar/app-toolbar-progress-bar.component';
+import { FilterButtonsGroupComponent } from './components/filter-buttons-group/filter-buttons-group.component';
+import { ToggleFilterButtonComponent } from './components/toggle-filter-button/toggle-filter-button.component';
 
 @NgModule({
     declarations: [
@@ -40,6 +41,8 @@ import { AppToolbarProgressBarComponent } from './components/app-toolbar-progres
         SkeletonLoaderComponent,
         SkeletonLoaderDirective,
         AppToolbarProgressBarComponent,
+        FilterButtonsGroupComponent,
+        ToggleFilterButtonComponent,
     ],
     imports: [
         CommonModule,
@@ -57,7 +60,8 @@ import { AppToolbarProgressBarComponent } from './components/app-toolbar-progres
         SkeletonLoaderComponent,
         SkeletonLoaderDirective,
         ErrorMessageComponent,
-        TranslateModule
+        TranslateModule,
+        FilterButtonsGroupComponent
     ]
 })
 export class SharedModule {}

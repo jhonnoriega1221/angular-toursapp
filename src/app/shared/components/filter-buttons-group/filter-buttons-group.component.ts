@@ -16,7 +16,6 @@ export class FilterButtonsGroupComponent implements OnInit {
     {text: 'Cercanos', active: true},
     {text: 'Destacados', active: false},
     {text: 'Populares', active: false}
-    
   ]
 
   constructor() { }
