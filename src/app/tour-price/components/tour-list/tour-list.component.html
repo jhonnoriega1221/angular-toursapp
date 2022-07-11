@@ -1,6 +1,7 @@
 <div class="wrapper">
   <app-tour-list-item
     *ngFor="let tour of tours"
+    [url]="['/services/tour-prices', tour.id]"
     [tourType]="tour.type"
     [tourName]="tour.name"
     [tourPlaces]="tour.places"

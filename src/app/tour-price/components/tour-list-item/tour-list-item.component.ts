@@ -17,6 +17,7 @@ export class TourListItemComponent implements OnInit {
 
   @Input() tourType:string = "";
   @Input() tourName:string = "";
+  @Input() url = ['',0];
   @Input() tourPlaces:Place[] = [];
 
   constructor() { }

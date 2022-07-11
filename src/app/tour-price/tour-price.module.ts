@@ -6,13 +6,15 @@ import { SharedModule } from '../shared/shared.module';
 import { TourListComponent } from './components/tour-list/tour-list.component';
 import { TourListItemComponent } from './components/tour-list-item/tour-list-item.component';
 import { MatRippleModule } from '@angular/material/core';
+import { TourDetailsPageComponent } from './pages/tour-details-page/tour-details-page.component';
 
 
 @NgModule({
   declarations: [
     ToursPageComponent,
     TourListComponent,
-    TourListItemComponent
+    TourListItemComponent,
+    TourDetailsPageComponent
   ],
   imports: [
     CommonModule,
