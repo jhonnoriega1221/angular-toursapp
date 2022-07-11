@@ -1,0 +1,7 @@
+<a class="mat-card list-item-body" matRipple>
+	<span class="tour-class mat-caption">{{tourType}}</span>
+    <p class="tour-name mat-h3">{{tourName}}</p>
+    <div class="route-images">
+        <img *ngFor="let tourPlace of tourPlaces | slice:0:3" class="route-image" [src]="tourPlace.pictureUrl" alt="">
+    </div>
+</a>

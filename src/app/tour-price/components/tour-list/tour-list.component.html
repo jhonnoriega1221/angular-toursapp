@@ -1,0 +1,8 @@
+<div class="wrapper">
+  <app-tour-list-item
+    *ngFor="let tour of tours"
+    [tourType]="tour.type"
+    [tourName]="tour.name"
+    [tourPlaces]="tour.places"
+  ></app-tour-list-item>
+</div>

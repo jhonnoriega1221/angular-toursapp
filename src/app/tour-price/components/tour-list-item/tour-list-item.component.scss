@@ -1,0 +1,36 @@
+.list-item-body{
+    width: 100%;
+    display: block;
+    padding: 6px;
+    box-sizing: border-box;
+    height: 136px;
+
+    .tour-class{
+        color: gray;
+        display: block;
+
+    }
+
+    .tour-name{
+        line-height: 20px;
+        font-weight: 500;
+        text-overflow: ellipsis;
+        overflow-wrap: anywhere;
+        height: 40px;
+        overflow: hidden;
+        margin-bottom: 6px;
+    }
+
+    .route-images{
+        display: flex;
+        width: 100%;
+        gap: 6px;
+
+        .route-image {
+            width: 36px;
+            height: 58px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+    }
+}
