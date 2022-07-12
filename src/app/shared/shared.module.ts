@@ -28,6 +28,7 @@ import { SkeletonLoaderDirective } from './directives/skeleton-loader.directive'
 import { AppToolbarProgressBarComponent } from './components/app-toolbar-progress-bar/app-toolbar-progress-bar.component';
 import { FilterButtonsGroupComponent } from './components/filter-buttons-group/filter-buttons-group.component';
 import { ToggleFilterButtonComponent } from './components/toggle-filter-button/toggle-filter-button.component';
+import { DetailsSeparatorComponent } from './components/details-separator/details-separator.component';
 
 @NgModule({
     declarations: [
@@ -43,6 +44,7 @@ import { ToggleFilterButtonComponent } from './components/toggle-filter-button/t
         AppToolbarProgressBarComponent,
         FilterButtonsGroupComponent,
         ToggleFilterButtonComponent,
+        DetailsSeparatorComponent,
     ],
     imports: [
         CommonModule,
@@ -61,7 +63,8 @@ import { ToggleFilterButtonComponent } from './components/toggle-filter-button/t
         SkeletonLoaderDirective,
         ErrorMessageComponent,
         TranslateModule,
-        FilterButtonsGroupComponent
+        FilterButtonsGroupComponent,
+        DetailsSeparatorComponent
     ]
 })
 export class SharedModule {}

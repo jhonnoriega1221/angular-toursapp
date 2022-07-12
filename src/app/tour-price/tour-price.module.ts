@@ -7,6 +7,10 @@ import { TourListComponent } from './components/tour-list/tour-list.component';
 import { TourListItemComponent } from './components/tour-list-item/tour-list-item.component';
 import { MatRippleModule } from '@angular/material/core';
 import { TourDetailsPageComponent } from './pages/tour-details-page/tour-details-page.component';
+import { TourDetailsHeadingComponent } from './components/tour-details-heading/tour-details-heading.component';
+import { TourDetailsPriceComponent } from './components/tour-details-price/tour-details-price.component';
+import { TourDetailsPictureComponent } from './components/tour-details-picture/tour-details-picture.component';
+import { TourDetailsPlacesComponent } from './components/tour-details-places/tour-details-places.component';
 
 
 @NgModule({
@@ -14,7 +18,11 @@ import { TourDetailsPageComponent } from './pages/tour-details-page/tour-details
     ToursPageComponent,
     TourListComponent,
     TourListItemComponent,
-    TourDetailsPageComponent
+    TourDetailsPageComponent,
+    TourDetailsHeadingComponent,
+    TourDetailsPriceComponent,
+    TourDetailsPictureComponent,
+    TourDetailsPlacesComponent
   ],
   imports: [
     CommonModule,

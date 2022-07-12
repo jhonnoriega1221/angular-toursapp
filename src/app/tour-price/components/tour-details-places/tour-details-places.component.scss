@@ -1,0 +1,10 @@
+.wrapper {
+    display: flex;
+    gap: 6px;
+    overflow: auto;
+    .tour-place {
+        aspect-ratio: 1;
+        width: 90px;
+        object-fit: cover;
+    }
+}

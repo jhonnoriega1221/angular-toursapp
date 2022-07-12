@@ -1,1 +1,8 @@
 <app-back-title-button viewTitle="Información del tour"></app-back-title-button>
+<app-tour-details-heading [name]="tour.name" [type]="tour.type" [description]="tour.description"></app-tour-details-heading>
+<app-details-separator title="Precio"></app-details-separator>
+<app-tour-details-price [price]="tour.price"></app-tour-details-price>
+<app-details-separator title="Recorrido"></app-details-separator>
+<app-tour-details-picture [imageUrl]="tour.routePictureUrl"></app-tour-details-picture>
+<app-details-separator title="Lugares"></app-details-separator>
+<app-tour-details-places [places]="tour.places"></app-tour-details-places>
