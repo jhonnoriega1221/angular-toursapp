@@ -28,15 +28,15 @@ export class TourDetailsPageComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
       this.tourId = params['id'];
-      this.getRoute(this.tourId);
+      this.getTour();
     })
   }
 
-  private getRoute(id: number): void {
+  public getTour(): void {
 
     this.isError = false;
     this.isLoading = true;
-    this.tourService.getTour(id)
+    this.tourService.getTour(this.tourId)
       .subscribe({
         next: (v) => this.tour = v,
         error: (e) => {
