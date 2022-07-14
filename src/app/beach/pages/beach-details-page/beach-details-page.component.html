@@ -1,9 +1,12 @@
 <app-back-title-button viewTitle="Informacion de la playa"></app-back-title-button>
-<app-beach-top-details [name]="beach.name" ></app-beach-top-details>
-<app-beach-image-details [imageUrl]="beach.imageUrl"></app-beach-image-details>
-<app-details-separator title="Horario"></app-details-separator>
-<app-beach-schedule-details [schedule]="beach.hours"></app-beach-schedule-details>
-<app-details-separator title="Servicios"></app-details-separator>
-<app-beach-services-details [tent]="beach.services.tent" [chairs]="beach.services.chairs" [massage]="beach.services.massage" [braids]="beach.services.braids" [jetsky]="beach.services.jetsky" [worm]="beach.services.worm" [boatDish]="beach.services.boatDish"></app-beach-services-details>
-<app-details-separator title="Ubicación"></app-details-separator>
-<app-beach-location-details [locationPictureUrl]="beach.location.imgUrl"></app-beach-location-details>
+<div *ngIf="!isError">
+    <app-beach-top-details *skeleton="isLoading; height: '35px'; repeat: 1; width: '100%';" [name]="beach.name" ></app-beach-top-details>
+    <app-beach-image-details *skeleton="isLoading; height: '320px'; repeat: 1; width: '100%';" [imageUrl]="beach.imageUrl"></app-beach-image-details>
+    <app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';" title="Horario"></app-details-separator>
+    <app-beach-schedule-details *skeleton="isLoading; height: '20px'; repeat: 1; width: '150px';" [schedule]="beach.hours"></app-beach-schedule-details>
+    <app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';" title="Servicios"></app-details-separator>
+    <app-beach-services-details *skeleton="isLoading; height: '20px'; repeat: 6; width: '190px';" [tent]="beach.services.tent" [chairs]="beach.services.chairs" [massage]="beach.services.massage" [braids]="beach.services.braids" [jetsky]="beach.services.jetsky" [worm]="beach.services.worm" [boatDish]="beach.services.boatDish"></app-beach-services-details>
+    <app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';" title="Ubicación"></app-details-separator>
+    <app-beach-location-details *skeleton="isLoading; height: '190px'; repeat: 1; width: '60px';" [locationPictureUrl]="beach.location.imgUrl"></app-beach-location-details>
+</div>
+<app-error-message (reload)="getBeach()" *ngIf="isError"></app-error-message>

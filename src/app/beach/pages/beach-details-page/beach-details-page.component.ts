@@ -11,8 +11,8 @@ import { ActivatedRoute } from '@angular/router';
 export class BeachDetailsPageComponent implements OnInit {
 
   private beachId: number = 0;
-  public isLoading: boolean[] = [true,true];
-  public isError: boolean[] = [false, false];
+  public isLoading: boolean = true;
+  public isError: boolean = false;
   public beach:Beach = {
     distance: 0,
     hours: '',
@@ -47,17 +47,17 @@ export class BeachDetailsPageComponent implements OnInit {
 
   public getBeach():void {
 
-      this.isError[0] = false;
-      this.isLoading[0] = true;
+      this.isError = false;
+      this.isLoading = true;
       this.beachService.getBeach(this.beachId)
         .subscribe({
           next: (v) => this.beach = v,
           error: (e) => {
-            this.isError[0] = true;
-            this.isLoading[0] = false;
+            this.isError = true;
+            this.isLoading = false;
             console.error(e);
           },
-          complete: () => this.isLoading[0] = false
+          complete: () => this.isLoading = false
         });
     }
 }

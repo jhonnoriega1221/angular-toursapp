@@ -7,15 +7,15 @@
 	gap: 12px;
 	border-radius: 12px;
 	box-shadow: none;
-	min-height: 92px;
-	max-height: 92px;
-	.museum-image{
+	min-height: 74px;
+	max-height: 74px;
+	.beach-image{
 		min-width: 117px;
 		max-width: 117px;
 		object-fit: cover;
 		border-radius: 8px;
 	}
-	.museum-info{
+	.beach-info{
 		width: 100%;
 
 		span{
@@ -23,22 +23,12 @@
 			display: block;
 		}
 
-		.museum-name{
+		.beach-name{
 		margin: 0;
 		height: 36px;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		font-weight: 500;
 		}
-
-		.museum-rate{
-			height: 16px;
-		}
 	}
-}
-
-.icon-small{
-	height: 16px;
-	width: 16px;
-	font-size: 16px;
 }
