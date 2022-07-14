@@ -1,1 +1,9 @@
 <app-back-title-button viewTitle="Informacion de la playa"></app-back-title-button>
+<app-beach-top-details [name]="beach.name" ></app-beach-top-details>
+<app-beach-image-details [imageUrl]="beach.imageUrl"></app-beach-image-details>
+<app-details-separator title="Horario"></app-details-separator>
+<app-beach-schedule-details [schedule]="beach.hours"></app-beach-schedule-details>
+<app-details-separator title="Servicios"></app-details-separator>
+<app-beach-services-details [tent]="beach.services.tent" [chairs]="beach.services.chairs" [massage]="beach.services.massage" [braids]="beach.services.braids" [jetsky]="beach.services.jetsky" [worm]="beach.services.worm" [boatDish]="beach.services.boatDish"></app-beach-services-details>
+<app-details-separator title="Ubicación"></app-details-separator>
+<app-beach-location-details [locationPictureUrl]="beach.location.imgUrl"></app-beach-location-details>

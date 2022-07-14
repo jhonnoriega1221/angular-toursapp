@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-beach-top-details',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./beach-top-details.component.scss']
 })
 export class BeachTopDetailsComponent implements OnInit {
+  
+  @Input() name:string = '';
 
   constructor() { }
 
