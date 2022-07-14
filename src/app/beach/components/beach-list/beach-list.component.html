@@ -1,0 +1,9 @@
+<app-beach-list-item
+*ngFor="let beach of beaches"
+    [url]="['/services/beach', beach.id]"
+    [name]="beach.name"
+    [imageUrl]="beach.imageUrl"
+    [hours]="beach.hours"
+    [location]="beach.location.name"
+    [distance]="beach.distance"
+></app-beach-list-item>
