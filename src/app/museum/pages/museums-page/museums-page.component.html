@@ -1,4 +1,4 @@
-<app-back-title-button viewTitle="Museos"></app-back-title-button>
+<app-back-title-button [viewTitle]="pageTitle"></app-back-title-button>
 <app-filter-buttons-group></app-filter-buttons-group>
 <div *ngIf="!isError">
 	<app-museum-list *skeleton="isLoading; height: '104px'; repeat: 10; width: '100%';" [museums]=museums></app-museum-list>

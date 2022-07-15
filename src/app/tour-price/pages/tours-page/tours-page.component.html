@@ -1,4 +1,4 @@
-<app-back-title-button viewTitle="Paseos y viajes"></app-back-title-button>
+<app-back-title-button [viewTitle]="pageTitle"></app-back-title-button>
 <div *ngIf="!isError">
     <app-filter-buttons-group></app-filter-buttons-group>
     <app-tour-list *skeleton="isLoading; height: '180px'; repeat: 2; width: '100%';" [tours]="tours"></app-tour-list>

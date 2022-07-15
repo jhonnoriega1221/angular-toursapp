@@ -9,6 +9,8 @@ import { FakeStoreService } from '../../services/fake-store.service';
 })
 export class ProductsListPageComponent implements OnInit {
 
+  public pageTitle:string = '';
+
   public fakeProducts:FakeProduct[] = [];
   public isLoading:boolean = true;
   public isLoadingMore:boolean = false;

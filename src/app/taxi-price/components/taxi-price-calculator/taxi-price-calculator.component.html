@@ -6,7 +6,7 @@
 
 <mat-autocomplete (optionSelected)=changePlace() class="autocomplete" #autocompletePlaces="matAutocomplete">
   <mat-option value='marker'>
-    <mat-icon>pin_drop</mat-icon>Seleccionar un punto en el mapa
+    <mat-icon>pin_drop</mat-icon>{{ "TOURIST_SERVICES.TRANSPORT.SELECT_PLACE_MAP_OPTION_TEXT"  | translate}}
   </mat-option>
   <mat-divider></mat-divider>
   <mat-option *ngFor="let place of places" [value]=place.name>{{place.name}}</mat-option>

@@ -1,4 +1,4 @@
-<app-back-title-button *ngIf="!isSelectMode" viewTitle="Transporte"></app-back-title-button>
+<app-back-title-button *ngIf="!isSelectMode" [viewTitle]="pageTitle"></app-back-title-button>
 <app-taxi-price-calculator *ngIf="!isSelectMode" [isOrigin]=true [placeName]=originPlace (selectLocation)="setPlace($event)" class="taxi-price-calculator-container">
 </app-taxi-price-calculator>
 <app-taxi-price-calculator *ngIf="!isSelectMode" [isOrigin]=false [placeName]=destinationPlace (selectLocation)="setPlace($event)" class="taxi-price-calculator-container">
@@ -8,24 +8,24 @@
 
 <div class="taxi-price-calculator-container" *ngIf="!isSelectMode && !isCalculatingPrice">
 	<img class="taxi-icon" src="../../../../assets/taxi-calculator.svg">
-	<p class="taxi-text">Selecciona los lugares de origen y destino para visualizar su precio.</p>
+	<p class="taxi-text">{{"TOURIST_SERVICES.TRANSPORT.TAXI_ICON_TEXT" | translate}}</p>
 </div>
 
 <div class="taxi-price-calculator-container" *ngIf="!isSelectMode && isCalculatingPrice">
-	<p class="taxi-price-title">El precio de la carrera de {{originPlace}} a {{destinationPlace}} es de </p>
+	<p class="taxi-price-title">{{ "TOURIST_SERVICES.TRANSPORT.PRICE_TEXT_1" | translate }} {{originPlace}} {{ "TOURIST_SERVICES.TRANSPORT.PRICE_TEXT_2" | translate }} {{destinationPlace}} {{ "TOURIST_SERVICES.TRANSPORT.PRICE_TEXT_3" | translate }} </p>
 	<p class="taxi-price-text">$ 3.000</p>
 </div>
 
 <div class="taxi-price-calculator-container" *ngIf="isSelectMode">
-	<p class="select-place-title">Selecciona un lugar.</p>
-	<p class="select-place-subtitle">Lugar seleccionado</p>
+	<p class="select-place-title">{{"TOURIST_SERVICES.TRANSPORT.SELECT_PLACE_TITLE" | translate}}</p>
+	<p class="select-place-subtitle">{{"TOURIST_SERVICES.TRANSPORT.SELECTED_PLACE_LABEL_TEXT" | translate}}</p>
 	<div class="select-place-name-icon">
 		<mat-icon>share_location</mat-icon>
 	 	<p class="select-place-name">{{locationName}}</p>
 	</div>
 	<div class="action-buttons">
-		<button mat-raised-button (click)="setPlace({place: 'cancel'})">Cancelar</button>
-		<button mat-raised-button (click)="acceptPlace()" color="primary" [disabled]=isAcceptButtonDisabled>Aceptar</button>
+		<button mat-raised-button (click)="setPlace({place: 'cancel'})">{{"MISC.CANCEL_ACTION_TEXT" | translate}}</button>
+		<button mat-raised-button (click)="acceptPlace()" color="primary" [disabled]=isAcceptButtonDisabled>{{"MISC.ACCEPT_ACTION_TEXT" | translate}}</button>
 	</div>
 </div>
 <app-map *ngIf="isSelectMode || !isMobile" class="map-container"></app-map>

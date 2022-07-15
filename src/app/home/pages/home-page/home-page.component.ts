@@ -1,18 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
-interface homeTranslations {
-  GREETINGS: string;
-  TIP: string;
-  EXCHANGE_RATE: {
-    TITLE: string;
-    UPDATED_AT: string;
-  },
-  PRICES_LIST: {
-    TITLE: string;
-    PRODUCTS_BUTTON: string;
-    SERVICES_BUTTON: string;
-  }
+export interface homeButton {
+  color: string;
+  text: string;
+  icon: string;
+  route: string;
 }
 
 @Component({
@@ -23,21 +16,29 @@ interface homeTranslations {
 
 export class HomePageComponent implements OnInit {
 
-  public homeWidgetsTitle:any[] = [
-    'EXCHANGE_RATE.TITLE'
-  ]
+  public homeWidgetsTitle:any[] = []
+
+  public priceListButtons: homeButton[] = [
+    { color: 'accent', text: 'Productos', icon: 'ballot', route: '/products' },
+    { color: 'primary', text: 'Servicios', icon: 'tour', route: '/services' }
+  ];
   
-  constructor( public translate:TranslateService ){
-    translate.get("HOME")
+  constructor( private translate:TranslateService ){ }
+
+  ngOnInit(): void {
+    this.translatePage();
+  }
+
+  private translatePage():void {
+    this.translate.get("HOME")
     .subscribe ({
-      next: (v:homeTranslations) => { 
-        this.homeWidgetsTitle[0] = v.EXCHANGE_RATE.TITLE;
+      next: (v) => {
+        this.priceListButtons[0].text = v.PRICES_LIST.PRODUCTS_BUTTON;
+        this.priceListButtons[1].text = v.PRICES_LIST.SERVICES_BUTTON;
+        this.homeWidgetsTitle.push({text: v.WIDGETS.EXCHANGE_RATE.TITLE});
       },
       error: (e) => { console.log(e)},
       complete: () => {}
     })
-  }
-
-  ngOnInit(): void {
   }
 }

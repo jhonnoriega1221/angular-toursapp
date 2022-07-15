@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BeachService } from '../../services/beach.service';
 import { Beach } from '../../models/beach';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-beaches-page',
@@ -9,16 +10,18 @@ import { Beach } from '../../models/beach';
 })
 export class BeachesPageComponent implements OnInit {
 
+  public pageTitle:string = '';
   public beaches: Beach[] = [];
   public isLoading:boolean = true;
   public isError:boolean = false;
 
-  constructor(private beachService: BeachService) {}
+  constructor(private beachService: BeachService, private translate:TranslateService) {}
 
 
 
   ngOnInit(): void {
     this.getBeaches();
+    this.translatePage();
   }
 
   public getBeaches(): void {
@@ -34,6 +37,13 @@ export class BeachesPageComponent implements OnInit {
         },
         complete: () => this.isLoading = false
       });
+  }
+
+  private translatePage():void {
+    this.translate.get("TOURIST_SERVICES.BEACH.LIST")
+    .subscribe( {
+      next: (v) => { this.pageTitle = v.TITLE }
+    })
   }
 
 }

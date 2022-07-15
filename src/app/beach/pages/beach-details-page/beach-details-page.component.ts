@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Beach } from '../../models/beach';
 import { BeachService } from '../../services/beach.service';
 import { ActivatedRoute } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-beach-details-page',
@@ -10,6 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class BeachDetailsPageComponent implements OnInit {
 
+  public pageTitle:string = '';
   private beachId: number = 0;
   public isLoading: boolean = true;
   public isError: boolean = false;
@@ -34,15 +36,19 @@ export class BeachDetailsPageComponent implements OnInit {
       tent: 0,
       worm: 0
     }
-  }
+  };
+  public separatorTexts:any[] = [];
 
-  constructor( private beachService:BeachService, private activatedRoute:ActivatedRoute) { }
+
+
+  constructor( private beachService:BeachService, private activatedRoute:ActivatedRoute, private translate:TranslateService) { }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe( params => {
       this.beachId = params["id"];
       this.getBeach();
-    })
+    });
+    this.translatePage();
   }
 
   public getBeach():void {
@@ -59,5 +65,19 @@ export class BeachDetailsPageComponent implements OnInit {
           },
           complete: () => this.isLoading = false
         });
+    }
+
+    private translatePage():void {
+      this.translate.get("TOURIST_SERVICES.BEACH.DETAILS")
+      .subscribe( {
+        next: (v) => {
+          this.pageTitle = v.TITLE;
+          this.separatorTexts.push(
+            { text: v.SCHEDULE_SEPARATOR_TEXT },
+            { text: v.SERVICES.SEPARATOR_TEXT },
+            { text: v.LOCATION_SEPARATOR_TEXT }
+          ); 
+        }
+      })
     }
 }

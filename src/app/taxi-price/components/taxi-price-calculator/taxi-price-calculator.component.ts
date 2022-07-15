@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { TaxiPriceCalculatorService } from '../../services/taxi-price-calculator.service';
 
 interface Place {
@@ -17,6 +18,9 @@ export class TaxiPriceCalculatorComponent implements OnInit {
   @Input() placeName?:string;
   @Input() isOrigin!:boolean;
   public locationInputLabel?:string;
+  private originPlaceSelectText:string = '';
+  private destinationPlaceSelectText:string = '';
+
 
   public place!: string | undefined;
 
@@ -30,15 +34,26 @@ export class TaxiPriceCalculatorComponent implements OnInit {
     { name: 'Pie de la popa' }
   ];
 
-  constructor(private taxiPriceCalculatorService: TaxiPriceCalculatorService) {}
+  constructor(private taxiPriceCalculatorService: TaxiPriceCalculatorService, private translate:TranslateService) {}
 
   ngOnInit(): void {
-    this.locationInputLabel = this.isOrigin ? 'Lugar de origen' : 'Lugar de destino';
+    this.translateComponent();
+    this.locationInputLabel = this.isOrigin ? this.originPlaceSelectText : this.destinationPlaceSelectText;
     this.place = this.placeName;
   }
 
   public changePlace() {
       this.selectLocation.emit({'place': this.place, 'isOrigin': this.isOrigin});
+  }
+
+  private translateComponent() {
+    this.translate.get("TOURIST_SERVICES.TRANSPORT")
+    .subscribe({
+      next: (v) => {
+        this.originPlaceSelectText = v.ORIGIN_PLACE_INPUT_PLACEHOLDER_TEXT;
+        this.destinationPlaceSelectText = v.DESTINATION_PLACE_INPUT_PLACEHOLDER_TEXT;
+      }
+    })
   }
 
 }

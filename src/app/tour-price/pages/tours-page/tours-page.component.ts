@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ToursService } from '../../services/tours.service';
 import { Tours } from '../../models/tours';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-tours-page',
@@ -9,14 +10,16 @@ import { Tours } from '../../models/tours';
 })
 export class ToursPageComponent implements OnInit {
 
+  public pageTitle:string = '';
   public tours: Tours[] = [];
   public isLoading:boolean = true;
   public isError:boolean = false;
 
-  constructor( private tourService:ToursService ) { }
+  constructor( private tourService:ToursService, private translate:TranslateService ) { }
 
   ngOnInit(): void {
     this.getTours();
+    this.translatePage();
   }
 
   public getTours(): void {
@@ -32,6 +35,13 @@ export class ToursPageComponent implements OnInit {
         },
         complete: () => this.isLoading = false
       });
+  }
+
+    private translatePage(): void {
+      this.translate.get("TOURIST_SERVICES.TRAVELS_RIDES.LIST")
+      .subscribe({
+        next: (v) => { this.pageTitle = v.TITLE }
+      })
   }
 
 }

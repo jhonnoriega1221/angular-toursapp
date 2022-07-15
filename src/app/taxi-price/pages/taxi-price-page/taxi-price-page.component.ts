@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 interface inputParameters {
   place: string,
@@ -15,11 +16,14 @@ interface inputParameters {
 
 export class TaxiPricePageComponent implements OnInit {
 
+  private nothingText:string = '';
+
+  public pageTitle:string = '';
   public isSelectMode: boolean = false;
   public isMobile: boolean = this.setIsMobile(window.innerWidth);
   public isAcceptButtonDisabled: boolean = true;
   public isCalculatingPrice:boolean = false;
-  public locationName: string = 'Ninguno';
+  public locationName: string = '';
   public isOriginMarker ? : boolean;
 
   public originPlace = '';
@@ -57,13 +61,16 @@ export class TaxiPricePageComponent implements OnInit {
     return isMobile;
   }
 
-  constructor() {}
+  constructor( private translate:TranslateService ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.translatePage();
+    this.locationName = this.nothingText;
+  }
 
   public getNeighborhood(name: any) {
     this.isAcceptButtonDisabled = name === 'none' ? true : false;
-    this.locationName = name === 'none' ? 'Ninguno' : name;
+    this.locationName = name === 'none' ? this.nothingText : name;
   }
 
   public getTaxiPrice(origin:string, destination:string){
@@ -77,6 +84,16 @@ export class TaxiPricePageComponent implements OnInit {
       isOrigin: this.isOriginMarker
     });
     this.isSelectMode = !this.isSelectMode;
+  }
+
+  private translatePage():void{
+    this.translate.get("TOURIST_SERVICES.TRANSPORT")
+    .subscribe( { 
+      next: (v) => {
+        this.pageTitle = v.TITLE;
+        this.nothingText = v.NOTHING_SELECTED_TEXT;
+      }    
+    })
   }
 
 }

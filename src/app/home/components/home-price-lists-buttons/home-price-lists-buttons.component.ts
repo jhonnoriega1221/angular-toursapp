@@ -1,19 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-
-interface homeTranslations {
-  GREETINGS: string;
-  TIP: string;
-  EXCHANGE_RATE: {
-    TITLE: string;
-    UPDATED_AT: string;
-  },
-  PRICES_LIST: {
-    TITLE: string;
-    PRODUCTS_BUTTON: string;
-    SERVICES_BUTTON: string;
-  }
-}
+import { Component, OnInit, Input } from '@angular/core';
 
 export interface homeButton {
   color: string;
@@ -29,22 +14,9 @@ export interface homeButton {
 })
 export class HomePriceListsButtonsComponent implements OnInit {
 
-  public priceListButtons: homeButton[] = [
-    { color: 'accent', text: 'Productos', icon: 'ballot', route: '/products' },
-    { color: 'primary', text: 'Servicios', icon: 'tour', route: '/services' }
-  ];
+  @Input() priceListButtons:homeButton[] = [];
 
-  constructor( public translate:TranslateService) {
-      translate.get("HOME")
-    .subscribe ({
-      next: (v:homeTranslations) => { 
-        this.priceListButtons[0].text = v.PRICES_LIST.PRODUCTS_BUTTON;
-        this.priceListButtons[1].text = v.PRICES_LIST.SERVICES_BUTTON;
-      },
-      error: (e) => { console.log(e)},
-      complete: () => {}
-    })
-
+  constructor( ) {
   }
 
   ngOnInit(): void {}

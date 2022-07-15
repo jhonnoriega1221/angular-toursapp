@@ -1,4 +1,4 @@
-<app-back-title-button viewTitle="Playas"></app-back-title-button>
+<app-back-title-button [viewTitle]="pageTitle"></app-back-title-button>
 <div *ngIf="!isError">
     <app-beach-list *skeleton="isLoading; height: '74px'; repeat: 4; width: '100%';" [beaches]="beaches"></app-beach-list>
 </div>

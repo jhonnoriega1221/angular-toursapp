@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Museum } from '../../models/museum';
 import { MuseumService } from '../../services/museum.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-museums-page',
@@ -9,16 +10,18 @@ import { MuseumService } from '../../services/museum.service';
 })
 export class MuseumsPageComponent implements OnInit {
 
+  public pageTitle:string = '';
   public museums: Museum[] = [];
   public isLoading:boolean = true;
   public isError:boolean = false;
 
-  constructor(private museumService: MuseumService) {}
+  constructor(private museumService: MuseumService, private translate:TranslateService) {}
 
 
 
   ngOnInit(): void {
     this.getMuseums();
+    this.translatePage();
   }
 
   public getMuseums(): void {
@@ -34,6 +37,16 @@ export class MuseumsPageComponent implements OnInit {
         },
         complete: () => this.isLoading = false
       });
+  }
+
+  private translatePage(){
+    this.translate.get("TOURIST_SERVICES.MUSEUM.LIST")
+    .subscribe( {
+      next: (v) => {
+        this.pageTitle = v.TITLE;
+
+      }
+    })
   }
 
 }

@@ -1,5 +1,5 @@
 <a [routerLink]="['/services/museum', exhibitions[0].museum_id,'exhibitions']" *ngIf="exhibitions.length > 0; else no_link" class="title-link mat-card ">
-	Exhibiciones
+	{{ "TOURIST_SERVICES.MUSEUM.DETAILS.EXHIBITIONS_SEPARATOR_TEXT" | translate }}
 	<mat-icon class="icon-small">chevron_right</mat-icon>
 </a>
 
@@ -9,9 +9,9 @@
 </div>
 
 <ng-template #no_exhibitions>
-	<p style="text-align: center;">Este museo no tiene exhibiciones</p>
+	<p style="text-align: center;">{{ "TOURIST_SERVICES.MUSEUM.DETAILS.NO_EXHIBITIONS_TEXT" | translate }}</p>
 </ng-template>
 
 <ng-template #no_link>
-	<p class="title">Exhibiciones</p>
+	<p class="title">{{ "TOURIST_SERVICES.MUSEUM.DETAILS.EXHIBITIONS_SEPARATOR_TEXT" | translate }}</p>
 </ng-template>

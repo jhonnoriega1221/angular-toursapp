@@ -4,6 +4,7 @@ import { ExhibitionService } from '../../services/exhibition.service';
 import { ActivatedRoute } from '@angular/router';
 import { Museum } from '../../models/museum';
 import { Exhibition } from '../../models/exhibition';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-museum-details-page',
@@ -12,6 +13,7 @@ import { Exhibition } from '../../models/exhibition';
 })
 export class MuseumDetailsPageComponent implements OnInit {
 
+  public pageTitle:string = '';
   private museumId: number = 0;
   public isLoading: boolean[] = [true,true];
   public isError: boolean[] = [false, false];
@@ -31,16 +33,19 @@ export class MuseumDetailsPageComponent implements OnInit {
     schedule:''
   }
 
+  public separatorTitles:any[] = []
+
   public exhibitions:Exhibition[] = [];
 
 
-  constructor(private museumService: MuseumService, private exhibitionService:ExhibitionService, private activatedRoute: ActivatedRoute) {}
+  constructor(private translate:TranslateService, private museumService: MuseumService, private exhibitionService:ExhibitionService, private activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
       this.museumId = params['id'];
       this.getMuseumData();
-    })
+    });
+    this.translatePage();
   }
 
   public getMuseumData():void {
@@ -85,6 +90,18 @@ export class MuseumDetailsPageComponent implements OnInit {
 
     
 
+  }
+
+  private translatePage(){
+    this.translate.get("TOURIST_SERVICES.MUSEUM.DETAILS")
+    .subscribe( {
+      next: (v) => {
+        this.pageTitle = v.TITLE;
+        this.separatorTitles.push({text: v.SCHEDULE_SEPARATOR_TEXT})
+        this.separatorTitles.push({text: v.PRICES_SEPARATOR_TEXT})
+        this.separatorTitles.push({text: v.EXHIBITIONS_SEPARATOR_TEXT})
+      }
+    })
   }
 
 }
