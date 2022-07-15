@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FakeProduct } from '../../models/fake-product';
 import { FakeStoreService } from '../../services/fake-store.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-products-list-page',
@@ -16,10 +17,11 @@ export class ProductsListPageComponent implements OnInit {
   public isLoadingMore:boolean = false;
   public isError:boolean = false;
 
-    constructor(public fakeStoreService:FakeStoreService) { }
+    constructor(public fakeStoreService:FakeStoreService, private translate:TranslateService) { }
 
     ngOnInit(): void {
         this.getFakeProducts(10);
+        this.translatePage();
     }
 
     public getFakeProducts(limit:Number): void {
@@ -49,5 +51,12 @@ export class ProductsListPageComponent implements OnInit {
           complete: () => this.isLoadingMore = false
         }
       )
+    }
+
+    private translatePage():void{
+      this.translate.get("TOURIST_PRODUCTS.LIST")
+      .subscribe({
+        next: (v) => { this.pageTitle = v.TITLE }
+      })
     }
 }

@@ -49,11 +49,17 @@
   "TOURIST_PRODUCTS":{
     "LIST": {
       "TITLE": "Productos",
-      "ANOTHER_PAYED_TEXT": "Otros han pagado "
+      "ANOTHER_PAYED_TEXT": "Otros han pagado"
     },
     "DETAILS": {
       "TITLE": "Detalles del producto",
-      "STANDARD_PRICE_TEXT": "Precio estándar"
+      "STANDARD_PRICE_TEXT": "Precio estándar",
+      "HAVE_ADQUIRED_ANOTHER_PRICE_QUESTION_TEXT_1": "¿Has adquirido este producto a un precio distinto?",
+      "HAVE_ADQUIRED_ANOTHER_PRICE_QUESTION_TEXT_2": "indicanos cuánto pagaste.",
+      "INDICATE_PRICE_ACTION_TEXT": "Indicar precio",
+      "PRODUCT_PRICE_DIALOG_TITLE": "Precio del producto",
+      "PRODUCT_PRICE_DIALOG_BODY_TEXT": "Nos sería de mucha ayuda si nos indicaras el precio que pagastes por el producto.",
+      "PRODUCT_PRICE_DIALOG_INPUT_TEXT": "Precio del producto"
     }
   },
   "TOURIST_SERVICES": {
@@ -123,8 +129,9 @@
     "MAP": "Mapa"
   },
   "MISC": {
-    "LOAD_MORE_TEXT": "Cargar más",
+    "LOAD_MORE_ACTION_TEXT": "Cargar más",
     "CANCEL_ACTION_TEXT": "Cancelar",
-    "ACCEPT_ACTION_TEXT": "Aceptar"
+    "ACCEPT_ACTION_TEXT": "Aceptar",
+    "SUBMIT_ACTION_TEXT": "Enviar"
   }
 }
