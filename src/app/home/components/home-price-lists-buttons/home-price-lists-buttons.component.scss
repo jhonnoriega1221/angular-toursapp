@@ -6,3 +6,10 @@
 	display: flex;
 	gap: 12px;
 }
+
+@media (min-width: 600px) {
+	.home-button-container:last-child {
+		display: none;
+	}
+}
+

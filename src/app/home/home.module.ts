@@ -13,6 +13,7 @@ import { HomePriceListsButtonComponent } from './components/home-price-lists-but
 import { MatButtonModule } from '@angular/material/button';
 import { MatRippleModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
 import { CurrencyExchangeModule } from '../currency-exchange/currency-exchange.module';
 import { HomeCardBodyComponent } from './components/home-card-body/home-card-body.component';
 import { MatCardModule } from '@angular/material/card';
@@ -36,7 +37,8 @@ import { MatCardModule } from '@angular/material/card';
     MatIconModule,
     MatCardModule,
     CurrencyExchangeModule,
-    SharedModule
+    SharedModule,
+    MatDividerModule
   ]
 })
 export class HomeModule { }

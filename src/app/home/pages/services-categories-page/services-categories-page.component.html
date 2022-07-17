@@ -1,2 +1,6 @@
-<app-back-title-button [viewTitle]=pageTitle></app-back-title-button>
+<app-back-title-button *ngIf="showBackTitle" [viewTitle]=pageTitle></app-back-title-button>
+<div class="list-prices-divider" *ngIf="!showBackTitle">
+    <p>Servicios turisticos</p>
+    <mat-divider class="line"></mat-divider>
+</div>
 <app-service-categories-list [categoriesListButtons]="categoriesListButtons"></app-service-categories-list>

@@ -8,6 +8,14 @@ export interface homeButton {
   route: string;
 }
 
+interface categoryButton {
+  text:string;
+  background:string;
+  icon: string;
+  route: string;
+  color: string;
+}
+
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
@@ -37,7 +45,7 @@ export class HomePageComponent implements OnInit {
         this.priceListButtons[1].text = v.PRICES_LIST.SERVICES_BUTTON;
         this.homeWidgetsTitle.push({text: v.WIDGETS.EXCHANGE_RATE.TITLE});
       },
-      error: (e) => { console.log(e)},
+      error: (e) => { console.log(e); },
       complete: () => {}
     })
   }

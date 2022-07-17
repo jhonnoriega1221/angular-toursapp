@@ -1,3 +1,13 @@
+.home-container{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list-prices{
+  width: 100%;
+}
+
 .home-section {
   margin-bottom: 16px;
 }
@@ -7,25 +17,46 @@
   font-weight: 500;
 }
 
-.home-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 0px;
-  max-width: 1000px;
-  margin: 0 auto;
+.list-prices-divider{
+  display: none;
+}
+
+.turist-services-list{
+  display: none;
 }
 
 @media(min-width: 600px) {
-  .home-container {
-    grid-template-columns: repeat(2, 1fr);
-    
-    grid-gap: 0px 36px;
-  }
-}
 
-@media(min-width: 1400px) {
-  .home-container {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 1400px;
+  .home-container{
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .home-tips{
+    display: none;
+  }
+
+  .list-prices{
+    min-width: 230px;
+    max-width: 320px;
+  }
+
+  .turist-services-list{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .widgets {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 18px;
+    max-width: 1000px;
+    align-content: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .app-home-card{
+    width: 320px;
   }
 }

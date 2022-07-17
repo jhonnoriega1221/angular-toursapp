@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 interface categoryButton {
@@ -15,6 +15,8 @@ interface categoryButton {
   styleUrls: ['./services-categories-page.component.scss']
 })
 export class ServicesCategoriesPageComponent implements OnInit {
+
+  @Input() showBackTitle:boolean = true;
 
   public pageTitle:string = 'HOME.SERVICES_BUTTONS.TITLE'
 
