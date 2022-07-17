@@ -19,8 +19,6 @@ export class TourDetailsPlacesComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    console.log(this.places)
-  }
+  ngOnInit(): void {}
 
 }
