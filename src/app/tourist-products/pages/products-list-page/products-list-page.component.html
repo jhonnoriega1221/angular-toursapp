@@ -1,6 +1,12 @@
 <app-back-title-button [viewTitle]="pageTitle"></app-back-title-button>
-<div *ngIf="!isError" >
-	<app-products-list *skeleton="isLoading; height: '82px'; repeat: 10; width: '100%';" [fakeProducts]="fakeProducts" ></app-products-list>
-	<button *ngIf="!isLoading" (click)=loadMoreFakeProducts() class="load-more-button" mat-raised-button color="primary" [disabled]=isLoadingMore >Cargar más</button>
+<div *ngIf="!isError" class="wrapper" >
+	<div class="filters-list">
+		<p>Categorías</p>
+		<app-filter-buttons-group></app-filter-buttons-group>
+	</div>
+	<div class="products-list">
+		<app-products-list *skeleton="isLoading; height: '82px'; repeat: 10; width: '100%';" [fakeProducts]="fakeProducts"></app-products-list>
+		<button *ngIf="!isLoading" (click)=loadMoreFakeProducts() class="load-more-button" mat-raised-button color="primary" [disabled]=isLoadingMore >Cargar más</button>
+	</div>
 </div>
 <app-error-message (reload)="getFakeProducts(10)" *ngIf="isError"></app-error-message>
