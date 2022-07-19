@@ -29,6 +29,7 @@ import { AppToolbarProgressBarComponent } from './components/app-toolbar-progres
 import { FilterButtonsGroupComponent } from './components/filter-buttons-group/filter-buttons-group.component';
 import { ToggleFilterButtonComponent } from './components/toggle-filter-button/toggle-filter-button.component';
 import { DetailsSeparatorComponent } from './components/details-separator/details-separator.component';
+import { DetailsPriceTextComponent } from './components/details-price-text/details-price-text.component';
 
 @NgModule({
     declarations: [
@@ -45,6 +46,7 @@ import { DetailsSeparatorComponent } from './components/details-separator/detail
         FilterButtonsGroupComponent,
         ToggleFilterButtonComponent,
         DetailsSeparatorComponent,
+        DetailsPriceTextComponent,
     ],
     imports: [
         CommonModule,
@@ -64,7 +66,8 @@ import { DetailsSeparatorComponent } from './components/details-separator/detail
         ErrorMessageComponent,
         TranslateModule,
         FilterButtonsGroupComponent,
-        DetailsSeparatorComponent
+        DetailsSeparatorComponent,
+        DetailsPriceTextComponent
     ]
 })
 export class SharedModule {}

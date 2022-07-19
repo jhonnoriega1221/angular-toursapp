@@ -1,0 +1,25 @@
+.wrapper{
+    display: flex;
+    gap: 6px;
+    margin-bottom: 12px;
+    
+    .icon-side {
+        background-color: var(--toursapp-primary-transparent-app);
+        border-radius: 100%;
+        padding: 6px;
+        color: var(--toursapp-primary-app);
+    }
+
+    p{
+        margin: 0;
+    }
+    .title-text{
+        color: gray;
+        line-height: 18px;
+    }
+
+    .body-text{
+        font-weight: 500;
+        color: var(--toursapp-primary-app);
+    }
+}

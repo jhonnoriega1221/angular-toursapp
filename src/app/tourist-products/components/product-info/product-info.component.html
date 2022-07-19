@@ -1,9 +1,10 @@
 <div class="product-info-container">
 	<div class="product-data">
 		<p class="product-name">{{fakeProductTitle}}</p>
-		<div class="product-price-container">
-			<p class="info-text">{{"TOURIST_PRODUCTS.DETAILS.STANDARD_PRICE_TEXT" | translate}}</p>
-			<p class="product-price">${{fakeProductPrice}}</p>
+		<div class="prices-list">
+			<app-details-price-text icon="store" title="Precio en tiendas" text="3.200"></app-details-price-text>
+			<app-details-price-text icon="person" title="Precio ofrecido a turistas" text="4.600"></app-details-price-text>
+			<app-details-price-text icon="group" title="Otros turistas han pagado" text="4.200"></app-details-price-text>
 		</div>
 	</div>
 </div>

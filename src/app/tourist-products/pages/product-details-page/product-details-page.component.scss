@@ -1,0 +1,24 @@
+
+
+@media (min-width: 600px) {
+    .product-image-details {
+        max-width: 1150px;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin: 0 auto;
+    }
+
+    .image-side {
+        min-width: 280px;
+        max-width: 500px;
+    }
+
+    .details-side {
+        min-width: 280px;
+        width: 600px;
+        max-width: 490px;
+        margin: 0 0 0 auto;
+    }
+
+}
