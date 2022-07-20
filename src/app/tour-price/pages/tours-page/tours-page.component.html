@@ -1,5 +1,11 @@
 <app-back-title-button [viewTitle]="pageTitle"></app-back-title-button>
-<div *ngIf="!isError">
-    <app-tour-list *skeleton="isLoading; height: '180px'; repeat: 2; width: '100%';" [tours]="tours"></app-tour-list>
+<div *ngIf="!isError" class="wrapper">
+	<div class="filters-list">
+		<p>Categorías</p>
+		<app-filter-buttons-group></app-filter-buttons-group>
+	</div>
+    <div class="tours-list">
+        <app-tour-list *skeleton="isLoading; height: '180px'; repeat: 2; width: '100%';" [tours]="tours"></app-tour-list>
+    </div>
 </div>
 <app-error-message (reload)="getTours()" *ngIf="isError"></app-error-message>

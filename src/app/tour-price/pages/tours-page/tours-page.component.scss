@@ -1,0 +1,21 @@
+.wrapper{
+	width: 100%;
+}
+
+@media(min-width: 600px) {
+	.wrapper{
+		display: flex;
+		gap: 12px;
+	}
+
+	.filters-list {
+		min-width: 270px;
+		width: 380px;
+	}
+
+	.tours-list {
+		max-width: 1366px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
