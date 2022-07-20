@@ -1,5 +1,12 @@
 <app-back-title-button [viewTitle]="pageTitle"></app-back-title-button>
-<div *ngIf="!isError">
-    <app-beach-list *skeleton="isLoading; height: '74px'; repeat: 4; width: '100%';" [beaches]="beaches"></app-beach-list>
+<div *ngIf="!isError" class="wrapper">
+	<div class="filters-list">
+		<p>Categorías</p>
+		<app-filter-buttons-group></app-filter-buttons-group>
+	</div>
+    <div class="beaches-list">
+        <app-beach-list *skeleton="isLoading; height: '74px'; repeat: 4; width: '100%';" [beaches]="beaches"></app-beach-list>
+
+    </div>
 </div>
 <app-error-message (reload)="getBeaches()" *ngIf="isError"></app-error-message>
