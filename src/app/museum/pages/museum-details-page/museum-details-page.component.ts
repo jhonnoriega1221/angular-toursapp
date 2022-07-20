@@ -15,8 +15,8 @@ export class MuseumDetailsPageComponent implements OnInit {
 
   public pageTitle:string = '';
   private museumId: number = 0;
-  public isLoading: boolean[] = [true,true];
-  public isError: boolean[] = [false, false];
+  public isLoading: boolean = true;
+  public isError: boolean = false;
   public tempDate:string='Todos los días - 8:00am a 5:00pm';
   public loremDescription:string = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat quis neque venenatis ullamcorper. Nam ultrices sapien vitae felis imperdiet, non lacinia libero tempus. Sed lacus diam, egestas ac est vitae, vulputate efficitur massa. Maecenas ut sodales nunc. Integer volutpat lectus in sem sollicitudin rutrum nec vitae nulla.'
 
@@ -50,46 +50,23 @@ export class MuseumDetailsPageComponent implements OnInit {
 
   public getMuseumData():void {
     this.getMuseum();
-    this.getExhibitions();
   }
 
   private getMuseum(): void {
 
-    this.isError[0] = false;
-    this.isLoading[0] = true;
+    this.isError = false;
+    this.isLoading = true;
     this.museumService.getMuseum(this.museumId)
       .subscribe({
         next: (v) => this.museum = v,
         error: (e) => {
-          this.isError[0] = true;
-          this.isLoading[0] = false;
+          this.isError = true;
+          this.isLoading = false;
           console.error(e);
         },
-        complete: () => this.isLoading[0] = false
+        complete: () => this.isLoading = false
       });
       
-  }
-
-  private getExhibitions(): void{
-    this.isError[1] = false;
-    this.isLoading[1] = true;
-    this.exhibitionService.getMuseumExhibitions(this.museumId)
-    .subscribe({
-      next: (v) => {
-        this.exhibitions = v.slice(0,3).map(exhibition => {
-          return exhibition
-        });
-      },
-      error: (e) => {
-        this.isError[1] = true;
-        this.isLoading[1] = false;
-        console.log(e);
-      },
-      complete: () => this.isLoading[1] = false
-    });
-
-    
-
   }
 
   private translatePage(){
@@ -97,11 +74,8 @@ export class MuseumDetailsPageComponent implements OnInit {
     .subscribe( {
       next: (v) => {
         this.pageTitle = v.TITLE;
-        this.separatorTitles.push({text: v.SCHEDULE_SEPARATOR_TEXT})
-        this.separatorTitles.push({text: v.PRICES_SEPARATOR_TEXT})
-        this.separatorTitles.push({text: v.EXHIBITIONS_SEPARATOR_TEXT})
+        this.separatorTitles.push({text: v.SCHEDULE_SEPARATOR_TEXT}, {text: v.PRICES_SEPARATOR_TEXT});
       }
     })
   }
-
 }
