@@ -1,5 +1,11 @@
 <app-back-title-button [viewTitle]="pageTitle"></app-back-title-button>
-<div *ngIf="!isError">
-	<app-museum-list *skeleton="isLoading; height: '104px'; repeat: 10; width: '100%';" [museums]=museums></app-museum-list>
+<div *ngIf="!isError" class="wrapper">
+	<div class="filters-list">
+		<p>Categorías</p>
+		<app-filter-buttons-group></app-filter-buttons-group>
+	</div>
+	<div class="museums-list">
+		<app-museum-list class="museums-list" *skeleton="isLoading; height: '104px'; repeat: 10; width: '100%';" [museums]=museums></app-museum-list>
+	</div>
 </div>
 <app-error-message (reload)="getMuseums()" *ngIf="isError"></app-error-message>

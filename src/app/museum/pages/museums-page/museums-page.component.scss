@@ -1,0 +1,21 @@
+.wrapper{
+	width: 100%;
+}
+
+@media(min-width: 800px) {
+	.wrapper{
+		display: flex;
+		gap: 12px;
+	}
+
+	.filters-list {
+		min-width: 270px;
+		width: 380px;
+	}
+
+	.museums-list {
+		max-width: 1366px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
