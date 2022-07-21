@@ -1,6 +1,6 @@
 <div class="settings-page-layout mat-card">
   <div *ngIf="!isInConfig || !isMobile" class="settings-list">
-    <app-settings-list></app-settings-list>
+    <app-settings-list [isMobile]="isMobile"></app-settings-list>
   </div>
   <div *ngIf="isInConfig || !isMobile" class="setting-view">
     <div class="empty-state" *ngIf="!isInConfig">

@@ -1,17 +1,17 @@
 <mat-nav-list>
-  <a mat-list-item routerLink='/settings/appearance'>
+  <a mat-list-item routerLink='/settings/appearance' [skipLocationChange]="!isMobile" >
     <mat-icon matListIcon>palette</mat-icon>
     <p mat-line>Apariencia</p>
       <mat-divider></mat-divider>
   </a>
 
-  <a mat-list-item routerLink='/settings/language'>
+  <a mat-list-item routerLink='/settings/language' [skipLocationChange]="!isMobile">
     <mat-icon matListIcon>translate</mat-icon>
     <p mat-line>{{"SETTINGS.LANGUAGE.TITLE" | translate}}</p>
       <mat-divider></mat-divider>
   </a>
 
-  <a mat-list-item routerLink='/settings/about'>
+  <a mat-list-item routerLink='/settings/about' [skipLocationChange]="!isMobile">
     <mat-icon matListIcon>info</mat-icon>
     <p mat-line>{{"SETTINGS.ABOUT.TITLE" | translate}}</p>
       <mat-divider></mat-divider>
