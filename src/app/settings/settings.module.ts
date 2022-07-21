@@ -16,6 +16,7 @@ import { SettingsToolbarComponent } from './components/settings-toolbar/settings
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
+import { AppearanceComponent } from './components/appearance/appearance.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { MatSelectModule } from '@angular/material/select';
     LanguageSettingsListComponent,
     AboutComponent,
     SettingsLayoutComponent,
-    SettingsToolbarComponent
+    SettingsToolbarComponent,
+    AppearanceComponent
   ],
   imports: [
     CommonModule,

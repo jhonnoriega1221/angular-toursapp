@@ -1,0 +1,15 @@
+
+<div class="setting-container">
+    <div>
+      <p class="setting-title">Tema</p>
+      <p class="setting-description">Elige tu tema preferido</p>
+    </div>
+    <mat-form-field appearance="outline">
+        <mat-select #selTheme (selectionChange)="changeTheme(selTheme.value)" [value]=appTheme>
+          <mat-option value="auto">Sistema</mat-option>
+          <mat-option value="light">Claro</mat-option>
+          <mat-option value="dark">Oscuro</mat-option>
+        </mat-select>
+      </mat-form-field>
+  </div>
+  <mat-divider></mat-divider>
