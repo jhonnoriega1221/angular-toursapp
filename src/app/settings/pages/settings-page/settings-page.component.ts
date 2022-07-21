@@ -34,7 +34,7 @@ export class SettingsPageComponent {
   }
 
   private setIsMobile(innerWidth:number):boolean {
-    const isMobile = innerWidth <= 600 ? true : false
+    const isMobile = innerWidth < 600 ? true : false
     return isMobile;
   }
 
