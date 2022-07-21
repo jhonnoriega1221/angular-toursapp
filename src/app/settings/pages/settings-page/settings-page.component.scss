@@ -20,6 +20,25 @@
     margin: 0 auto;
 }
 
+.empty-state{
+	position: relative;
+	top: 33%;
+	color: grey;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	.empty-state-icon {
+		font-size: 110px;
+		width: 110px;
+		height: 110px;
+	}
+
+	.empty-state-title{
+		margin: 0;
+	}
+}
+
 @media(min-width: 600px){
 	.settings-list {
 		min-width: 300px;

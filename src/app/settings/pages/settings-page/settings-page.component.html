@@ -3,6 +3,11 @@
     <app-settings-list></app-settings-list>
   </div>
   <div *ngIf="isInConfig || !isMobile" class="setting-view">
+    <div class="empty-state" *ngIf="!isInConfig">
+      <mat-icon class="empty-state-icon">settings</mat-icon>
+      <p class="mat-display-1 empty-state-title">Ajustes</p>
+      <p class="mat-h2 empty-state-body">Selecciona una categoria</p>
+    </div>
     <router-outlet></router-outlet>
   </div>
 </div>
