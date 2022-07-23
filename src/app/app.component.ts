@@ -8,7 +8,7 @@ import { Renderer2 } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-toursapp';
+  title = 'TourSupp';
 
   constructor(
     public translate: TranslateService,
