@@ -11,8 +11,6 @@ export class FirstTimeGuard implements CanActivateChild {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     const firstTime = localStorage.getItem('ft');
-    console.log('no puede pasar')
-    console.log(localStorage.getItem('ft'))
     if (firstTime === 'false') {
       return true;
     } else {
