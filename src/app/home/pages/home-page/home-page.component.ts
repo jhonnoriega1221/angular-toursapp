@@ -24,7 +24,7 @@ interface categoryButton {
 
 export class HomePageComponent implements OnInit {
 
-  public homeWidgetsTitle:any[] = []
+  public homeWidgetsTitle:any[] = [];
 
   public priceListButtons: homeButton[] = [
     { color: 'accent', text: 'Productos', icon: 'ballot', route: '/products' },

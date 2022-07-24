@@ -1,0 +1,23 @@
+.onboarding-image{
+    width: 200px;
+    object-fit: contain;
+    max-height: 500px;
+    height: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    p{
+        text-align: center;
+        max-width: 450px;
+        margin: 10px auto;
+    }
+
+    .onboarding-text{
+        height: 60px;
+    }
+}

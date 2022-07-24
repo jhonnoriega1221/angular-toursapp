@@ -1,0 +1,20 @@
+.stepper{
+	height: 8px;
+	display: flex;
+	align-items: center;
+	gap:6px;
+	justify-content: center;
+}
+
+.stepper-dot{
+	height: 100%;
+	width: 8px;
+	background-color: lightgray;
+	border-radius: 10px;
+	transition: 0.2s;
+}
+
+.active {
+	background-color: var(--toursapp-primary-app);
+	width: 18px;
+}

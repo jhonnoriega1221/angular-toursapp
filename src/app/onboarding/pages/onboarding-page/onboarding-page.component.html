@@ -1,0 +1,17 @@
+<div class="wrapper">
+    <div class="slide-container mat-card">
+        <app-onboarding-item class="slide-item" [imgURL]="slides[actualSlide].imgURL"
+            [title]="slides[actualSlide].title" [text]="slides[actualSlide].text">
+        </app-onboarding-item>
+        <div class="onboarding-bottom">
+            <app-onboarding-dots [actualStep]="actualSlide"></app-onboarding-dots>
+
+            <div class="button-group">
+                <button class="nav-button prev-button" (click)="skipOnboarding()" mat-button
+                    color="primary">Omitir</button>
+                <button class="nav-button next-button" (click)="nextSlide()" mat-raised-button
+                    color="primary">{{nextButtonText}}</button>
+            </div>
+        </div>
+    </div>
+</div>
