@@ -17,9 +17,9 @@ export class OnboardingPageComponent implements OnInit {
   public nextButtonText:string = 'Siguiente';
   public isLastSlide:boolean = false;
   public slides:Slide[] = [
-    { title: 'Revisa los precios', text: 'Antes de consumir un producto o servicio, observa su precio en la aplicación', imgURL: '../../../../assets/taxi-calculator.svg' },
-    { title: 'Revisa los precioas', text: 'Sexo', imgURL: '../../../../assets/taxi-calculator.svg' },
-    { title: 'Revisa los precioes', text: 'Motelea con las putas mas baratas del centro', imgURL: '../../../../assets/taxi-calculator.svg' }
+    { title: 'Conoce los precios', text: 'Consulta el valor de los productos y servicios turisticos', imgURL: '../../../../assets/onboarding1.svg' },
+    { title: 'Información actualizada', text: 'Precios que se van actualizando constantemente', imgURL: '../../../../assets/onboarding2.svg' },
+    { title: 'Evita cobros excesivos', text: 'Disfruta de tu estadía en la ciudad de Cartagena', imgURL: '../../../../assets/onboarding3.svg' }
   ];
 
   constructor( private routerService:Router) { }
