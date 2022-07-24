@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppLayoutComponent } from "./shared/layouts/app-layout/app-layout.component";
+import { FirstTimeGuard } from './onboarding/guards/first-time.guard';
 
 const routes: Routes = [
     {
@@ -13,9 +14,11 @@ const routes: Routes = [
             { path: 'services/museum', loadChildren: () => import('./museum/museum.module').then(m => m.MuseumModule) },
             { path: 'services/tour-prices', loadChildren: () => import('./tour-price/tour-price.module').then(m => m.TourPriceModule) },
             { path: 'services/beach', loadChildren: () => import('./beach/beach.module').then(m => m.BeachModule) }
-        ]
+        ],
+        canActivateChild: [FirstTimeGuard]
     }, {
-        path: 'settings', loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule)
+        path: 'settings', loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule),
+        canActivateChild: [FirstTimeGuard]
     }, { 
         path: 'onboarding', loadChildren: () => import('./onboarding/onboarding.module').then(m => m.OnboardingModule)
     },

@@ -33,13 +33,16 @@ export class OnboardingPageComponent implements OnInit {
     if(this.isLastSlide){
       this.nextButtonText = 'Continuar'
     }
-    if(this.actualSlide === 3){
+    if(this.actualSlide > 2){
+      localStorage.setItem('ft', 'false');
       this.routerService.navigate(['/']);
       
     }
+    console.log(this.actualSlide)
   }
 
   skipOnboarding(){
+    localStorage.setItem('ft', 'false');
     this.routerService.navigate(['/']);
   }
 

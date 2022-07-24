@@ -17,6 +17,13 @@ export class AppComponent {
     translate.addLangs(['en', 'es']);
     this.configDefaultLanguage(localStorage.getItem('app_language'));
     this.configDefaultTheme(localStorage.getItem('app_theme'));
+    this.setFirstTime(localStorage.getItem('ft'));
+  }
+
+  private setFirstTime(firstTime: string | null){
+    if(firstTime === null || firstTime === undefined ){
+      localStorage.setItem('ft', 'true');
+    }
   }
 
   private configDefaultLanguage(appLanguage: string | null) {
