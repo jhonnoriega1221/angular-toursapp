@@ -15,6 +15,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { CurrencyExchangeModule } from '../currency-exchange/currency-exchange.module';
+import { WeatherModule } from '../weather/weather.module';
 import { HomeCardBodyComponent } from './components/home-card-body/home-card-body.component';
 import { MatCardModule } from '@angular/material/card';
 
@@ -38,7 +39,8 @@ import { MatCardModule } from '@angular/material/card';
     MatCardModule,
     CurrencyExchangeModule,
     SharedModule,
-    MatDividerModule
+    MatDividerModule,
+    WeatherModule
   ]
 })
 export class HomeModule { }
