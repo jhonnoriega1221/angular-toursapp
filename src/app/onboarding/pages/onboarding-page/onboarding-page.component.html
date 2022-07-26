@@ -8,7 +8,7 @@
 
             <div class="button-group">
                 <button *ngIf="!isLastSlide" class="nav-button prev-button" (click)="skipOnboarding()" mat-button
-                    color="primary">Omitir</button>
+                    color="primary">{{"MISC.SKIP_ACTION_TEXT" | translate}}</button>
                 <button class="nav-button next-button" (click)="nextSlide()" mat-raised-button
                     color="primary">{{nextButtonText}}</button>
             </div>

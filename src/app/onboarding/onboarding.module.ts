@@ -6,6 +6,7 @@ import { SwiperModule } from 'swiper/angular';
 import { OnboardingRoutingModule } from './onboarding-routing.module';
 import { MatButtonModule } from '@angular/material/button';
 import { OnboardingDotsComponent } from './components/onboarding-dots/onboarding-dots.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { OnboardingDotsComponent } from './components/onboarding-dots/onboarding
     CommonModule,
     SwiperModule,
     OnboardingRoutingModule,
-    MatButtonModule
+    MatButtonModule,
+    TranslateModule
   ]
 })
 export class OnboardingModule { }
