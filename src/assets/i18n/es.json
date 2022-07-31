@@ -1,4 +1,12 @@
 {
+  "ONBOARDING": {
+    "SLIDE1_TITLE":"Conoce los precios",
+    "SLIDE1_TEXT": "Consulta el valor de los productos y servicios turisticos",
+    "SLIDE2_TITLE":"InforInformación actualizada",
+    "SLIDE2_TEXT": "Precios que se van actualizando constantemente",
+    "SLIDE3_TITLE":"Evita cobros excesivos",
+    "SLIDE3_TEXT": "Disfruta de tu estadía en la ciudad de Cartagena"
+  },
   "TOOLBAR": {
     "MORE_OPTIONS": {
       "TITLE": "Más opciones",
@@ -132,6 +140,9 @@
     "LOAD_MORE_ACTION_TEXT": "Cargar más",
     "CANCEL_ACTION_TEXT": "Cancelar",
     "ACCEPT_ACTION_TEXT": "Aceptar",
-    "SUBMIT_ACTION_TEXT": "Enviar"
+    "SUBMIT_ACTION_TEXT": "Enviar",
+    "CONTINUE_ACTION_TEXT": "Continuar",
+    "SKIP_ACTION_TEXT": "Omitir",
+    "NEXT_ACTION_TEXT": "Siguiente"
   }
 }
