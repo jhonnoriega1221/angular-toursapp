@@ -16,7 +16,7 @@ export class MuseumService {
     return this.http.get<Museum[]>(`${this.apiURL}museums`);
   };
 
-  getMuseum(museumId: number): Observable < Museum > {
+  getMuseum(museumId: string): Observable < Museum > {
     return this.http.get<Museum>(`${this.apiURL}museums/${museumId}`);
   }
 }

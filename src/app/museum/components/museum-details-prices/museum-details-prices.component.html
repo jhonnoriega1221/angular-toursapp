@@ -1,0 +1,5 @@
+<p class="title">{{title}}</p>
+<div class="info">
+    <app-details-price-text *ngFor="let price of prices" icon="person" [title]="price.people" [text]="price.amount"></app-details-price-text>
+</div>
+<mat-divider></mat-divider>

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Price, Schedule } from '../../models/museum';
 
 @Component({
   selector: 'app-museum-info-line',
@@ -7,9 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MuseumInfoLineComponent implements OnInit {
 
+  @Input() datas:any[] = [];
   @Input() title:string = '';
-  @Input() info:string = '';
-  @Input() info2:string = '';
   @Input() isPrices:boolean = false;
 
   constructor() { }

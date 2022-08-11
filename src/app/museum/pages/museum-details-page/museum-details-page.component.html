@@ -2,9 +2,9 @@
 <div *ngIf="!isError" class="wrapper">
 	<app-museum-picture class="image-side" *skeleton="isLoading; height: '200px'; repeat: 1; width: '100%';" [imageUrl]=museum.imgURL></app-museum-picture>
 	<div class="details-side">
-		<app-museum-header-details *skeleton="isLoading; height: ''; repeat: 1; width: '100%';" [name]=museum.name [rate]="0" location="Centro" [distance]="12" [description]=loremDescription></app-museum-header-details>
-		<app-museum-info-line *skeleton="isLoading; height: '60px'; repeat: 1; width: '100%';" [title]="separatorTitles[0].text" [info]=tempDate [isPrices]=false></app-museum-info-line>
-		<app-museum-info-line *skeleton="isLoading; height: '60px'; repeat: 1; width: '100%';" [title]="separatorTitles[1].text"  info="12.000" info2="13.000" [isPrices]=true></app-museum-info-line>
+		<app-museum-header-details *skeleton="isLoading; height: ''; repeat: 1; width: '100%';" [name]=museum.name [rate]="0" location="Centro" [distance]="12" [description]=museum.description></app-museum-header-details>
+		<app-museum-details-prices *skeleton="isLoading; height: '60px'; repeat: 1; width: '100%';" [title]="separatorTitles[0].text" [prices]=museum.prices ></app-museum-details-prices>
+		<app-museum-details-schedules *skeleton="isLoading; height: '60px'; repeat: 1; width: '100%';" [title]="separatorTitles[1].text"  [schedules]=museum.schedule></app-museum-details-schedules>
 	</div>
 </div>
 <app-error-message (reload)="getMuseumData()" *ngIf="isError"></app-error-message>

@@ -80,8 +80,7 @@
               "browserTarget": "angular-toursapp:build:production"
             },
             "development": {
-              "browserTarget": "angular-toursapp:build:development",
-              "proxyConfig": "src/proxy.conf.json"
+              "browserTarget": "angular-toursapp:build:development"
             }
           },
           "defaultConfiguration": "development"

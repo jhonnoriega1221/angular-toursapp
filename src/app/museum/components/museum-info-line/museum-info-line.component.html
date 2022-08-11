@@ -1,6 +1,7 @@
 <p class="title">{{title}}</p>
 <div class="info">
-	<p><span *ngIf="isPrices">Adultos: </span> <span>{{info}}</span> <span *ngIf="isPrices"> COP</span></p>
-	<p *ngIf="isPrices"><span>Niños: </span> <span>{{info2}} COP</span></p>
+	<p *ngFor="let data of datas">
+		{{data.people}}
+	</p>
 </div>
 <mat-divider></mat-divider>

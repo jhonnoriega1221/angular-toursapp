@@ -17,6 +17,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MuseumExhibitionsLineComponent } from './components/museum-exhibitions-line/museum-exhibitions-line.component';
 import { MuseumExhibitionsPageComponent } from './pages/museum-exhibitions-page/museum-exhibitions-page.component';
 import { MuseumExhibitionsListComponent } from './components/museum-exhibitions-list/museum-exhibitions-list.component';
+import { MuseumDetailsPricesComponent } from './components/museum-details-prices/museum-details-prices.component';
+import { MuseumDetailsSchedulesComponent } from './components/museum-details-schedules/museum-details-schedules.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { MuseumExhibitionsListComponent } from './components/museum-exhibitions-
     MuseumInfoLineComponent,
     MuseumExhibitionsLineComponent,
     MuseumExhibitionsPageComponent,
-    MuseumExhibitionsListComponent
+    MuseumExhibitionsListComponent,
+    MuseumDetailsPricesComponent,
+    MuseumDetailsSchedulesComponent
   ],
   imports: [
     CommonModule,

@@ -1,9 +1,9 @@
-interface Price {
+export interface Price {
 	people: string;
 	amount: number;
 }
 
-interface Schedule {
+export interface Schedule {
 	day: string;
 	closed: boolean;
 	time_from: string;
@@ -11,8 +11,8 @@ interface Schedule {
 }
 
 interface Location {
-	lat: string;
-	lon: string;
+	lat: number;
+	lon: number;
 }
 
 export interface Museum {
@@ -22,5 +22,5 @@ export interface Museum {
 	description: string;
 	prices: Price[];
 	schedule: Schedule[];
-	location: Location[];
+	location: Location;
 }

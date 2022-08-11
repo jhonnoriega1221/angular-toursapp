@@ -9,7 +9,7 @@ export class DetailsPriceTextComponent implements OnInit {
 
   @Input() icon:string = '';
   @Input() title:string = '';
-  @Input() text:string = '';
+  @Input() text:string | number = '';
 
 
   constructor() { }

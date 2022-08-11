@@ -14,11 +14,9 @@ import { TranslateService } from '@ngx-translate/core';
 export class MuseumDetailsPageComponent implements OnInit {
 
   public pageTitle:string = '';
-  private museumId: number = 0;
+  private museumId: string = '';
   public isLoading: boolean = true;
   public isError: boolean = false;
-  public tempDate:string='Todos los días - 8:00am a 5:00pm';
-  public loremDescription:string = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat quis neque venenatis ullamcorper. Nam ultrices sapien vitae felis imperdiet, non lacinia libero tempus. Sed lacus diam, egestas ac est vitae, vulputate efficitur massa. Maecenas ut sodales nunc. Integer volutpat lectus in sem sollicitudin rutrum nec vitae nulla.'
 
   public museum: Museum = {
     _id: '',
@@ -26,7 +24,10 @@ export class MuseumDetailsPageComponent implements OnInit {
     imgURL: '',
     prices:[],
     description:'',
-    location:[],
+    location:{
+      lat:0,
+      lon:0
+    },
     schedule: []
   }
 
@@ -71,7 +72,7 @@ export class MuseumDetailsPageComponent implements OnInit {
     .subscribe( {
       next: (v) => {
         this.pageTitle = v.TITLE;
-        this.separatorTitles.push({text: v.SCHEDULE_SEPARATOR_TEXT}, {text: v.PRICES_SEPARATOR_TEXT});
+        this.separatorTitles.push( {text: v.PRICES_SEPARATOR_TEXT}, {text: v.SCHEDULE_SEPARATOR_TEXT});
       }
     })
   }
