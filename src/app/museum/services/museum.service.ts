@@ -13,10 +13,10 @@ export class MuseumService {
   apiURL: String = environment.apiURL;
 
   getMuseums(): Observable < Museum[] > {
-    return this.http.get<Museum[]>(`${this.apiURL}museum`);
+    return this.http.get<Museum[]>(`${this.apiURL}museums`);
   };
 
   getMuseum(museumId: number): Observable < Museum > {
-    return this.http.get<Museum>(`${this.apiURL}museum/${museumId}`);
+    return this.http.get<Museum>(`${this.apiURL}museums/${museumId}`);
   }
 }

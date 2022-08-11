@@ -21,16 +21,13 @@ export class MuseumDetailsPageComponent implements OnInit {
   public loremDescription:string = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat quis neque venenatis ullamcorper. Nam ultrices sapien vitae felis imperdiet, non lacinia libero tempus. Sed lacus diam, egestas ac est vitae, vulputate efficitur massa. Maecenas ut sodales nunc. Integer volutpat lectus in sem sollicitudin rutrum nec vitae nulla.'
 
   public museum: Museum = {
-    id: 0,
+    _id: '',
     name: '',
-    imageUrl: '',
-    location: '',
-    distance: 0,
-    rating: 0,
-    exhibitions: 0,
-    adult_price:'',
-    child_price:'',
-    schedule:''
+    imgURL: '',
+    prices:[],
+    description:'',
+    location:[],
+    schedule: []
   }
 
   public separatorTitles:any[] = []
