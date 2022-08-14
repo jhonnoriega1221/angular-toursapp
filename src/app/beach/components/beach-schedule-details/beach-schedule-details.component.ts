@@ -8,7 +8,7 @@ import { Schedule } from '../../models/beach';
 })
 export class BeachScheduleDetailsComponent implements OnInit {
 
-  @Input() schedule:Schedule[] = [];
+  @Input() schedule:Schedule = { close_hour: '', open_hour: '' };
 
   constructor() { }
 

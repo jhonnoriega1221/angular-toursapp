@@ -1,14 +1,28 @@
 <app-back-title-button viewTitle="Informacion de la playa"></app-back-title-button>
 <div *ngIf="!isError" class="wrapper">
-    <app-beach-image-details class="image-side" *skeleton="isLoading; height: '320px'; repeat: 1; width: '100%';" [imageUrl]="beach.imgURL"></app-beach-image-details>
-    <div class="details-side">
-        <app-beach-top-details *skeleton="isLoading; height: '35px'; repeat: 1; width: '100%';" [name]="beach.name" ></app-beach-top-details>
-        <app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';" [title]="separatorTexts[0].text"></app-details-separator>
-        <app-beach-schedule-details *skeleton="isLoading; height: '20px'; repeat: 1; width: '150px';" [schedule]="beach.schedule"></app-beach-schedule-details>
-        <app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';" [title]="separatorTexts[1].text"></app-details-separator>
-        <app-beach-services-details *skeleton="isLoading; height: '20px'; repeat: 6; width: '190px';" [services]="beach.services"></app-beach-services-details>
-        <app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';" [title]="separatorTexts[2].text"></app-details-separator>
-        <app-beach-location-details *skeleton="isLoading; height: '190px'; repeat: 1; width: '60px';" locationPictureUrl="nada"></app-beach-location-details>
+    <div class="top-info">
+        <app-beach-image-details class="image-side" *skeleton="isLoading; height: '320px'; repeat: 1; width: '100%';"
+            [imageUrl]="beach.imgURL"></app-beach-image-details>
+        <div class="details-side">
+            <app-beach-top-details *skeleton="isLoading; height: '35px'; repeat: 1; width: '100%';" [name]="beach.name">
+            </app-beach-top-details>
+            <app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';"
+                [title]="separatorTexts[0].text"></app-details-separator>
+            <app-beach-schedule-details *skeleton="isLoading; height: '20px'; repeat: 1; width: '150px';"
+                [schedule]="beach.schedule[0]"></app-beach-schedule-details>
+            <app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';"
+                [title]="separatorTexts[1].text"></app-details-separator>
+            <app-beach-services-details *skeleton="isLoading; height: '20px'; repeat: 6; width: '190px';"
+                [services]="beach.services"></app-beach-services-details>
+        </div>
     </div>
+    <div class="bottom-info">
+        <app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';"
+            [title]="separatorTexts[2].text"></app-details-separator>
+        <app-beach-location-details *skeleton="isLoading; height: '190px'; repeat: 1; width: '60px';" 
+            [lat]="beach.location[0].lat" [lon]="beach.location[0].lon"></app-beach-location-details>
+
+    </div>
+
 </div>
 <app-error-message (reload)="getBeach()" *ngIf="isError"></app-error-message>

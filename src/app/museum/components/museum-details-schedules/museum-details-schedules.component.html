@@ -1,6 +1,5 @@
-<div>
-    <div *ngFor="let schedule of schedules">
-        <p class="time-title mat-caption">{{schedule.day}}</p>
-        <p class="time-text" *ngIf="!schedule.closed"> {{schedule.time_from}} - {{schedule.time_to}} </p>  <p class="time-text closed" *ngIf="schedule.closed"> Cerrado </p> 
-    </div>
+<div *ngFor="let schedule of schedules">
+    <p class="time-title mat-caption">{{schedule.day}}</p>
+    <p class="time-text" *ngIf="!schedule.closed"> {{schedule.time_from}} - {{schedule.time_to}} </p>
+    <p class="time-text closed" *ngIf="schedule.closed"> Cerrado </p>
 </div>

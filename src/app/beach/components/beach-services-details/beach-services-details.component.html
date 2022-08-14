@@ -1,1 +1,10 @@
-<p *ngFor="let service of services">{{service.name}} $ {{service.price}} COP - {{service.desc}}</p>
+<div class="wrapper">
+    <div class="mat-card container " *ngFor="let service of services">
+        <div class="title-container">
+            <div class="line"></div>
+            <p class="mat-h3">{{service.name}}</p>
+        </div>
+        <div class="price">${{service.price}} COP</div>
+        <div class="desc mat-caption">{{service.desc}}</div>
+    </div>
+</div>
