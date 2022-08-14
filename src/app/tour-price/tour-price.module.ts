@@ -11,6 +11,7 @@ import { TourDetailsHeadingComponent } from './components/tour-details-heading/t
 import { TourDetailsPriceComponent } from './components/tour-details-price/tour-details-price.component';
 import { TourDetailsPictureComponent } from './components/tour-details-picture/tour-details-picture.component';
 import { TourDetailsPlacesComponent } from './components/tour-details-places/tour-details-places.component';
+import { TourDetailsRouteComponent } from './components/tour-details-route/tour-details-route.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { TourDetailsPlacesComponent } from './components/tour-details-places/tou
     TourDetailsHeadingComponent,
     TourDetailsPriceComponent,
     TourDetailsPictureComponent,
-    TourDetailsPlacesComponent
+    TourDetailsPlacesComponent,
+    TourDetailsRouteComponent
   ],
   imports: [
     CommonModule,

@@ -13,10 +13,10 @@ export class ToursService {
   apiURL: String = environment.apiURL;
 
   getTours(): Observable < Tours[] > {
-    return this.http.get<Tours[]>(`${this.apiURL}tours`);
+    return this.http.get<Tours[]>(`${this.apiURL}rides`);
   };
 
-  getTour(tourId: number): Observable < Tours > {
-    return this.http.get<Tours>(`${this.apiURL}tours/${tourId}`);
+  getTour(tourId: string): Observable < Tours > {
+    return this.http.get<Tours>(`${this.apiURL}rides/${tourId}`);
   }
 }

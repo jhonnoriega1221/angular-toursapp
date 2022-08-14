@@ -12,18 +12,22 @@ import { TranslateService } from '@ngx-translate/core';
 export class TourDetailsPageComponent implements OnInit {
   public pageTitle:string = '';
   public separatorText:any[] = [];
-  private tourId: number = 0;
+  private tourId: string = '';
   public isError: boolean = false;
   public isLoading: boolean = true;
   public tour: Tours = {
-    id: 0,
+    _id: '',
     description: '',
     name: '',
     places: [],
     price: 0,
-    routePictureUrl: '',
-    type: ''
-
+    type: '',
+    duration:{
+      finish:0,
+      start:0,
+      time: ''
+    },
+    route_id: '',
   }
 
 

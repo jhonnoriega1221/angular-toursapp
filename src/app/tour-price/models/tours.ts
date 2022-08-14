@@ -1,16 +1,27 @@
 export interface Tours {
-    id:            number;
-    name:          string;
-    type:          string;
-    places:        Place[];
-    routePictureUrl: string;
-    price:         number;
-    description:   string;
+    _id:         string;
+    name:        string;
+    type:        string;
+    description: string;
+    price:       number;
+    duration:    Duration;
+    places:      Place[];
+    route_id:    string;
+}
+
+export interface Duration {
+    start:  number;
+    finish: number;
+    time:   string;
 }
 
 export interface Place {
-    name:          string;
-    pictureUrl:    string;
-    lat:           number;
-    lng:           number;
+    name:        string;
+    imageURL:    string;
+    coordenates: Coordenates;
+}
+
+export interface Coordenates {
+    lat: string;
+    lon: string;
 }

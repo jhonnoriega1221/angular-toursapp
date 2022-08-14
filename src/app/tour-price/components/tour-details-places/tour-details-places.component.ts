@@ -1,12 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
-interface Place {
-  name:          string;
-  pictureUrl:    string;
-  lat:           number;
-  lng:           number;
-}
-
+import { Place } from '../../models/tours';
 
 @Component({
   selector: 'app-tour-details-places',
