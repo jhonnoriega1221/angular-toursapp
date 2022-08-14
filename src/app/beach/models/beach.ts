@@ -1,26 +1,24 @@
 export interface Beach {
-    id:       number;
+    _id:      string;
     name:     string;
-    imageUrl: string;
-    hours:    string;
-    location: Location;
-    distance: number;
-    services: Services;
+    imgURL:   string;
+    schedule: Schedule[];
+    services: Service[];
+    location: Location[];
 }
 
 export interface Location {
-    lat:    number;
-    lng:    number;
-    imgUrl: string;
-    name: string;
+    lat: number;
+    lon: number;
 }
 
-export interface Services {
-    chairs:   number;
-    massage:  number;
-    braids:   number;
-    jetsky:   number;
-    worm:     number;
-    boatDish: number;
-    tent:     number;
+export interface Schedule {
+    open_hour:  string;
+    close_hour: string;
+}
+
+export interface Service {
+    name:  string;
+    price: number;
+    desc:  string;
 }

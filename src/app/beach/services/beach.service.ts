@@ -18,7 +18,7 @@ export class BeachService {
     return this.http.get<Beach[]>(`${this.apiURL}beaches`);
   };
 
-  getBeach(beachId:number): Observable < Beach > {
+  getBeach(beachId:string): Observable < Beach > {
     return this.http.get<Beach>(`${this.apiURL}beaches/${beachId}`);
   };
 }

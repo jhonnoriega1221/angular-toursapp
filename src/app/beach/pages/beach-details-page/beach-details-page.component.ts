@@ -12,30 +12,16 @@ import { TranslateService } from '@ngx-translate/core';
 export class BeachDetailsPageComponent implements OnInit {
 
   public pageTitle:string = '';
-  private beachId: number = 0;
+  private beachId: string = '';
   public isLoading: boolean = true;
   public isError: boolean = false;
   public beach:Beach = {
-    distance: 0,
-    hours: '',
-    id: 0,
-    imageUrl: '',
-    location :{
-      imgUrl: '',
-      lat: 0,
-      lng: 0,
-      name: ''
-    },
+    schedule: [],
+    _id: '',
+    imgURL: '',
+    location :[],
     name: '',
-    services: {
-      boatDish: 0,
-      braids: 0,
-      chairs: 0,
-      jetsky: 0,
-      massage:0,
-      tent: 0,
-      worm: 0
-    }
+    services: []
   };
   public separatorTexts:any[] = [];
 

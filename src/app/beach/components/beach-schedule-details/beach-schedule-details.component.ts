@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Schedule } from '../../models/beach';
 
 @Component({
   selector: 'app-beach-schedule-details',
@@ -7,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BeachScheduleDetailsComponent implements OnInit {
 
-  @Input() schedule:string = '';
+  @Input() schedule:Schedule[] = [];
 
   constructor() { }
 

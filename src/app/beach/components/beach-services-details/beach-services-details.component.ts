@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Service } from '../../models/beach';
 
 @Component({
   selector: 'app-beach-services-details',
@@ -7,13 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BeachServicesDetailsComponent implements OnInit {
 
-  @Input() tent:number = 0;
-  @Input() chairs:number = 0;
-  @Input() jetsky:number = 0;
-  @Input() massage:number = 0;
-  @Input() braids:number = 0;
-  @Input() worm:number = 0;
-  @Input() boatDish:number = 0;
+  @Input() services:Service[] = [];
 
   constructor() { }
 

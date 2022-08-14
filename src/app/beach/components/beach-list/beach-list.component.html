@@ -1,9 +1,9 @@
 <app-beach-list-item
 *ngFor="let beach of beaches"
-    [url]="['/services/beach', beach.id]"
+    [url]="['/services/beach', beach._id]"
     [name]="beach.name"
-    [imageUrl]="beach.imageUrl"
-    [hours]="beach.hours"
-    [location]="beach.location.name"
-    [distance]="beach.distance"
+    [imageUrl]="beach.imgURL"
+    [schedule]="beach.schedule"
+    location="Bocagrande"
+    [distance]="2"
 ></app-beach-list-item>

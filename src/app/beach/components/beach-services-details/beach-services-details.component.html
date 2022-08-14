@@ -1,6 +1,1 @@
-<p>Carpas: $ {{tent}} COP - Sillas: $ {{chairs}} COP c/u</p>
-<p>Masajes: $ {{massage}} COP</p>
-<p>Trenzas: $ {{braids}} COP</p>
-<p>Jetsky: $ {{jetsky}} COP</p>
-<p>Gusano: $ {{worm}} COP</p>
-<p>Plato lancha $ {{boatDish}} COP</p>
+<p *ngFor="let service of services">{{service.name}} $ {{service.price}} COP - {{service.desc}}</p>
