@@ -5,9 +5,17 @@
 	gap: 6px;
 }
 
+.category-text {
+	display: none;
+}
+
 @media(min-width: 600px){
 	.wrapper {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.category-text {
+		display: block;
 	}
 }
