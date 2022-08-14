@@ -22,5 +22,5 @@ export interface Museum {
 	description: string;
 	prices: Price[];
 	schedule: Schedule[];
-	location: Location;
+	location: Location[];
 }

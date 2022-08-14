@@ -12,13 +12,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MuseumDetailsPageComponent } from './pages/museum-details-page/museum-details-page.component';
 import { MuseumHeaderDetailsComponent } from './components/museum-header-details/museum-header-details.component';
 import { MuseumPictureComponent } from './components/museum-picture/museum-picture.component';
-import { MuseumInfoLineComponent } from './components/museum-info-line/museum-info-line.component';
-import { MatDividerModule } from '@angular/material/divider';
-import { MuseumExhibitionsLineComponent } from './components/museum-exhibitions-line/museum-exhibitions-line.component';
-import { MuseumExhibitionsPageComponent } from './pages/museum-exhibitions-page/museum-exhibitions-page.component';
-import { MuseumExhibitionsListComponent } from './components/museum-exhibitions-list/museum-exhibitions-list.component';
 import { MuseumDetailsPricesComponent } from './components/museum-details-prices/museum-details-prices.component';
 import { MuseumDetailsSchedulesComponent } from './components/museum-details-schedules/museum-details-schedules.component';
+import { MapModule } from '../map/map.module';
+import { MuseumDetailsMapComponent } from './components/museum-details-map/museum-details-map.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +25,9 @@ import { MuseumDetailsSchedulesComponent } from './components/museum-details-sch
     MuseumDetailsPageComponent,
     MuseumHeaderDetailsComponent,
     MuseumPictureComponent,
-    MuseumInfoLineComponent,
-    MuseumExhibitionsLineComponent,
-    MuseumExhibitionsPageComponent,
-    MuseumExhibitionsListComponent,
     MuseumDetailsPricesComponent,
-    MuseumDetailsSchedulesComponent
+    MuseumDetailsSchedulesComponent,
+    MuseumDetailsMapComponent
   ],
   imports: [
     CommonModule,
@@ -43,7 +37,7 @@ import { MuseumDetailsSchedulesComponent } from './components/museum-details-sch
     MatCardModule,
     MatRippleModule,
     MatButtonModule,
-    MatDividerModule
+    MapModule
   ]
 })
 export class MuseumModule { }

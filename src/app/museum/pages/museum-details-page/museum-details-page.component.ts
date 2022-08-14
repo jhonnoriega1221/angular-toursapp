@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MuseumService } from '../../services/museum.service';
-import { ExhibitionService } from '../../services/exhibition.service';
 import { ActivatedRoute } from '@angular/router';
 import { Museum } from '../../models/museum';
-import { Exhibition } from '../../models/exhibition';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -18,25 +16,20 @@ export class MuseumDetailsPageComponent implements OnInit {
   public isLoading: boolean = true;
   public isError: boolean = false;
 
+
   public museum: Museum = {
     _id: '',
     name: '',
     imgURL: '',
     prices:[],
     description:'',
-    location:{
-      lat:0,
-      lon:0
-    },
+    location:[],
     schedule: []
   }
 
   public separatorTitles:any[] = []
 
-  public exhibitions:Exhibition[] = [];
-
-
-  constructor(private translate:TranslateService, private museumService: MuseumService, private exhibitionService:ExhibitionService, private activatedRoute: ActivatedRoute) {}
+  constructor(private translate:TranslateService, private museumService: MuseumService, private activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
@@ -56,7 +49,7 @@ export class MuseumDetailsPageComponent implements OnInit {
     this.isLoading = true;
     this.museumService.getMuseum(this.museumId)
       .subscribe({
-        next: (v) => this.museum = v,
+        next: (v) => {this.museum = v;},
         error: (e) => {
           this.isError = true;
           this.isLoading = false;

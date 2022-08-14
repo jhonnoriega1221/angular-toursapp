@@ -1,14 +1,19 @@
-.info{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 12px;
+.time-title {
+    color: gray;
+    margin:0;
 }
 
-.title{
-	margin:8px 0;
-	font-size: 12px;
+.time-text{
+    font-weight: 500;
+    color: var(--toursapp-primary-app);
+    margin-bottom: 6px;
+
 }
 
-p{
-	width: 100%;
+.time-text::last-child{
+    margin-bottom: 0;
+}
+
+.closed{
+    color: red;
 }

@@ -1,7 +1,6 @@
-<p class="title">{{title}}</p>
 <div>
-    <p *ngFor="let schedule of schedules">
-        {{schedule.day}}: <span *ngIf="!schedule.closed"> {{schedule.time_from}} - {{schedule.time_to}} </span>  <span *ngIf="schedule.closed"> Cerrado </span> 
-    </p>
+    <div *ngFor="let schedule of schedules">
+        <p class="time-title mat-caption">{{schedule.day}}</p>
+        <p class="time-text" *ngIf="!schedule.closed"> {{schedule.time_from}} - {{schedule.time_to}} </p>  <p class="time-text closed" *ngIf="schedule.closed"> Cerrado </p> 
+    </div>
 </div>
-<mat-divider></mat-divider>
