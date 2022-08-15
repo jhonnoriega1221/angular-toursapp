@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DetailsPriceTextComponent implements OnInit {
 
-  @Input() icon:string = '';
+  @Input() icon:string = 'attach_money';
   @Input() title:string = '';
   @Input() text:string | number = '';
 
