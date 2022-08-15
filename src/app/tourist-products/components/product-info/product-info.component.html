@@ -1,10 +1,8 @@
 <div class="product-info-container">
 	<div class="product-data">
-		<p class="product-name">{{fakeProductTitle}}</p>
+		<p class="product-name">{{name}}</p>
 		<div class="prices-list">
-			<app-details-price-text icon="store" title="Precio en tiendas" text="3.200"></app-details-price-text>
-			<app-details-price-text icon="person" title="Precio ofrecido a turistas" text="4.600"></app-details-price-text>
-			<app-details-price-text icon="group" title="Otros turistas han pagado" text="4.200"></app-details-price-text>
+			<app-details-price-text *ngFor="let price of prices" icon="store" [title]="price.name" [text]="price.price"></app-details-price-text>
 		</div>
 	</div>
 </div>

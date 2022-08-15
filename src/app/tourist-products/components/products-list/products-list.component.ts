@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { FakeProduct } from '../../models/fake-product';
+import { Product } from '../../models/product';
 
 @Component({
     selector: 'app-products-list',
@@ -8,7 +8,7 @@ import { FakeProduct } from '../../models/fake-product';
 })
 export class ProductsListComponent implements OnInit {
 
-    @Input() fakeProducts:FakeProduct[] = [];
+    @Input() products:Product[] = [];
 
     constructor() { }
 

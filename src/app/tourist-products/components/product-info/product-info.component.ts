@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Price } from '../../models/product';
 
 @Component({
   selector: 'app-product-info',
@@ -7,8 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProductInfoComponent implements OnInit {
 
-  @Input() fakeProductTitle:string = '';
-  @Input() fakeProductPrice:number = 0;
+  @Input() name:string = '';
+  @Input() prices:Price[] = [];
 
   constructor( ) { }
 

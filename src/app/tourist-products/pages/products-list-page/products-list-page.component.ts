@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FakeProduct } from '../../models/fake-product';
-import { FakeStoreService } from '../../services/fake-store.service';
+import { Product } from '../../models/product';
+import { TouristProductService } from '../../services/tourist-product.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -12,24 +12,24 @@ export class ProductsListPageComponent implements OnInit {
 
   public pageTitle:string = '';
 
-  public fakeProducts:FakeProduct[] = [];
+  public touristProducts:Product[] = [];
   public isLoading:boolean = true;
   public isLoadingMore:boolean = false;
   public isError:boolean = false;
 
-    constructor(public fakeStoreService:FakeStoreService, private translate:TranslateService) { }
+    constructor(public touristProductService:TouristProductService, private translate:TranslateService) { }
 
     ngOnInit(): void {
-        this.getFakeProducts(10);
+        this.getProducts();
         this.translatePage();
     }
 
-    public getFakeProducts(limit:Number): void {
+    public getProducts(): void {
       this.isError = false;
-      this.fakeStoreService.getProducts(limit)
+      this.touristProductService.getProducts()
       .subscribe(
         {
-          next: (v) => this.fakeProducts = v,
+          next: (v) => this.touristProducts = v,
           error: (e) => { 
             this.isError = true; 
             console.error(e)
@@ -37,20 +37,6 @@ export class ProductsListPageComponent implements OnInit {
           complete: () => this.isLoading = false
         }
       );
-    }
-
-    public loadMoreFakeProducts() {
-      this.isLoadingMore = true;
-      this.fakeStoreService.getProducts(this.fakeProducts.length + 5)
-      .subscribe(
-        {
-          next: (v) => this.fakeProducts = v,
-          error: (e) => { 
-            console.error(e)
-          },
-          complete: () => this.isLoadingMore = false
-        }
-      )
     }
 
     private translatePage():void{

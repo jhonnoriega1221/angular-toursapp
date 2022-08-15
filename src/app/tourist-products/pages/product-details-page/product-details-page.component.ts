@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FakeStoreService } from '../../services/fake-store.service';
-import { FakeProduct } from '../../models/fake-product';
+import { Product } from '../../models/product';
+import { TouristProductService } from '../../services/tourist-product.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -10,24 +10,18 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductDetailsPageComponent implements OnInit {
 
-    private productId:number = 0;
+    private productId:string = '';
     public isLoading:boolean = true;
     public isError:boolean = false;
 
-    public fakeProduct:FakeProduct = {
-    id: 0,
-    title: '',
-    price: 0,
-    description: '',
-    category: '',
-    image: '',
-    rating: {
-      rate: 0,
-      count: 0
-    }
-  };
+  public product:Product = {
+    _id: '',
+    name: '',
+    imageURL: '',
+    prices: []
+  }
 
-  constructor( private fakeStoreService: FakeStoreService, private activatedRoute: ActivatedRoute ) { }
+  constructor( private touristProductService: TouristProductService, private activatedRoute: ActivatedRoute ) { }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe( params => {
@@ -38,10 +32,10 @@ export class ProductDetailsPageComponent implements OnInit {
 
   public getProductInfo(): void {
       this.isError = false;
-      this.fakeStoreService.getProduct(this.productId)
+      this.touristProductService.getProduct(this.productId)
       .subscribe(
         {
-          next: (v) => this.fakeProduct = v,
+          next: (v) => this.product = v,
           error: (e) => { 
             this.isError = true; 
             console.error(e)

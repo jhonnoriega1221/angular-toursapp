@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProductImageComponent implements OnInit {
 
-  @Input() fakeProductImage = '';
+  @Input() imageURL = '';
 
   constructor() { }
 

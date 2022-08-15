@@ -1,8 +1,8 @@
 <app-back-title-button viewTitle="Detalles del producto"></app-back-title-button>
 <div *ngIf="!isError" class="product-image-details">
-	<app-product-image class="image-side" *skeleton="isLoading; height: '300px'; width: '100%';" [fakeProductImage]="fakeProduct.image"></app-product-image>
+	<app-product-image class="image-side" *skeleton="isLoading; height: '300px'; width: '100%';" [imageURL]="product.imageURL"></app-product-image>
 	<div class="details-side">
-		<app-product-info *skeleton="isLoading; height: '20px'; repeat: 2; width: '100%';" [fakeProductTitle]="fakeProduct.title" [fakeProductPrice]="fakeProduct.price" class="page-component"></app-product-info>
+		<app-product-info *skeleton="isLoading; height: '20px'; repeat: 2; width: '100%';" [name]="product.name" [prices]="product.prices" class="page-component"></app-product-info>
 		<app-product-alt-prices-button *skeleton="isLoading; height: '40px'; width: '100%';" class="page-component"></app-product-alt-prices-button>	
 	</div>
 </div>
