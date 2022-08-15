@@ -12,7 +12,7 @@ import { TourDetailsPriceComponent } from './components/tour-details-price/tour-
 import { TourDetailsPictureComponent } from './components/tour-details-picture/tour-details-picture.component';
 import { TourDetailsPlacesComponent } from './components/tour-details-places/tour-details-places.component';
 import { TourDetailsRouteComponent } from './components/tour-details-route/tour-details-route.component';
-
+import { MapModule } from '../map/map.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import { TourDetailsRouteComponent } from './components/tour-details-route/tour-
     CommonModule,
     TourPriceRoutingModule,
     SharedModule,
-    MatRippleModule
+    MatRippleModule,
+    MapModule
   ]
 })
 export class TourPriceModule { }

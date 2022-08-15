@@ -1,8 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ToursService } from '../../services/tours.service';
+import { RouteService } from '../../services/route.service';
 import { Tours } from '../../models/tours';
+import { Route } from '../../models/route';
+import * as geojson from 'geojson';
+
+
 import { TranslateService } from '@ngx-translate/core';
+import { combineLatest, forkJoin, switchMap } from 'rxjs';
 
 @Component({
   selector: 'app-tour-details-page',
@@ -30,8 +36,13 @@ export class TourDetailsPageComponent implements OnInit {
     route_id: '',
   }
 
+  public route:geojson.FeatureCollection = {
+    features: [],
+    type:'FeatureCollection'
+  };
 
-  constructor(private tourService: ToursService, private activatedRoute: ActivatedRoute, private translate:TranslateService) { }
+
+  constructor(private tourService: ToursService, private routeService:RouteService, private activatedRoute: ActivatedRoute, private translate:TranslateService) { }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
@@ -45,16 +56,21 @@ export class TourDetailsPageComponent implements OnInit {
 
     this.isError = false;
     this.isLoading = true;
-    this.tourService.getTour(this.tourId)
-      .subscribe({
-        next: (v) => this.tour = v,
-        error: (e) => {
-          this.isError = true;
-          this.isLoading = false;
-          console.error(e);
-        },
-        complete: () => this.isLoading = false
-      });
+    
+    this.tourService.getTour(this.tourId).pipe(
+      switchMap(res => (
+        this.tour = res,
+        this.routeService.getRoute(res.route_id)
+      ))
+    ).subscribe({
+      next: (v) => this.route = v,
+      error: (e) => {
+        this.isError = true;
+        this.isLoading = false;
+        console.error(e);
+      },
+      complete: () => this.isLoading = false
+    })
 
   }
   
