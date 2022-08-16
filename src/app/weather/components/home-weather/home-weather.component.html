@@ -3,23 +3,50 @@
     Cartagena de indias
 </span>
 <div class="weather-info">
-    <mat-icon>sunny</mat-icon>
+    <mat-icon class="weather-main-icon">sunny</mat-icon>
     <div class="weather-right">
-    <p class="weather">
-        35°
-    </p>
-    <p>soleado</p>
+        <p class="weather-main-text">
+            35°
+        </p>
+        <p class="weather-status">soleado</p>
+    </div>
 </div>
 <ul class="weather-week-list">
     <li class="weather-day-line">
         <div class="left-side">
-            <p>Mañana</p> <p>Jue 12</p>
+            <p>Mañana</p>
+            <p class="date">Jue 12</p>
 
         </div>
         <div class="right-side">
-            <mat-icon>cloud</mat-icon> <p>12°</p>
+            <mat-icon>cloud</mat-icon>
+            <p>12°</p>
+
+        </div>
+    </li>
+    <li class="weather-day-line">
+        <div class="left-side">
+            <p>Mañana</p>
+            <p class="date">Jue 12</p>
+
+        </div>
+        <div class="right-side">
+            <mat-icon>cloud</mat-icon>
+            <p>12°</p>
+
+        </div>
+    </li>
+    <li class="weather-day-line">
+        <div class="left-side">
+            <p>Mañana</p>
+            <p class="date">Jue 12</p>
+
+        </div>
+        <div class="right-side">
+            <mat-icon>cloud</mat-icon>
+            <p>12°</p>
 
         </div>
     </li>
 </ul>
-</div>
+<p class="updated-at-text mat-small" [@showUpdateDate]=updateDateState>Actualizado el 23/23/23</p>
