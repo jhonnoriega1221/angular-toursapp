@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { trigger, style, animate, transition, state } from '@angular/animations';
 
 
+
 @Component({
   selector: 'app-home-weather',
   templateUrl: './home-weather.component.html',
@@ -17,14 +18,12 @@ import { trigger, style, animate, transition, state } from '@angular/animations'
 })
 export class HomeWeatherComponent implements OnInit {
 
-  public updateDateState: string = 'invisible';
+  public updateDateState: string = 'visible';
 
 
   constructor() { }
 
   ngOnInit(): void {
-    this.updateDateState = 'visible';
-
   }
 
 }
