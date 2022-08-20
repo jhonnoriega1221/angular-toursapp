@@ -44,11 +44,10 @@
     padding: 0;
     margin: 0 0 12px 0;
     
-
     .weather-day-line{
         display: flex;
         justify-content: space-between;
-        align-items: end;
+        align-items: flex-end;
         margin: 2px 0;
     
         .left-side, .right-side{
@@ -61,7 +60,7 @@
             }
             display: inherit;
             gap: 6px;
-            align-items: end;
+            align-items: flex-end;
         }
     }
 }
