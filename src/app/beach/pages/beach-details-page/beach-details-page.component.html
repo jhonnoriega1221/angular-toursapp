@@ -1,25 +1,25 @@
 <app-back-title-button viewTitle="Informacion de la playa"></app-back-title-button>
 <div *ngIf="!isError" class="wrapper">
     <div class="top-info">
-        <app-beach-image-details class="image-side" *skeleton="isLoading; height: '320px'; repeat: 1; width: '100%';"
+        <app-beach-image-details class="image-side" *skeleton="isLoading; height: '300px'; width: '100%';"
             [imageUrl]="beach.imgURL"></app-beach-image-details>
         <div class="details-side">
-            <app-beach-top-details *skeleton="isLoading; height: '35px'; repeat: 1; width: '100%';" [name]="beach.name">
+            <app-beach-top-details *skeleton="isLoading; height: '20px'; width: '100%';" [name]="beach.name">
             </app-beach-top-details>
-            <app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';"
+            <app-details-separator *skeleton="isLoading; height: '20px'; width: '60px';"
                 [title]="separatorTexts[0].text"></app-details-separator>
-            <app-beach-schedule-details *skeleton="isLoading; height: '20px'; repeat: 1; width: '150px';"
+            <app-beach-schedule-details *skeleton="isLoading; height: '50px';width: '200px';"
                 [schedule]="beach.schedule[0]"></app-beach-schedule-details>
-            <app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';"
+            <app-details-separator *skeleton="isLoading; height: '20px'; width: '60px';"
                 [title]="separatorTexts[1].text"></app-details-separator>
-            <app-beach-services-details *skeleton="isLoading; height: '20px'; repeat: 6; width: '190px';"
+            <app-beach-services-details *skeleton="isLoading; height: '95px'; repeat: 3; width: '100%';"
                 [services]="beach.services"></app-beach-services-details>
         </div>
     </div>
     <div class="bottom-info">
         <app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';"
             [title]="separatorTexts[2].text"></app-details-separator>
-        <app-beach-location-details *skeleton="isLoading; height: '190px'; repeat: 1; width: '60px';" 
+        <app-beach-location-details *skeleton="isLoading; height: '300px'; repeat: 1; width: '100%';" 
             [lat]="beach.location[0].lat" [lon]="beach.location[0].lon"></app-beach-location-details>
 
     </div>

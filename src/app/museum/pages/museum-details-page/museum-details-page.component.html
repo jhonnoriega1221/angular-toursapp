@@ -1,18 +1,18 @@
 <app-back-title-button [viewTitle]="pageTitle"></app-back-title-button>
 <div *ngIf="!isError" class="wrapper">
 	<div class="top-info">
-		<app-museum-picture class="image-side" *skeleton="isLoading; height: '200px'; repeat: 1; width: '100%';" [imageUrl]=museum.imgURL></app-museum-picture>
+		<app-museum-picture class="image-side" *skeleton="isLoading; height: '225px'; width: '100%';" [imageUrl]=museum.imgURL></app-museum-picture>
 		<div class="details-side">
-			<app-museum-header-details *skeleton="isLoading; height: ''; repeat: 1; width: '100%';" [name]=museum.name [rate]="0" location="Centro" [distance]="12" [description]=museum.description></app-museum-header-details>
-			<app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';" [title]="separatorTitles[0].text"></app-details-separator>
-			<app-museum-details-prices *skeleton="isLoading; height: '60px'; repeat: 1; width: '100%';" [prices]=museum.prices ></app-museum-details-prices>
-			<app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';" [title]="separatorTitles[1].text"></app-details-separator>
-			<app-museum-details-schedules *skeleton="isLoading; height: '60px'; repeat: 1; width: '100%';" [schedules]=museum.schedule></app-museum-details-schedules>
+			<app-museum-header-details *skeleton="isLoading; height: '100px'; width: '100%';" [name]=museum.name [rate]="0" location="Centro" [distance]="12" [description]=museum.description></app-museum-header-details>
+			<app-details-separator *skeleton="isLoading; height: '20px'; width: '60px';" [title]="separatorTitles[0].text"></app-details-separator>
+			<app-museum-details-prices *skeleton="isLoading; height: '60px'; repeat: 1; width: '200px';" [prices]=museum.prices ></app-museum-details-prices>
+			<app-details-separator *skeleton="isLoading; height: '20px'; width: '60px';" [title]="separatorTitles[1].text"></app-details-separator>
+			<app-museum-details-schedules *skeleton="isLoading; height: '60px'; repeat: 2; width: '180px';" [schedules]=museum.schedule></app-museum-details-schedules>
 		</div>
 	</div>
 	<div class="bottom-info">
 		<app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';" title="Ubicación"></app-details-separator>
-		<app-museum-details-map *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';" [lat]="museum.location[0].lat" [lon]="museum.location[0].lon"></app-museum-details-map>
+		<app-museum-details-map *skeleton="isLoading; height: '300px'; repeat: 1; width: '100%';" [lat]="museum.location[0].lat" [lon]="museum.location[0].lon"></app-museum-details-map>
 	</div>
 </div>
 <app-error-message (reload)="getMuseumData()" *ngIf="isError"></app-error-message>

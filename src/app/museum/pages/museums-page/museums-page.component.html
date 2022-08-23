@@ -4,7 +4,7 @@
 		<app-filter-buttons-group></app-filter-buttons-group>
 	</div>
 	<div class="museums-list">
-		<app-museum-list class="museums-list" *skeleton="isLoading; height: '104px'; repeat: 10; width: '100%';" [museums]=museums></app-museum-list>
+		<app-museum-list class="museums-list" *skeleton="isLoading; height: '90px'; repeat: 8; width: '100%';" [museums]=museums></app-museum-list>
 	</div>
 </div>
 <app-error-message (reload)="getMuseums()" *ngIf="isError"></app-error-message>

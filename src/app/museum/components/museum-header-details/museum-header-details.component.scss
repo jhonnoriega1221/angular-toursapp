@@ -18,11 +18,13 @@
 	.museum-rate {
 		width: 112px;
 		margin-top: 4px;
+		display: none;
 	}
 }
 
 .museum-location, .museum-distance{
 	font-size: 12px;
+	display: none;
 }
 
 .museum-description {
