@@ -16,7 +16,7 @@
 		<app-home-card-body [homeCardTitle]=homeWidgetsTitle[0].text class="app-home-card">
 			<app-home-currency-exchange homeCardContent></app-home-currency-exchange>
 		</app-home-card-body>
-		<app-home-card-body homeCardTitle="Clima" class="app-home-card">
+		<app-home-card-body *ngIf="false" homeCardTitle="Clima" class="app-home-card">
 			<app-home-weather homeCardContent></app-home-weather>
 		</app-home-card-body>
 	</div>
