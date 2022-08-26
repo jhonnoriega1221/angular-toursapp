@@ -24,7 +24,7 @@ export class ServicesCategoriesPageComponent implements OnInit {
     { text: 'TRANSPORT_BUTTON', background: '../../../../assets/transport_button_bg.jpg', icon: 'local_taxi', route: '/services/taxi-prices', color:'#c49000' },
     { text: 'MUSEUM_BUTTON', background: '../../../../assets/museum_button_bg.jpg', icon: 'museum', route: '/services/museum', color:'#6a0080' },
     { text: 'BEACH_BUTTON', background: '../../../../assets/beach_button_bg.jpg', icon: 'beach_access', route: '/services/beach', color:'#0077c2' },
-    { text: 'RESTAURANT_BUTTON', background: '../../../../assets/restaurant_button_bg.jpg', icon: 'restaurant', route: '/services/transport', color:'#8c7b75' },
+    { text: 'RESTAURANT_BUTTON', background: '../../../../assets/restaurant_button_bg.jpg', icon: 'restaurant', route: '/services/food', color:'#8c7b75' },
     { text: 'TRAVELS_RIDES_BUTTON', background: '../../../../assets/tour_button_bg.jpg', icon: 'route', route: '/services/tour-prices', color:'#004c40' }
   ];
 

@@ -13,6 +13,7 @@ const routes: Routes = [
             { path: 'services/taxi-prices', loadChildren: () => import('./taxi-price/taxi-price.module').then(m => m.TaxiPriceModule) },
             { path: 'services/museum', loadChildren: () => import('./museum/museum.module').then(m => m.MuseumModule) },
             { path: 'services/tour-prices', loadChildren: () => import('./tour-price/tour-price.module').then(m => m.TourPriceModule) },
+            { path: 'services/food', loadChildren: () => import('./food/food.module').then(m => m.FoodModule) },
             { path: 'services/beach', loadChildren: () => import('./beach/beach.module').then(m => m.BeachModule) }
         ],
         canActivateChild: [FirstTimeGuard]
