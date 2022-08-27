@@ -17,8 +17,18 @@
       }
     },
     {
+      "name": "translate",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/i18n/*.json"
+        ]
+      }
+    },
+    {
       "name": "assets",
-      "installMode": "lazy",
+      "installMode": "prefetch",
       "updateMode": "prefetch",
       "resources": {
         "files": [
@@ -27,24 +37,26 @@
         ]
       }
     }
+
   ],
   "dataGroups": [
     {
-      "name": "museums-data",
+      "name": "icons",
       "urls": [
-        "http://localhost:3000/museum"
+        "https://fonts.googleapis.com/**",
+        "https://fonts.gstatic.com/**"
       ],
       "cacheConfig": {
-        "strategy": "freshness",
-        "maxSize": 1,
+        "strategy": "performance",
+        "maxSize": 100,
         "maxAge": "50m",
         "timeout": "5s"
       }
     },
     {
-      "name": "museum-data",
+      "name": "museums-data",
       "urls": [
-        "http://localhost:3000/museum/**"
+        "http://localhost:3000/api/museums"
       ],
       "cacheConfig": {
         "strategy": "freshness",

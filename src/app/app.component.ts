@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Renderer2 } from '@angular/core';
+import { fromEvent, Observable, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,10 @@ import { Renderer2 } from '@angular/core';
 })
 export class AppComponent {
   title = 'TourSupp';
+  
+  offlineEvent?: Observable<Event>;
+  onlineEvent?: Observable<Event>;
+  subscriptions: Subscription[] = [];
 
   constructor(
     public translate: TranslateService,
@@ -18,6 +23,7 @@ export class AppComponent {
     this.configDefaultLanguage(localStorage.getItem('app_language'));
     this.configDefaultTheme(localStorage.getItem('app_theme'));
     this.setFirstTime(localStorage.getItem('ft'));
+    this.handleAppConnectivityChanges();
   }
 
   private setFirstTime(firstTime: string | null){
@@ -55,5 +61,20 @@ export class AppComponent {
     } else {
       setDefaultTheme(appTheme === 'dark');
     }
+  }
+
+  private handleAppConnectivityChanges(): void {
+    this.onlineEvent = fromEvent(window, 'online');
+    this.offlineEvent = fromEvent(window, 'offline');
+
+    this.subscriptions.push(this.onlineEvent.subscribe(e => {
+      // handle online mode
+      console.log('Online...');
+    }));
+
+    this.subscriptions.push(this.offlineEvent.subscribe(e => {
+      // handle offline mode
+      console.log('Offline...');
+    }));
   }
 }
