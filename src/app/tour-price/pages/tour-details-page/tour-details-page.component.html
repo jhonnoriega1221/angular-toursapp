@@ -1,7 +1,7 @@
 <app-back-title-button [viewTitle]="pageTitle"></app-back-title-button>
 <div *ngIf="!isError" class="wrapper">
     <div class="top-info">
-        <app-tour-details-picture class="image-side" *skeleton="isLoading; height: '260px'; repeat: 1; width: '100%';" imageUrl="route" ></app-tour-details-picture>
+        <app-tour-details-picture class="image-side" *skeleton="isLoading; height: '260px'; repeat: 1; width: '100%';" [imageUrl]="tour.imgURL" ></app-tour-details-picture>
         <div class="details-side">
             <app-tour-details-heading *skeleton="isLoading; height: '190px'; repeat: 1; width: '100%';" [name]="tour.name" [type]="tour.type" [description]="tour.description"></app-tour-details-heading>
             <app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';" [title]="separatorText[0].text"></app-details-separator>

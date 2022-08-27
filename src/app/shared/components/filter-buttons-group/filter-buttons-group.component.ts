@@ -13,9 +13,7 @@ interface filterButton {
 export class FilterButtonsGroupComponent implements OnInit {
 
   public filterButtons:filterButton[] = [
-    {text: 'Cercanos', active: true},
-    {text: 'Destacados', active: false},
-    {text: 'Populares', active: false}
+    {text: 'Todos', active: true}
   ]
 
   constructor() { }

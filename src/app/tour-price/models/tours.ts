@@ -7,6 +7,7 @@ export interface Tours {
     duration:    Duration;
     places:      Place[];
     route_id:    string;
+    imgURL: string;
 }
 
 export interface Duration {
