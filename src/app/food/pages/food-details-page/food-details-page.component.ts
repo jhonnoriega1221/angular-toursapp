@@ -23,13 +23,16 @@ export class FoodDetailsPageComponent implements OnInit {
     prices:[]
   }
 
-  constructor(private foodService: FoodService, private activatedRoute: ActivatedRoute) {}
+  public separatorTitles:any[] = []
+
+  constructor(private foodService: FoodService, private activatedRoute: ActivatedRoute, private translate:TranslateService) {}
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
       this.foodId = params['id'];
       this.getFood();
     });
+    this.translatePage();
   }
 
   public getFood(): void {
@@ -47,6 +50,16 @@ export class FoodDetailsPageComponent implements OnInit {
         complete: () => this.isLoading = false
       });
       
+  }
+
+  private translatePage():void{
+    this.translate.get("TOURIST_SERVICES.FOOD.DETAILS")
+    .subscribe( {
+      next: (v) => {
+        this.pageTitle = v.TITLE;
+        this.separatorTitles.push( {text: v.PRICES_SEPARATOR_TEXT});
+      }
+    })
   }
 
 }

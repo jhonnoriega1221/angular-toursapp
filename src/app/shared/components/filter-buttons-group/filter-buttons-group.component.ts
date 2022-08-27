@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 interface filterButton {
   text:string;
@@ -16,9 +17,19 @@ export class FilterButtonsGroupComponent implements OnInit {
     {text: 'Todos', active: true}
   ]
 
-  constructor() { }
+  constructor(private translate:TranslateService) { }
 
   ngOnInit(): void {
+    this.translateComponent();
+  }
+
+  private translateComponent(){
+    this.translate.get("FILTER")
+    .subscribe({
+      next: (v) => {
+        this.filterButtons[0].text = v.CATEGORIES_LIST.ALL
+      }
+    })
   }
 
 }

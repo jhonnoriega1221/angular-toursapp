@@ -1,14 +1,14 @@
 
 <div class="setting-container">
     <div>
-      <p class="setting-title">Tema</p>
-      <p class="setting-description">Elige tu tema preferido</p>
+      <p class="setting-title">{{"SETTINGS.APPEARANCE.THEME_OPTION_TITLE" | translate}}</p>
+      <p class="setting-description">{{"SETTINGS.APPEARANCE.THEME_OPTION_SUBTITLE" | translate}}</p>
     </div>
     <mat-form-field appearance="outline">
         <mat-select #selTheme (selectionChange)="changeTheme(selTheme.value)" [value]=appTheme>
-          <mat-option value="auto">Sistema</mat-option>
-          <mat-option value="light">Claro</mat-option>
-          <mat-option value="dark">Oscuro</mat-option>
+          <mat-option value="auto">{{"SETTINGS.APPEARANCE.THEMES_LIST.AUTO" | translate}}</mat-option>
+          <mat-option value="light">{{"SETTINGS.APPEARANCE.THEMES_LIST.LIGHT" | translate}}</mat-option>
+          <mat-option value="dark">{{"SETTINGS.APPEARANCE.THEMES_LIST.DARK" | translate}}</mat-option>
         </mat-select>
       </mat-form-field>
   </div>

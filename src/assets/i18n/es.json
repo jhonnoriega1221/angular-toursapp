@@ -49,6 +49,16 @@
         "SPANISH": "Español"
       }
     },
+    "APPEARANCE":{
+      "TITLE": "Apariencia",
+      "THEME_OPTION_TITLE": "Tema",
+      "THEME_OPTION_SUBTITLE": "Elige tu tema preferido",
+      "THEMES_LIST": {
+        "AUTO": "Sistema",
+        "LIGHT": "Claro",
+        "DARK": "Oscuro"
+      }
+    },
     "ABOUT": {
       "TITLE": "Acerca de",
       "CREATED_BY": "Creado por:"
@@ -92,7 +102,8 @@
       "DETAILS": {
         "TITLE": "Información del museo",
         "SCHEDULE_SEPARATOR_TEXT": "Horario",
-        "PRICES_SEPARATOR_TEXT": "Tickets",
+        "PRICES_SEPARATOR_TEXT": "Precios",
+        "LOCATION_SEPARATOR_TEXT": "Ubicación",
         "EXHIBITIONS_SEPARATOR_TEXT": "Exhibiciones",
         "NO_EXHIBITIONS_TEXT": "Este museo no tiene exhibiciones"
       },
@@ -130,11 +141,26 @@
         "ROUTE_SEPARATOR_TEXT": "Recorrido",
         "PLACES_SEPARATOR_TEXT": "Lugares"
       }
+    },
+    "FOOD":{
+      "LIST": {
+        "TITLE": "Comidas"
+      },
+      "DETAILS": {
+        "TITLE": "Detalles de la comida",
+        "PRICES_SEPARATOR_TEXT": "Precio"
+      }
     }
   },
   "NAVBAR": {
     "HOME": "Inicio",
     "MAP": "Mapa"
+  },
+  "FILTER":{
+    "CATEGORIES_TITLE": "Categorías",
+    "CATEGORIES_LIST":{
+      "ALL": "Todos"
+    }
   },
   "MISC": {
     "LOAD_MORE_ACTION_TEXT": "Cargar más",
