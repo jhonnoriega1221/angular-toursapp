@@ -6,7 +6,7 @@
 
 .title-and-rating{
 	display: flex;
-	.museum-name{
+	.food-name{
 		width: 100%;
 		max-height: 64px;
 		text-overflow: ellipsis;
@@ -15,18 +15,18 @@
 		line-height: 25px
 	}
 
-	.museum-rate {
+	.food-rate {
 		width: 112px;
 		margin-top: 4px;
 		display: none;
 	}
 }
 
-.museum-location, .museum-distance{
+.food-location, .food-distance{
 	font-size: 12px;
 	display: none;
 }
 
-.museum-description {
+.food-description {
 	margin: 6px 0;
 }

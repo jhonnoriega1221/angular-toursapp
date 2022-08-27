@@ -1,4 +1,14 @@
 <app-back-title-button viewTitle="Detalles de la comida"></app-back-title-button>
-<app-food-details-picture></app-food-details-picture>
-<app-food-top-details name="Mojarra negra"></app-food-top-details>
-<app-details-price-text title="Precio" text="2000"></app-details-price-text>
+<div *ngIf="!isError" class="wrapper">
+	<div class="top-info">
+		<app-food-details-picture class="image-side" *skeleton="isLoading; height: '225px'; width: '100%';" [imageUrl]=food.imgURL></app-food-details-picture>
+		<div class="details-side">
+			<app-food-top-details *skeleton="isLoading; height: '100px'; width: '100%';" [name]=food.name></app-food-top-details>
+			<app-details-separator *skeleton="isLoading; height: '20px'; width: '60px';" title="Precio"></app-details-separator>
+            <app-details-price-text *ngFor="let price of food.prices" [title]="price.name" [text]="price.amount"></app-details-price-text>
+		</div>
+	</div>
+	<div class="bottom-info">
+	</div>
+</div>
+<app-error-message (reload)="getFood()" *ngIf="isError"></app-error-message>

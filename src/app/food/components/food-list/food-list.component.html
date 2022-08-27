@@ -1,1 +1,7 @@
-<app-food-list-item></app-food-list-item>
+<app-food-list-item
+*ngFor="let food of foods"
+[url]="['/services/food', food._id]"
+[urlImage]="food.imgURL"
+[rowOneText]="food.name"
+[rowTwoText]="food.prices[0].amount"
+></app-food-list-item>

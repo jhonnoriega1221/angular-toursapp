@@ -1,0 +1,29 @@
+
+@media (min-width: 600px) {
+    .wrapper     {
+        max-width: 1150px;
+        margin: 0 auto;
+
+    }
+    .top-info {
+        display: flex;
+
+        gap: 24px;
+        justify-content: center;
+
+
+    }
+
+    .image-side {
+        min-width: 280px;
+        width: 500px;
+    }
+
+    .details-side {
+        min-width: 280px;
+        width: 600px;
+        max-width: 490px;
+        margin: 0 0 0 auto;
+    }
+
+}

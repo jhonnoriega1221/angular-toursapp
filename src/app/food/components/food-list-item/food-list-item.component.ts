@@ -7,11 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FoodListItemComponent implements OnInit {
 
-  @Input() itemUrl = ['',0];
+  @Input() url = ['',0];
   @Input() urlImage = '';
   @Input() rowOneText = '';
   @Input() rowTwoText = 0;
-  @Input() rowThreeText = 0;
 
   constructor() { }
 
