@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnDestroy } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, Input } from '@angular/core';
 import * as L from 'leaflet';
 import { MapService } from '../../services/map.service';
 
@@ -8,6 +8,8 @@ import { MapService } from '../../services/map.service';
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements AfterViewInit, OnDestroy {
+
+  @Input() isFullView:boolean = false;
 
   constructor(private mapService: MapService) {}
 

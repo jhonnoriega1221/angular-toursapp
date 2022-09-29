@@ -30,7 +30,6 @@ export class TaxiPricePageComponent implements OnInit {
   public destinationPlace = '';
 
   public setPlace(parameters: inputParameters) {
-    console.log('place: ', parameters);
     if (parameters.place === 'marker' || parameters.place === 'cancel') {
       this.getNeighborhood('none');
       this.isSelectMode = !this.isSelectMode;

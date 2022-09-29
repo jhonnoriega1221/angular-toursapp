@@ -28,7 +28,12 @@
 		<button mat-raised-button (click)="acceptPlace()" color="primary" [disabled]=isAcceptButtonDisabled>{{"MISC.ACCEPT_ACTION_TEXT" | translate}}</button>
 	</div>
 </div>
-<app-map *ngIf="isSelectMode || !isMobile" class="map-container"></app-map>
+<app-map *ngIf="isSelectMode" class="map-container" [isFullView]="true"></app-map>
+<div class="map-container-placeholder" *ngIf="!isSelectMode && !isMobile">
+	<img class="placeholder-map" src="../../../../assets/map_placeholder.jpg" alt="" >
+	<mat-icon class="placeholder-icon">lightbulb</mat-icon>
+	<p class="placeholder-text">Puedes elegir la opción "seleccionar un punto en el mapa" para ver los barrios en el mapa.</p>
+</div>
 <app-neighborhoods (selectNeigborhood)="getNeighborhood($event)" *ngIf="isSelectMode"></app-neighborhoods>
 <app-click-marker *ngIf="isSelectMode"></app-click-marker>
-<app-location-button *ngIf="isSelectMode || !isMobile" class="map-location-container"></app-location-button>
+<app-location-button *ngIf="isSelectMode" class="map-location-container"></app-location-button>
