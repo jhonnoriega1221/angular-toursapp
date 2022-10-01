@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, OnDestroy, EventEmitter, Output } from '@angular/core';
+import { Component, AfterViewInit, OnDestroy, EventEmitter, Output, Input } from '@angular/core';
 import * as L from 'leaflet';
 import { MapService } from '../../services/map.service';
 
@@ -10,6 +10,8 @@ import { MapService } from '../../services/map.service';
 export class NeighborhoodsComponent implements AfterViewInit, OnDestroy {
 
   @Output() selectNeigborhood: EventEmitter < any > = new EventEmitter();
+
+  @Input() latLon = { lat: '0', lon : '0'}
   private neighborhoodClickedName: string = '';
 
 
@@ -246,18 +248,20 @@ export class NeighborhoodsComponent implements AfterViewInit, OnDestroy {
   }
 
   private initNeighborhoods() {
+    //const latLng = L.latLng(Number.parseFloat(this.latLon.lat), Number.parseFloat(this.latLon.lon));
 
     this.neighborhoodsLayer.on('click', (e: L.LeafletMouseEvent) => {
       this.neighborhoodClickedName = e.sourceTarget.feature.properties.name;
     }).addTo(this.mapService.getMapInstance())
 
-    this.mapService.getMapInstance().on('click', () => {
+    this.mapService.getMapInstance().on('load', (evt:L.LeafletEvent) => {
       if (this.neighborhoodClickedName === '') {
         this.neighborhoodClickedName = 'none';
       }
       this.selectNeigborhood.emit(this.neighborhoodClickedName);
       this.neighborhoodClickedName = '';
     })
+
   }
 
 }

@@ -1,9 +1,14 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { iif } from 'rxjs';
 
 interface inputParameters {
   place: string,
-    isOrigin ? : boolean
+  isOrigin? : boolean,
+  latlon :{
+    lat:string,
+    lon:string
+  }
 }
 
 @Component({
@@ -25,15 +30,21 @@ export class TaxiPricePageComponent implements OnInit {
   public isCalculatingPrice:boolean = false;
   public locationName: string = '';
   public isOriginMarker ? : boolean;
+  public latLonSearch = {lat: '0', lon: '0'}
 
   public originPlace = '';
   public destinationPlace = '';
 
   public setPlace(parameters: inputParameters) {
-    if (parameters.place === 'marker' || parameters.place === 'cancel') {
+    if (parameters.place === 'marker' || parameters.place === 'cancel' || parameters.place === 'search') {
       this.getNeighborhood('none');
       this.isSelectMode = !this.isSelectMode;
       this.isOriginMarker = parameters.isOrigin;
+      
+      if(parameters.place === 'search') {
+        console.log(parameters.latlon)
+        this.latLonSearch = parameters.latlon;
+      }
     } else {
       if (parameters.isOrigin) {
         this.originPlace = parameters.place;
@@ -46,6 +57,11 @@ export class TaxiPricePageComponent implements OnInit {
         this.getTaxiPrice(this.originPlace, this.destinationPlace);
       }
     }
+  }
+
+  public cancelPlace(){
+    this.getNeighborhood('none');
+    this.isSelectMode = !this.isSelectMode;
   }
 
   //Detecta cada vez que se cambia el tamaño de la ventana
@@ -80,7 +96,8 @@ export class TaxiPricePageComponent implements OnInit {
     this.isAcceptButtonDisabled = true;
     this.setPlace({
       place: this.locationName,
-      isOrigin: this.isOriginMarker
+      isOrigin: this.isOriginMarker,
+      latlon: {lat: '', lon: ''}
     });
     this.isSelectMode = !this.isSelectMode;
   }

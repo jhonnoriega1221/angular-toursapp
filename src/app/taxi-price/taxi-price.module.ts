@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { MapModule } from '../map/map.module';
 import { FormsModule } from '@angular/forms';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 
 import { TaxiPriceRoutingModule } from './taxi-price-routing.module';
@@ -35,6 +36,7 @@ import { TaxiPriceCalculatorInputComponent } from './components/taxi-price-calcu
     MatDividerModule,
     MapModule,
     MatAutocompleteModule,
+    MatProgressSpinnerModule,
     FormsModule
   ]
 })

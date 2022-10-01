@@ -1,13 +1,24 @@
 
   <mat-form-field class="location-input" appearance="outline">
     <mat-label>{{locationInputLabel}}</mat-label>
-    <input id="locationSelected" [matAutocomplete]="autocompletePlaces" matInput [(ngModel)]="place">
+    <input id="locationSelected" [matAutocomplete]="autocompletePlaces" (input)="getSearchPlaces()" matInput [(ngModel)]="place">
   </mat-form-field>
 
 <mat-autocomplete (optionSelected)=changePlace() class="autocomplete" #autocompletePlaces="matAutocomplete">
+
   <mat-option value='marker'>
     <mat-icon>pin_drop</mat-icon>{{ "TOURIST_SERVICES.TRANSPORT.SELECT_PLACE_MAP_OPTION_TEXT"  | translate}}
   </mat-option>
   <mat-divider></mat-divider>
+
+  <mat-option *ngIf="isSearching">
+    <mat-spinner style="margin: 0 auto" diameter="30" color="primary"></mat-spinner>
+  </mat-option>
+
+  <mat-option *ngFor="let locationPlace of locationPlaces; let i = index" [value]='i'>
+      {{locationPlace.display_name}}
+  </mat-option>
+  
   <mat-option *ngFor="let place of places" [value]=place.name>{{place.name}}</mat-option>
+
 </mat-autocomplete>
