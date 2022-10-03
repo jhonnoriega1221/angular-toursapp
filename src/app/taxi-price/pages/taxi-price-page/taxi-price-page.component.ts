@@ -30,7 +30,7 @@ export class TaxiPricePageComponent implements OnInit {
   public isCalculatingPrice:boolean = false;
   public locationName: string = '';
   public isOriginMarker ? : boolean;
-  public latLonSearch = {lat: '0', lon: '0'}
+  public latLonSearch = {lat: '0', lon: '0'};
 
   public originPlace = '';
   public destinationPlace = '';
@@ -40,9 +40,8 @@ export class TaxiPricePageComponent implements OnInit {
       this.getNeighborhood('none');
       this.isSelectMode = !this.isSelectMode;
       this.isOriginMarker = parameters.isOrigin;
-      
+      this.latLonSearch = {lat: '0', lon: '0'}
       if(parameters.place === 'search') {
-        console.log(parameters.latlon)
         this.latLonSearch = parameters.latlon;
       }
     } else {

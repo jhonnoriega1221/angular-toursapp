@@ -65,12 +65,16 @@ export class LocationButtonComponent implements AfterViewInit, OnDestroy {
   }
 
   public focusLocation() {
+    const isMobile = window.innerWidth <= 600 ? true : false;
     if (this.locateError) {
       this.initLocate();
     } else if (!this.isMarkerSet) {
       console.log('obteniendo ubicación...')
     } else {
-      this.mapService.getMapInstance().flyTo(this.locationMarker.getLatLng())
+      if(isMobile)
+      this.mapService.getMapInstance().flyTo([this.locationMarker.getLatLng().lat-0.02, this.locationMarker.getLatLng().lng])
+      else
+      this.mapService.getMapInstance().flyTo([this.locationMarker.getLatLng().lat, this.locationMarker.getLatLng().lng+0.02])
     }
   }
 

@@ -13,7 +13,8 @@ export class PlaceService {
   constructor( private http:HttpClient ) { }
 
   public search(query:string|undefined):Observable <LocationPlace[]>{
-    return this.http.get<LocationPlace[]>(`${this.nominatimURL}search.php?format=jsonv2&q=${query}`);
+    const viewBox:number[] = [-75.57, 10.33,-75.44,10.46]
+    return this.http.get<LocationPlace[]>(`${this.nominatimURL}search.php?format=jsonv2&bounded=1&viewbox=${viewBox[0]},${viewBox[1]},${viewBox[2]},${viewBox[3]}&q=${query}`);
   }
 
 }

@@ -59,9 +59,19 @@ export class TaxiPriceCalculatorComponent implements OnInit {
 
   getSearchPlaces(): void {
     this.locationPlaces = [];
+    this.places = [];
     clearTimeout(this.searchPlaceInterval);
     if (this.place === '') {
       this.isSearching = false;
+      this.places = [
+        { name: 'Bocagrande' },
+        { name: 'Crespo' },
+        { name: 'Canapote' },
+        { name: 'Centro' },
+        { name: 'Castillogrande' },
+        { name: 'El laguito' },
+        { name: 'Pie de la popa' }
+      ];
     } else {
       this.isSearching = true;
       

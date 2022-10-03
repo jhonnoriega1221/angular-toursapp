@@ -1,6 +1,7 @@
 import { Component, AfterViewInit, OnDestroy, EventEmitter, Output, Input } from '@angular/core';
 import * as L from 'leaflet';
 import { MapService } from '../../services/map.service';
+import * as turf from '@turf/turf';
 
 @Component({
   selector: 'app-neighborhoods',
@@ -13,7 +14,6 @@ export class NeighborhoodsComponent implements AfterViewInit, OnDestroy {
 
   @Input() latLon = { lat: '0', lon : '0'}
   private neighborhoodClickedName: string = '';
-
 
   private myGeoJSON: any = {
     "type": "FeatureCollection",
@@ -248,20 +248,57 @@ export class NeighborhoodsComponent implements AfterViewInit, OnDestroy {
   }
 
   private initNeighborhoods() {
-    //const latLng = L.latLng(Number.parseFloat(this.latLon.lat), Number.parseFloat(this.latLon.lon));
 
     this.neighborhoodsLayer.on('click', (e: L.LeafletMouseEvent) => {
       this.neighborhoodClickedName = e.sourceTarget.feature.properties.name;
+
     }).addTo(this.mapService.getMapInstance())
 
-    this.mapService.getMapInstance().on('load', (evt:L.LeafletEvent) => {
+    this.mapService.getMapInstance().on('click', () => {
       if (this.neighborhoodClickedName === '') {
         this.neighborhoodClickedName = 'none';
       }
-      this.selectNeigborhood.emit(this.neighborhoodClickedName);
+        this.selectNeigborhood.emit(this.neighborhoodClickedName);
       this.neighborhoodClickedName = '';
     })
 
+    if(!(this.latLon.lon === '0' && this.latLon.lat === '0')){
+      this.getSearchLocationName();
+    }
+
+  }
+
+  private getSearchLocationName(){
+    const isMobile = window.innerWidth <= 600 ? true : false;
+    setTimeout(() => {
+      this.selectNeigborhood.emit(this.getPointInPolygonName(this.myGeoJSON.features));
+      if(isMobile)
+        this.mapService.getMapInstance().flyTo([Number.parseFloat(this.latLon.lat)-0.01, Number.parseFloat(this.latLon.lon)], 14);
+      else
+        this.mapService.getMapInstance().flyTo([Number.parseFloat(this.latLon.lat), Number.parseFloat(this.latLon.lon)+0.01], 14);
+
+      }, 100);
+  }
+
+  private getPointInPolygonName(polygonGroup:any):string{
+    const point = turf.point([Number.parseFloat(this.latLon.lon), Number.parseFloat(this.latLon.lat)])
+
+    let polygon:any[];
+    let turfPolygon:any;
+    let within:any;
+
+    for(let i = 0; i < polygonGroup.length; i++){
+      polygon = polygonGroup[i].geometry.coordinates;
+      turfPolygon = turf.polygon(polygon);
+      within = turf.within(point, turfPolygon);
+
+      if(within.features.length > 0){
+        const location:string = polygonGroup[i].properties.name;
+        return location;
+      }
+    }
+
+    return 'none';
   }
 
 }

@@ -9,7 +9,7 @@ import * as L from 'leaflet';
 })
 export class ClickMarkerComponent implements AfterViewInit, OnDestroy {
 
-  @Input() latlon = { lat : '0', lon : '0' };
+  @Input() latLon = { lat : '0', lon : '0' };
 
   private clickMarker = L.marker({ lat: 0, lng: 0 });
   
@@ -26,9 +26,11 @@ export class ClickMarkerComponent implements AfterViewInit, OnDestroy {
    }
 
    private initClickMarker(){
-    const latLng = L.latLng(Number.parseFloat(this.latlon.lat), Number.parseFloat(this.latlon.lon));
-    console.log(latLng);
-    this.clickMarker.setLatLng(latLng).addTo(this.mapService.getMapInstance());
+    const latLng = L.latLng(Number.parseFloat(this.latLon.lat), Number.parseFloat(this.latLon.lon));
+
+    if(!(this.latLon.lon === '0' && this.latLon.lat === '0'))
+      this.clickMarker.setLatLng(latLng).addTo(this.mapService.getMapInstance());
+      
     this.mapService.getMapInstance().on('click', (e:L.LeafletMouseEvent) => {
         this.clickMarker.setLatLng(e.latlng).addTo(this.mapService.getMapInstance());
       });

@@ -35,5 +35,5 @@
 	<p class="placeholder-text">Puedes elegir la opción "seleccionar un punto en el mapa" para ver los barrios en el mapa.</p>
 </div>
 <app-neighborhoods (selectNeigborhood)="getNeighborhood($event)" *ngIf="isSelectMode" [latLon]="latLonSearch"></app-neighborhoods>
-<app-click-marker *ngIf="isSelectMode" [latlon]="latLonSearch"></app-click-marker>
+<app-click-marker *ngIf="isSelectMode" [latLon]="latLonSearch"></app-click-marker>
 <app-location-button *ngIf="isSelectMode" class="map-location-container"></app-location-button>
