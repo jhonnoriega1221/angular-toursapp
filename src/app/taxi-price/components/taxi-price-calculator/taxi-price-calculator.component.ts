@@ -49,7 +49,6 @@ export class TaxiPriceCalculatorComponent implements OnInit {
   public changePlace() {
     if(typeof this.place === 'number'){
       const latlon = {'lat': this.locationPlaces[this.place].lat, 'lon': this.locationPlaces[this.place].lon}
-      console.log(latlon);
       this.selectLocation.emit({'place': 'search', 'isOrigin': this.isOrigin, 'latlon': latlon});
     } else {
       this.selectLocation.emit({'place': this.place, 'isOrigin': this.isOrigin});
