@@ -11,7 +11,13 @@ export class ClickMarkerComponent implements AfterViewInit, OnDestroy {
 
   @Input() latLon = { lat : '0', lon : '0' };
 
-  private clickMarker = L.marker({ lat: 0, lng: 0 });
+  private clickMarkerIcon = L.icon({
+    iconUrl: '../../../../assets/click_marker.png',
+    iconSize: [42, 42],
+    iconAnchor: [21, 42]
+  })
+
+  private clickMarker = L.marker({ lat: 0, lng: 0 }, { icon: this.clickMarkerIcon, interactive: false });
   
 
   constructor( private mapService:MapService) { }
@@ -32,7 +38,7 @@ export class ClickMarkerComponent implements AfterViewInit, OnDestroy {
       this.clickMarker.setLatLng(latLng).addTo(this.mapService.getMapInstance());
       
     this.mapService.getMapInstance().on('click', (e:L.LeafletMouseEvent) => {
-        this.clickMarker.setLatLng(e.latlng).addTo(this.mapService.getMapInstance());
+          this.clickMarker.setLatLng(e.latlng).addTo(this.mapService.getMapInstance());
       });
    }
 
