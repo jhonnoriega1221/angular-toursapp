@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -21,7 +21,13 @@ export class AppToolbarMenuButtonComponent implements OnInit {
     })
   }
 
+  @Output() openFeedback: EventEmitter < any > = new EventEmitter();
+
   ngOnInit(): void {
+  }
+
+  public openFeedbackDialog():void {
+    this.openFeedback.emit();
   }
 
 }

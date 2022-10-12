@@ -67,7 +67,8 @@ import { DetailsPriceTextComponent } from './components/details-price-text/detai
         TranslateModule,
         FilterButtonsGroupComponent,
         DetailsSeparatorComponent,
-        DetailsPriceTextComponent
+        DetailsPriceTextComponent,
+        AppToolbarMenuButtonComponent
     ]
 })
 export class SharedModule {}
