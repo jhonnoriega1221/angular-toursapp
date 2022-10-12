@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { iif } from 'rxjs';
+import { TaxiPriceCalculatorService } from '../../services/taxi-price-calculator.service';
 
 interface inputParameters {
   place: string,
@@ -34,6 +34,7 @@ export class TaxiPricePageComponent implements OnInit {
 
   public originPlace = '';
   public destinationPlace = '';
+  public taxiPrice = '';
 
   public setPlace(parameters: inputParameters) {
     if (parameters.place === 'marker' || parameters.place === 'cancel' || parameters.place === 'search') {
@@ -75,7 +76,7 @@ export class TaxiPricePageComponent implements OnInit {
     return isMobile;
   }
 
-  constructor( private translate:TranslateService ) {}
+  constructor( private translate:TranslateService, private taxiPriceCalculator:TaxiPriceCalculatorService ) {}
 
   ngOnInit(): void {
     this.translatePage();
@@ -88,7 +89,8 @@ export class TaxiPricePageComponent implements OnInit {
   }
 
   public getTaxiPrice(origin:string, destination:string){
-    console.log('CALCULAR!!')
+    const taxiPrice = this.taxiPriceCalculator.calculatePrice(origin, destination);
+    this.taxiPrice = taxiPrice === '' ? 'null' : taxiPrice;
   }
 
   public acceptPlace() {

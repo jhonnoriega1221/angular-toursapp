@@ -12,8 +12,17 @@
 </div>
 
 <div class="taxi-price-calculator-container" *ngIf="!isSelectMode && isCalculatingPrice">
-	<p class="taxi-price-title">{{ "TOURIST_SERVICES.TRANSPORT.PRICE_TEXT_1" | translate }} {{originPlace}} {{ "TOURIST_SERVICES.TRANSPORT.PRICE_TEXT_2" | translate }} {{destinationPlace}} {{ "TOURIST_SERVICES.TRANSPORT.PRICE_TEXT_3" | translate }} </p>
-	<p class="taxi-price-text">$ 3.000</p>
+	<div *ngIf="taxiPrice !== 'null'">
+		<p class="taxi-price-title">{{ "TOURIST_SERVICES.TRANSPORT.PRICE_TEXT_1" | translate }} {{originPlace}} {{ "TOURIST_SERVICES.TRANSPORT.PRICE_TEXT_2" | translate }} {{destinationPlace}} {{ "TOURIST_SERVICES.TRANSPORT.PRICE_TEXT_3" | translate }} </p>
+		<p class="taxi-price-text">{{taxiPrice}}</p>
+	</div>
+
+
+	<div class="taxi-price-calculator-container" *ngIf="taxiPrice === 'null'">
+		<img class="taxi-icon" src="../../../../assets/page-error.svg">
+		<p class="taxi-text">Lo sentimos, el lugar seleccionado aún no tiene precio establecido.</p>
+	</div>
+
 </div>
 
 <div class="taxi-price-calculator-container" *ngIf="isSelectMode">
@@ -28,6 +37,7 @@
 		<button mat-raised-button (click)="acceptPlace()" color="primary" [disabled]=isAcceptButtonDisabled>{{"MISC.ACCEPT_ACTION_TEXT" | translate}}</button>
 	</div>
 </div>
+
 <app-map *ngIf="isSelectMode" class="map-container" [isFullView]="true"></app-map>
 <div class="map-container-placeholder" *ngIf="!isSelectMode && !isMobile">
 	<img class="placeholder-map" src="../../../../assets/map_placeholder.jpg" alt="" >
