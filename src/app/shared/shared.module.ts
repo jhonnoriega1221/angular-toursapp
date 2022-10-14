@@ -9,6 +9,7 @@ import { AppNavbarComponent } from './components/app-navbar/app-navbar.component
 import { AppNavbarButtonComponent } from './components/app-navbar-button/app-navbar-button.component';
 import { BackTitleButtonComponent } from './components/back-title-button/back-title-button.component';
 import { ErrorMessageComponent } from './components/error-message/error-message.component';
+import { StarRatingComponent } from './components/star-rating/star-rating.component';
 
 //Layouts
 import { AppLayoutComponent } from './layouts/app-layout/app-layout.component';
@@ -32,7 +33,6 @@ import { ToggleFilterButtonComponent } from './components/toggle-filter-button/t
 import { DetailsSeparatorComponent } from './components/details-separator/details-separator.component';
 import { DetailsPriceTextComponent } from './components/details-price-text/details-price-text.component';
 
-import { FeedbackModule } from '../feedback/feedback.module';
 
 @NgModule({
     declarations: [
@@ -50,6 +50,7 @@ import { FeedbackModule } from '../feedback/feedback.module';
         ToggleFilterButtonComponent,
         DetailsSeparatorComponent,
         DetailsPriceTextComponent,
+        StarRatingComponent,
     ],
     imports: [
         CommonModule,
@@ -61,8 +62,7 @@ import { FeedbackModule } from '../feedback/feedback.module';
         MatProgressBarModule,
         MatMenuModule,
         TranslateModule,
-        MatDialogModule,
-        FeedbackModule
+        MatDialogModule
     ],
     exports: [
         BackTitleButtonComponent,
@@ -73,7 +73,9 @@ import { FeedbackModule } from '../feedback/feedback.module';
         FilterButtonsGroupComponent,
         DetailsSeparatorComponent,
         DetailsPriceTextComponent,
-        AppToolbarMenuButtonComponent
+        AppToolbarMenuButtonComponent,
+        StarRatingComponent
+        
     ]
 })
 export class SharedModule {}

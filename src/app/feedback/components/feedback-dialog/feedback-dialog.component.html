@@ -2,6 +2,7 @@
 <div mat-dialog-content>
   <div *ngFor="let question of questions" class="question">
   	<p>{{question.question}}</p>
+    <app-star-rating></app-star-rating>
   </div>
 </div>
 <div mat-dialog-actions>
