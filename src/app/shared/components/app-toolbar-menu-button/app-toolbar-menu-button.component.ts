@@ -1,6 +1,8 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-
+import { FeedbackDialogService } from 'src/app/feedback/services/feedback-dialog.service';
+import { FeedbackDialogComponent } from 'src/app/feedback/components/feedback-dialog/feedback-dialog.component';
+import { MatDialog } from '@angular/material/dialog';
 @Component({
   selector: 'app-toolbar-menu-button',
   templateUrl: './app-toolbar-menu-button.component.html',
@@ -12,7 +14,7 @@ export class AppToolbarMenuButtonComponent implements OnInit {
     'MORE_OPTIONS.TITLE'
   ]
 
-  constructor( public translate:TranslateService) {
+  constructor( public translate:TranslateService, private feedbackDialog:FeedbackDialogService, public dialog: MatDialog) {
     translate.get("TOOLBAR")
     .subscribe({
       next: (v) => {
@@ -26,8 +28,9 @@ export class AppToolbarMenuButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public openFeedbackDialog():void {
-    this.openFeedback.emit();
+   openFeedbackDialog(): void {
+    const dialogRef = this.dialog.open(FeedbackDialogComponent);
   }
+
 
 }

@@ -22,6 +22,7 @@ import { SkeletonLoaderComponent } from './components/skeleton-loader/skeleton-l
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatMenuModule } from '@angular/material/menu';
 import { TranslateModule } from '@ngx-translate/core';
+import { MatDialogModule } from '@angular/material/dialog';
 
 //Directivas
 import { SkeletonLoaderDirective } from './directives/skeleton-loader.directive';
@@ -30,6 +31,8 @@ import { FilterButtonsGroupComponent } from './components/filter-buttons-group/f
 import { ToggleFilterButtonComponent } from './components/toggle-filter-button/toggle-filter-button.component';
 import { DetailsSeparatorComponent } from './components/details-separator/details-separator.component';
 import { DetailsPriceTextComponent } from './components/details-price-text/details-price-text.component';
+
+import { FeedbackModule } from '../feedback/feedback.module';
 
 @NgModule({
     declarations: [
@@ -57,7 +60,9 @@ import { DetailsPriceTextComponent } from './components/details-price-text/detai
         MatRippleModule,
         MatProgressBarModule,
         MatMenuModule,
-        TranslateModule
+        TranslateModule,
+        MatDialogModule,
+        FeedbackModule
     ],
     exports: [
         BackTitleButtonComponent,
