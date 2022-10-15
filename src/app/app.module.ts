@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
+import { FeedbackModule } from './feedback/feedback.module';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -27,6 +28,7 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
     SharedModule,
     HttpClientModule,
     MatSnackBarModule,
+    FeedbackModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
