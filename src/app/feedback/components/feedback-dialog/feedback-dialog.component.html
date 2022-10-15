@@ -1,10 +1,25 @@
-<h1 mat-dialog-title>Enviar comentarios</h1>
+<div class="dialog-header">
+  <button mat-icon-button mat-dialog-close class="close-dialog">
+    <mat-icon>close</mat-icon>
+  </button>
+  <h2 class="dialog-title">Enviar comentarios</h2>
+</div>
 <div mat-dialog-content>
   <div *ngFor="let question of questions" class="question">
-  	<p>{{question.question}}</p>
+    <p>{{question.question}}</p>
+    <input type="radio" id="question" name="assas">
+    <label for="question">1</label>
+    <input type="radio" id="question" name="assas">
+    <label for="question">2</label>
+    <input type="radio" id="question" name="assas">
+    <label for="question">3</label>
+    <input type="radio" id="question" name="assas">
+    <label for="question">4</label>
+    <input type="radio" id="question" name="assas">
+    <label for="question">5</label>
   </div>
 </div>
 <div mat-dialog-actions>
   <button mat-button>Cerrar</button>
-  <button mat-raised-button mat-dialog-close color="primary">Enviar</button>
+  <button mat-raised-button color="primary">Enviar</button>
 </div>
