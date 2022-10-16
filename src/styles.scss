@@ -39,6 +39,10 @@ $angular-toursapp-dark-theme: mat.define-dark-theme((
   )
 ));
 
+body{
+  -webkit-tap-highlight-color: transparent;
+}
+
 .dark-mode {
   @include mat.all-component-colors($angular-toursapp-dark-theme);
 }

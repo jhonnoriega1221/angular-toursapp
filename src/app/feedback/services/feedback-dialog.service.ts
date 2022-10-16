@@ -7,5 +7,9 @@ export class FeedbackDialogService {
 
   constructor() { }
 
+  public submitFeedback():void{
+
+  }
+
 
 }

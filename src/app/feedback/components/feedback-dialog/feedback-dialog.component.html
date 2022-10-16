@@ -1,26 +1,21 @@
-<div class="dialog-header">
-  <button mat-icon-button mat-dialog-close class="close-dialog">
-    <mat-icon>close</mat-icon>
-  </button>
-  <h2 class="dialog-title">Enviar comentarios</h2>
-</div>
-<div mat-dialog-content>
-  <div *ngFor="let question of questions" class="question">
-    <p>{{question.question}}</p>
-    <input type="radio" id="question" name="assas">
-    <label for="question">1</label>
-    <input type="radio" id="question" name="assas">
-    <label for="question">2</label>
-    <input type="radio" id="question" name="assas">
-    <label for="question">3</label>
-    <input type="radio" id="question" name="assas">
-    <label for="question">4</label>
-    <input type="radio" id="question" name="assas">
-    <label for="question">5</label>
-  	<p>{{question.question}}</p>
+<form class="wrapper" [formGroup]="feedbackForm" (ngSubmit)="submitFeedbackForm()">
+  <div class="dialog-header">
+    <button mat-icon-button mat-dialog-close class="close-dialog">
+      <mat-icon>close</mat-icon>
+    </button>
+    <h2 class="dialog-title">Enviar comentarios</h2>
   </div>
-</div>
-<div mat-dialog-actions>
-  <button mat-button>Cerrar</button>
-  <button mat-raised-button color="primary">Enviar</button>
-</div>
+  <div  class="dialog-content" >
+    <div *ngFor="let question of questions" class="question">
+      <p class="question-title">{{question.question}}</p>
+      <app-star-rating [formControlName]="question.name" [questionName]="question.name"></app-star-rating>
+    </div>
+    <div class="question">
+      <p class="question-title">Podrías compartirnos mas detalles</p>
+      <mat-form-field class="question-textarea" appearance="outline">
+        <textarea formControlName="textarea" matInput rows="6"></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+  <button type="submit" mat-raised-button color="primary" class="feedback-submit-button">Enviar</button>
+</form>

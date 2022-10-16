@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 interface Question {
   question:string;
-  answer:string
+  answer:string;
+  name:string;
 }
 
 @Component({
@@ -12,18 +14,37 @@ interface Question {
 })
 export class FeedbackDialogComponent implements OnInit {
 
-  constructor() { }
+  public feedbackForm: FormGroup;
 
-  ngOnInit(): void {
+  constructor( private fb:FormBuilder) {
+    this.feedbackForm = this.fb.group({
+      question1: new FormControl('', [Validators.required]),
+      question2: new FormControl('', [Validators.required]),
+      question3: new FormControl('', [Validators.required]),
+      question4: new FormControl('', [Validators.required]),
+      question5: new FormControl('', [Validators.required]),
+      textarea: new FormControl('', [Validators.required])
+    });
   }
 
+  ngOnInit(): void {
+
+  }
 
   public questions:Question[] = [
-    { question: '¿Le fué util este aplicativo para la consulta de precios de los servicios ofrecidos a turistas?', answer: '0' },
-    { question: '¿Que tan satisfecho te encuentras con tu experiencia usando el aplicativo?', answer: '0' },
-    { question: '¿Que tan probable es que vuelvas a usar el aplicativo?', answer: '0' },
-    { question: '¿Que tan probable es que ecomiendes este aplicativo a otras personas?', answer: '0' },
-    { question: '¿Estas de acuerdo que el aplicativo ayuda a mitigar el desconocimiento de precios?', answer: '0' }
-  ]
+    { name:'question1', question: '¿Le fué util este aplicativo para la consulta de precios de los servicios ofrecidos a turistas?', answer: '0' },
+    { name:'question2', question: '¿Que tan satisfecho te encuentras con tu experiencia usando el aplicativo?', answer: '0' },
+    { name:'question3', question: '¿Que tan probable es que vuelvas a usar el aplicativo?', answer: '0' },
+    { name:'question4', question: '¿Que tan probable es que ecomiendes este aplicativo a otras personas?', answer: '0' },
+    { name:'question5', question: '¿Estas de acuerdo que el aplicativo ayuda a mitigar el desconocimiento de precios?', answer: '0' }
+  ];
+
+  public submitFeedbackForm():void{
+    if(this.feedbackForm.invalid){
+      return;
+    }
+
+    
+  }
 
 }

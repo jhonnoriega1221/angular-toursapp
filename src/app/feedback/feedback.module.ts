@@ -5,6 +5,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { SharedModule } from '../shared/shared.module';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,11 @@ import { SharedModule } from '../shared/shared.module';
     MatDialogModule,
     MatButtonModule,
     MatIconModule,
-    SharedModule
+    SharedModule,
+    MatRadioModule,
+    MatInputModule,
+    MatFormFieldModule,
+    ReactiveFormsModule
   ]
 })
 export class FeedbackModule { }

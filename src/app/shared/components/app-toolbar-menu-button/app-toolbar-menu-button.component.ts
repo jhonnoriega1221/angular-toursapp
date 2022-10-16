@@ -28,8 +28,22 @@ export class AppToolbarMenuButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  private isMobile = this.setIsMobile(window.innerWidth);
+
+  private setIsMobile(innerWidth: number): boolean {
+    const isMobile = innerWidth <= 600 ? true : false
+    return isMobile;
+  }
+
    openFeedbackDialog(): void {
-    const dialogRef = this.dialog.open(FeedbackDialogComponent);
+    this.setIsMobile(window.innerWidth);
+    this.dialog.open(FeedbackDialogComponent, {
+      width: this.isMobile ? '100vw' : '450px',
+      height: this.isMobile ? '100vh' : '80vh',
+      maxWidth: this.isMobile ? '100vw' : '450px',
+      maxHeight: this.isMobile ? '100vh' : '100vh',
+      minHeight: '200px'
+    });
   }
 
 

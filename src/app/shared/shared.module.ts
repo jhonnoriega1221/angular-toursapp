@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 //Componentes
 import { AppToolbarComponent } from './components/app-toolbar/app-toolbar.component';
@@ -24,6 +25,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatMenuModule } from '@angular/material/menu';
 import { TranslateModule } from '@ngx-translate/core';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatRadioModule } from '@angular/material/radio';
 
 //Directivas
 import { SkeletonLoaderDirective } from './directives/skeleton-loader.directive';
@@ -62,7 +64,9 @@ import { DetailsPriceTextComponent } from './components/details-price-text/detai
         MatProgressBarModule,
         MatMenuModule,
         TranslateModule,
-        MatDialogModule
+        MatDialogModule,
+        MatRadioModule,
+        FormsModule
     ],
     exports: [
         BackTitleButtonComponent,
