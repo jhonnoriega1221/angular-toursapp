@@ -9,10 +9,16 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FeedbackDialogConfirmComponent } from './components/feedback-dialog-confirm/feedback-dialog-confirm.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
+
 
 @NgModule({
   declarations: [
-    FeedbackDialogComponent
+    FeedbackDialogComponent,
+    FeedbackDialogConfirmComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +29,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatRadioModule,
     MatInputModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatProgressSpinnerModule,
+    MatSnackBarModule
   ]
 })
 export class FeedbackModule { }

@@ -1,4 +1,4 @@
-<form class="wrapper" [formGroup]="feedbackForm" (ngSubmit)="submitFeedbackForm()">
+<form class="wrapper" [formGroup]="feedbackForm" (ngSubmit)="submitFeedbackForm({'isAccept': false})" *ngIf="!isShowingConfirmWrapper">
   <div class="dialog-header">
     <button mat-icon-button mat-dialog-close class="close-dialog">
       <mat-icon>close</mat-icon>
@@ -17,5 +17,10 @@
       </mat-form-field>
     </div>
   </div>
-  <button type="submit" mat-raised-button color="primary" class="feedback-submit-button">Enviar</button>
+  <button [disabled]="isLoadingData" type="submit" mat-raised-button color="primary" class="feedback-submit-button">
+        <span *ngIf="!isLoadingData">Enviar</span>
+        <mat-spinner *ngIf="isLoadingData" diameter="24" style="margin: 0 auto"></mat-spinner>
+</button>
 </form>
+
+<app-feedback-dialog-confirm [message]="confirmMessage" [icon]="confirmIcon" [isConfirmDialog]="isConfirmDialog" (updateLocationPermission)="submitFeedbackForm($event)" *ngIf="isShowingConfirmWrapper"></app-feedback-dialog-confirm>

@@ -5,11 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class FeedbackDialogService {
 
-  constructor() { }
-
-  public submitFeedback():void{
-
-  }
 
 
 }

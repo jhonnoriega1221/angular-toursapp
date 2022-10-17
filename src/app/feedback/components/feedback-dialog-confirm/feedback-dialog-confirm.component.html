@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="dialog-header">
+    <h2 class="dialog-title">Enviar comentarios</h2>
+  </div>  <div class="dialog-content">
+    <img class="permission-icon" [src]="icon">
+    <p class="permission-text">{{message}}</p>
+  </div>
+  <div class="permission-buttons">
+    <button *ngIf="!isConfirmDialog" (click)="acceptLocation(false)" [disabled]="isSearchingLocation" mat-button color="primary" class="permission-button">No acepto</button>
+    <button *ngIf="!isConfirmDialog" (click)="acceptLocation(true)" [disabled]="isSearchingLocation" mat-raised-button color="primary" class="permission-button">
+      <span *ngIf="!isSearchingLocation">Acepto</span>
+      <mat-spinner *ngIf="isSearchingLocation" diameter="24" style="margin: 0 auto"></mat-spinner>
+    </button>
+    <button *ngIf="isConfirmDialog" (click)="closeDialog()" mat-raised-button color="primary" class="permission-button">Cerrar</button>
+  </div>
+</div>
