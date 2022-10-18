@@ -5,7 +5,7 @@
     <img class="permission-icon" [src]="icon">
     <p class="permission-text">{{message}}</p>
   </div>
-  <div class="permission-buttons">
+  <div class="permission-buttons mat-card" style="box-shadow: none;">
     <button *ngIf="!isConfirmDialog" (click)="acceptLocation(false)" [disabled]="isSearchingLocation" mat-button color="primary" class="permission-button">No acepto</button>
     <button *ngIf="!isConfirmDialog" (click)="acceptLocation(true)" [disabled]="isSearchingLocation" mat-raised-button color="primary" class="permission-button">
       <span *ngIf="!isSearchingLocation">Acepto</span>

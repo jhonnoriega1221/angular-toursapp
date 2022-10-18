@@ -5,7 +5,7 @@
     </button>
     <h2 class="dialog-title">Enviar comentarios</h2>
   </div>
-  <div  class="dialog-content" >
+  <div  class="dialog-content">
     <div *ngFor="let question of questions" class="question">
       <p class="question-title">{{question.question}}</p>
       <app-star-rating [formControlName]="question.name" [questionName]="question.name"></app-star-rating>
@@ -17,10 +17,13 @@
       </mat-form-field>
     </div>
   </div>
-  <button [disabled]="isLoadingData" type="submit" mat-raised-button color="primary" class="feedback-submit-button">
-        <span *ngIf="!isLoadingData">Enviar</span>
-        <mat-spinner *ngIf="isLoadingData" diameter="24" style="margin: 0 auto"></mat-spinner>
-</button>
+  <div class="feedback-button-background mat-card" style="box-shadow: none;">
+    <button [disabled]="isLoadingData" type="submit" mat-raised-button color="primary" class="feedback-submit-button">
+      <span *ngIf="!isLoadingData">Enviar</span>
+      <mat-spinner *ngIf="isLoadingData" diameter="24" style="margin: 0 auto"></mat-spinner>
+    </button>
+  </div>
+
 </form>
 
 <app-feedback-dialog-confirm [message]="confirmMessage" [icon]="confirmIcon" [isConfirmDialog]="isConfirmDialog" (updateLocationPermission)="submitFeedbackForm($event)" *ngIf="isShowingConfirmWrapper"></app-feedback-dialog-confirm>

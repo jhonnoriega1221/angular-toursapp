@@ -3,6 +3,7 @@
 	flex-direction: column;
 	height: 100%;
 	overflow: auto;
+	padding: 0 0 72px 0;
 }
 
 .permission-icon{
@@ -16,15 +17,21 @@
 	text-align: center;
 }
 
-.permission-button{
-	width: 100%
-}
-
 .permission-buttons{
 	display: flex;
 	width: 100%;
 	gap: 12px;
-	height: 36px;
+	box-shadow: none;
+	position: fixed;
+	bottom: 0px;
+	box-sizing: border-box;
+	left: 0;
+	padding: 12px 24px 24px 24px;
+	height: 72px;
+}
+
+.permission-button{
+	width: 100%
 }
 
 .wrapper{
@@ -40,4 +47,17 @@
 
 .dialog-title{
 	margin: 4px 0px 16px 0px;
+}
+
+@media(min-width: 600px){
+	.permission-buttons{
+		position: static;
+		padding: 0;
+		height: 56px;
+		align-items: flex-start;
+	}
+
+	.dialog-content{
+		padding: 0 ; 
+	}
 }
