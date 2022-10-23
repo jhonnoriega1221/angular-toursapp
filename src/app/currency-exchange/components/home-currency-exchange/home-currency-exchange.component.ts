@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { trigger, style, animate, transition, state } from '@angular/animations';
 import { CurrencyExchangeService } from '../../services/currency-exchange.service';
 import { CurrencyConversion } from '../../models/currency-conversion';
+import { Currency } from '../../models/currency';
 
 @Component({
   selector: 'app-home-currency-exchange',
@@ -23,30 +24,35 @@ export class HomeCurrencyExchangeComponent implements OnInit {
   public isError: boolean = false;
   public conversion: CurrencyConversion = {
     date: '',
-    from: '',
-    to: '',
-    value: 0
+    from: 'usd',
+    to: 'cop',
+    fromValue: 1,
+    baseValue:0,
+    toValue: 0
   };
+
+  public currenciesList:Currency[] = this.currencyExchangeService.currenciesName();
 
   constructor(public currencyExchangeService: CurrencyExchangeService) {}
 
   ngOnInit(): void {
-    this.updateCurrencyData('usd');
+    this.updateCurrencyData(this.conversion.from,this.conversion.to);
   }
 
-  private updateCurrencyData(from: String) {
+  public updateCurrencyData(from: string, to: string) {
+    this.isLoading = true;
     this.currencyExchangeService.getCurrencyExchange(from)
       .subscribe({
         next: (v) => {
           this.updateDateState = 'visible';
-          const temporalConversion: CurrencyConversion = {
-            date: v.date,
-            from: from,
-            to: "cop",
-            value: v.cop
-          };
+          const conversion = {
+            "date": Object.entries(v)[0][1],
+            "value": Object.entries(v)[1][1]
+          }
 
-          this.conversion = temporalConversion;
+          this.conversion.toValue = this.conversion.fromValue == undefined ? conversion.value * 0 : conversion.value * this.conversion.fromValue;
+          this.conversion.date = conversion.date;
+          this.conversion.baseValue = conversion.value;
         },
         error: (e) => {
           this.isError = true;
@@ -54,6 +60,10 @@ export class HomeCurrencyExchangeComponent implements OnInit {
         },
         complete: () => this.isLoading = false
       });
+  }
+
+  public updateCurrencyFromValue(input:number|undefined){
+    this.conversion.toValue = input == undefined ? this.conversion.baseValue * 0 : this.conversion.baseValue * input;
   }
 
 }

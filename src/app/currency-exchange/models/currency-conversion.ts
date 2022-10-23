@@ -1,6 +1,8 @@
 export interface CurrencyConversion {
-	date:String;
-	from:String;
-	to:String;
-	value:Number;
+	date:string;
+	from:string;
+	to:string;
+	fromValue?:number;
+	baseValue:number;
+	toValue:number;
 }

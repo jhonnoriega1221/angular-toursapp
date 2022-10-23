@@ -1,0 +1,1070 @@
+[
+    {
+        "abreviation": "1inch",
+        "name": "1inch Network"
+    },
+    {
+        "abreviation": "aave",
+        "name": "Aave"
+    },
+    {
+        "abreviation": "ada",
+        "name": "Cardano"
+    },
+    {
+        "abreviation": "aed",
+        "name": "United Arab Emirates Dirham"
+    },
+    {
+        "abreviation": "afn",
+        "name": "Afghan afghani"
+    },
+    {
+        "abreviation": "algo",
+        "name": "Algorand"
+    },
+    {
+        "abreviation": "all",
+        "name": "Albanian lek"
+    },
+    {
+        "abreviation": "amd",
+        "name": "Armenian dram"
+    },
+    {
+        "abreviation": "amp",
+        "name": "Synereo"
+    },
+    {
+        "abreviation": "ang",
+        "name": "Netherlands Antillean Guilder"
+    },
+    {
+        "abreviation": "aoa",
+        "name": "Angolan kwanza"
+    },
+    {
+        "abreviation": "ar",
+        "name": "Arweave"
+    },
+    {
+        "abreviation": "ars",
+        "name": "Argentine peso"
+    },
+    {
+        "abreviation": "atom",
+        "name": "Atomic Coin"
+    },
+    {
+        "abreviation": "aud",
+        "name": "Australian dollar"
+    },
+    {
+        "abreviation": "avax",
+        "name": "Avalanche"
+    },
+    {
+        "abreviation": "awg",
+        "name": "Aruban florin"
+    },
+    {
+        "abreviation": "axs",
+        "name": "AXS"
+    },
+    {
+        "abreviation": "azn",
+        "name": "Azerbaijani manat"
+    },
+    {
+        "abreviation": "bam",
+        "name": "Bosnia-Herzegovina Convertible Mark"
+    },
+    {
+        "abreviation": "bat",
+        "name": "Basic Attention Token"
+    },
+    {
+        "abreviation": "bbd",
+        "name": "Bajan dollar"
+    },
+    {
+        "abreviation": "bch",
+        "name": "Bitcoin Cash"
+    },
+    {
+        "abreviation": "bdt",
+        "name": "Bangladeshi taka"
+    },
+    {
+        "abreviation": "bgn",
+        "name": "Bulgarian lev"
+    },
+    {
+        "abreviation": "bhd",
+        "name": "Bahraini dinar"
+    },
+    {
+        "abreviation": "bif",
+        "name": "Burundian Franc"
+    },
+    {
+        "abreviation": "bmd",
+        "name": "Bermudan dollar"
+    },
+    {
+        "abreviation": "bnb",
+        "name": "Binance Coin"
+    },
+    {
+        "abreviation": "bnd",
+        "name": "Brunei dollar"
+    },
+    {
+        "abreviation": "bob",
+        "name": "Bolivian boliviano"
+    },
+    {
+        "abreviation": "brl",
+        "name": "Brazilian real"
+    },
+    {
+        "abreviation": "bsd",
+        "name": "Bahamian dollar"
+    },
+    {
+        "abreviation": "bsv",
+        "name": "Bitcoin SV"
+    },
+    {
+        "abreviation": "btc",
+        "name": "Bitcoin"
+    },
+    {
+        "abreviation": "btcb",
+        "name": "Bitcoin BEP2"
+    },
+    {
+        "abreviation": "btg",
+        "name": "Bitcoin Gold"
+    },
+    {
+        "abreviation": "btn",
+        "name": "Bhutan currency"
+    },
+    {
+        "abreviation": "busd",
+        "name": "Binance USD"
+    },
+    {
+        "abreviation": "bwp",
+        "name": "Botswanan Pula"
+    },
+    {
+        "abreviation": "byn",
+        "name": "New Belarusian Ruble"
+    },
+    {
+        "abreviation": "byr",
+        "name": "Belarusian Ruble"
+    },
+    {
+        "abreviation": "bzd",
+        "name": "Belize dollar"
+    },
+    {
+        "abreviation": "cad",
+        "name": "Canadian dollar"
+    },
+    {
+        "abreviation": "cake",
+        "name": "PancakeSwap"
+    },
+    {
+        "abreviation": "cdf",
+        "name": "Congolese franc"
+    },
+    {
+        "abreviation": "celo",
+        "name": "Celo"
+    },
+    {
+        "abreviation": "chf",
+        "name": "Swiss franc"
+    },
+    {
+        "abreviation": "chz",
+        "name": "Chiliz"
+    },
+    {
+        "abreviation": "clf",
+        "name": "Chilean Unit of Account (UF)"
+    },
+    {
+        "abreviation": "clp",
+        "name": "Chilean peso"
+    },
+    {
+        "abreviation": "cny",
+        "name": "Chinese Yuan"
+    },
+    {
+        "abreviation": "comp",
+        "name": "Compound Coin"
+    },
+    {
+        "abreviation": "cop",
+        "name": "Colombian peso"
+    },
+    {
+        "abreviation": "crc",
+        "name": "Costa Rican Colón"
+    },
+    {
+        "abreviation": "cro",
+        "name": "Crypto.com Chain Token"
+    },
+    {
+        "abreviation": "crv",
+        "name": "Cravy"
+    },
+    {
+        "abreviation": "cuc",
+        "name": "Cuban peso"
+    },
+    {
+        "abreviation": "cup",
+        "name": "Cuban Peso"
+    },
+    {
+        "abreviation": "cve",
+        "name": "Cape Verdean escudo"
+    },
+    {
+        "abreviation": "cvx",
+        "name": "Convex Finance"
+    },
+    {
+        "abreviation": "czk",
+        "name": "Czech koruna"
+    },
+    {
+        "abreviation": "dai",
+        "name": "Dai"
+    },
+    {
+        "abreviation": "dash",
+        "name": "Dash"
+    },
+    {
+        "abreviation": "dcr",
+        "name": "Decred"
+    },
+    {
+        "abreviation": "dfi",
+        "name": "DfiStarter"
+    },
+    {
+        "abreviation": "djf",
+        "name": "Djiboutian franc"
+    },
+    {
+        "abreviation": "dkk",
+        "name": "Danish krone"
+    },
+    {
+        "abreviation": "doge",
+        "name": "Dogecoin"
+    },
+    {
+        "abreviation": "dop",
+        "name": "Dominican peso"
+    },
+    {
+        "abreviation": "dot",
+        "name": "Dotcoin"
+    },
+    {
+        "abreviation": "dzd",
+        "name": "Algerian dinar"
+    },
+    {
+        "abreviation": "egld",
+        "name": "Elrond"
+    },
+    {
+        "abreviation": "egp",
+        "name": "Egyptian pound"
+    },
+    {
+        "abreviation": "enj",
+        "name": "Enjin Coin"
+    },
+    {
+        "abreviation": "eos",
+        "name": "EOS"
+    },
+    {
+        "abreviation": "ern",
+        "name": "Eritrean nakfa"
+    },
+    {
+        "abreviation": "etb",
+        "name": "Ethiopian birr"
+    },
+    {
+        "abreviation": "etc",
+        "name": "Ethereum Classic"
+    },
+    {
+        "abreviation": "eth",
+        "name": "Ether"
+    },
+    {
+        "abreviation": "eur",
+        "name": "Euro"
+    },
+    {
+        "abreviation": "fei",
+        "name": "Fei USD"
+    },
+    {
+        "abreviation": "fil",
+        "name": "FileCoin"
+    },
+    {
+        "abreviation": "fjd",
+        "name": "Fijian dollar"
+    },
+    {
+        "abreviation": "fkp",
+        "name": "Falkland Islands pound"
+    },
+    {
+        "abreviation": "flow",
+        "name": "Flow"
+    },
+    {
+        "abreviation": "frax",
+        "name": "Frax"
+    },
+    {
+        "abreviation": "ftm",
+        "name": "Fantom"
+    },
+    {
+        "abreviation": "ftt",
+        "name": "FarmaTrust"
+    },
+    {
+        "abreviation": "gala",
+        "name": "Gala"
+    },
+    {
+        "abreviation": "gbp",
+        "name": "Pound sterling"
+    },
+    {
+        "abreviation": "gel",
+        "name": "Georgian lari"
+    },
+    {
+        "abreviation": "ggp",
+        "name": "GGPro"
+    },
+    {
+        "abreviation": "ghs",
+        "name": "Ghanaian cedi"
+    },
+    {
+        "abreviation": "gip",
+        "name": "Gibraltar pound"
+    },
+    {
+        "abreviation": "gmd",
+        "name": "Gambian dalasi"
+    },
+    {
+        "abreviation": "gnf",
+        "name": "Guinean franc"
+    },
+    {
+        "abreviation": "gno",
+        "name": "Gnosis"
+    },
+    {
+        "abreviation": "grt",
+        "name": "Golden Ratio Token"
+    },
+    {
+        "abreviation": "gt",
+        "name": "GateToken"
+    },
+    {
+        "abreviation": "gtq",
+        "name": "Guatemalan quetzal"
+    },
+    {
+        "abreviation": "gyd",
+        "name": "Guyanaese Dollar"
+    },
+    {
+        "abreviation": "hbar",
+        "name": "Hedera"
+    },
+    {
+        "abreviation": "hkd",
+        "name": "Hong Kong dollar"
+    },
+    {
+        "abreviation": "hnl",
+        "name": "Honduran lempira"
+    },
+    {
+        "abreviation": "hnt",
+        "name": "Helium"
+    },
+    {
+        "abreviation": "hot",
+        "name": "Hydro Protocol"
+    },
+    {
+        "abreviation": "hrk",
+        "name": "Croatian kuna"
+    },
+    {
+        "abreviation": "ht",
+        "name": "Huobi Token"
+    },
+    {
+        "abreviation": "htg",
+        "name": "Haitian gourde"
+    },
+    {
+        "abreviation": "huf",
+        "name": "Hungarian forint"
+    },
+    {
+        "abreviation": "icp",
+        "name": "Internet Computer"
+    },
+    {
+        "abreviation": "idr",
+        "name": "Indonesian rupiah"
+    },
+    {
+        "abreviation": "ils",
+        "name": "Israeli New Shekel"
+    },
+    {
+        "abreviation": "imp",
+        "name": "CoinIMP"
+    },
+    {
+        "abreviation": "inj",
+        "name": "Injective"
+    },
+    {
+        "abreviation": "inr",
+        "name": "Indian rupee"
+    },
+    {
+        "abreviation": "iqd",
+        "name": "Iraqi dinar"
+    },
+    {
+        "abreviation": "irr",
+        "name": "Iranian rial"
+    },
+    {
+        "abreviation": "isk",
+        "name": "Icelandic króna"
+    },
+    {
+        "abreviation": "jep",
+        "name": "Jersey Pound"
+    },
+    {
+        "abreviation": "jmd",
+        "name": "Jamaican dollar"
+    },
+    {
+        "abreviation": "jod",
+        "name": "Jordanian dinar"
+    },
+    {
+        "abreviation": "jpy",
+        "name": "Japanese yen"
+    },
+    {
+        "abreviation": "kava",
+        "name": "Kava"
+    },
+    {
+        "abreviation": "kcs",
+        "name": "Kucoin"
+    },
+    {
+        "abreviation": "kda",
+        "name": "Kadena"
+    },
+    {
+        "abreviation": "kes",
+        "name": "Kenyan shilling"
+    },
+    {
+        "abreviation": "kgs",
+        "name": "Kyrgystani Som"
+    },
+    {
+        "abreviation": "khr",
+        "name": "Cambodian riel"
+    },
+    {
+        "abreviation": "klay",
+        "name": "Klaytn"
+    },
+    {
+        "abreviation": "kmf",
+        "name": "Comorian franc"
+    },
+    {
+        "abreviation": "knc",
+        "name": "Kyber Network"
+    },
+    {
+        "abreviation": "kpw",
+        "name": "North Korean won"
+    },
+    {
+        "abreviation": "krw",
+        "name": "South Korean won"
+    },
+    {
+        "abreviation": "ksm",
+        "name": "Kusama"
+    },
+    {
+        "abreviation": "kwd",
+        "name": "Kuwaiti dinar"
+    },
+    {
+        "abreviation": "kyd",
+        "name": "Cayman Islands dollar"
+    },
+    {
+        "abreviation": "kzt",
+        "name": "Kazakhstani tenge"
+    },
+    {
+        "abreviation": "lak",
+        "name": "Laotian Kip"
+    },
+    {
+        "abreviation": "lbp",
+        "name": "Lebanese pound"
+    },
+    {
+        "abreviation": "leo",
+        "name": "LEOcoin"
+    },
+    {
+        "abreviation": "link",
+        "name": "ChainLink"
+    },
+    {
+        "abreviation": "lkr",
+        "name": "Sri Lankan rupee"
+    },
+    {
+        "abreviation": "lrc",
+        "name": "Loopring"
+    },
+    {
+        "abreviation": "lrd",
+        "name": "Liberian dollar"
+    },
+    {
+        "abreviation": "lsl",
+        "name": "Lesotho loti"
+    },
+    {
+        "abreviation": "ltc",
+        "name": "Litecoin"
+    },
+    {
+        "abreviation": "ltl",
+        "name": "Lithuanian litas"
+    },
+    {
+        "abreviation": "luna",
+        "name": "Luna Coin"
+    },
+    {
+        "abreviation": "lvl",
+        "name": "Latvian lats"
+    },
+    {
+        "abreviation": "lyd",
+        "name": "Libyan dinar"
+    },
+    {
+        "abreviation": "mad",
+        "name": "Moroccan dirham"
+    },
+    {
+        "abreviation": "mana",
+        "name": "Decentraland"
+    },
+    {
+        "abreviation": "matic",
+        "name": "Polygon"
+    },
+    {
+        "abreviation": "mdl",
+        "name": "Moldovan leu"
+    },
+    {
+        "abreviation": "mga",
+        "name": "Malagasy ariary"
+    },
+    {
+        "abreviation": "mina",
+        "name": "Mina"
+    },
+    {
+        "abreviation": "miota",
+        "name": "IOTA"
+    },
+    {
+        "abreviation": "mkd",
+        "name": "Macedonian denar"
+    },
+    {
+        "abreviation": "mkr",
+        "name": "Maker"
+    },
+    {
+        "abreviation": "mmk",
+        "name": "Myanmar Kyat"
+    },
+    {
+        "abreviation": "mnt",
+        "name": "Mongolian tugrik"
+    },
+    {
+        "abreviation": "mop",
+        "name": "Macanese pataca"
+    },
+    {
+        "abreviation": "mro",
+        "name": "Mauritanian ouguiya"
+    },
+    {
+        "abreviation": "mur",
+        "name": "Mauritian rupee"
+    },
+    {
+        "abreviation": "mvr",
+        "name": "Maldivian rufiyaa"
+    },
+    {
+        "abreviation": "mwk",
+        "name": "Malawian kwacha"
+    },
+    {
+        "abreviation": "mxn",
+        "name": "Mexican peso"
+    },
+    {
+        "abreviation": "myr",
+        "name": "Malaysian ringgit"
+    },
+    {
+        "abreviation": "mzn",
+        "name": "Mozambican Metical"
+    },
+    {
+        "abreviation": "nad",
+        "name": "Namibian dollar"
+    },
+    {
+        "abreviation": "near",
+        "name": "NEAR Protocol"
+    },
+    {
+        "abreviation": "neo",
+        "name": "NEO"
+    },
+    {
+        "abreviation": "nexo",
+        "name": "NEXO"
+    },
+    {
+        "abreviation": "ngn",
+        "name": "Nigerian naira"
+    },
+    {
+        "abreviation": "nio",
+        "name": "Nicaraguan córdoba"
+    },
+    {
+        "abreviation": "nok",
+        "name": "Norwegian krone"
+    },
+    {
+        "abreviation": "npr",
+        "name": "Nepalese rupee"
+    },
+    {
+        "abreviation": "nzd",
+        "name": "New Zealand dollar"
+    },
+    {
+        "abreviation": "okb",
+        "name": "Okex"
+    },
+    {
+        "abreviation": "omr",
+        "name": "Omani rial"
+    },
+    {
+        "abreviation": "one",
+        "name": "Menlo One"
+    },
+    {
+        "abreviation": "pab",
+        "name": "Panamanian balboa"
+    },
+    {
+        "abreviation": "paxg",
+        "name": "PAX Gold"
+    },
+    {
+        "abreviation": "pen",
+        "name": "Sol"
+    },
+    {
+        "abreviation": "pgk",
+        "name": "Papua New Guinean kina"
+    },
+    {
+        "abreviation": "php",
+        "name": "Philippine peso"
+    },
+    {
+        "abreviation": "pkr",
+        "name": "Pakistani rupee"
+    },
+    {
+        "abreviation": "pln",
+        "name": "Poland złoty"
+    },
+    {
+        "abreviation": "pyg",
+        "name": "Paraguayan guarani"
+    },
+    {
+        "abreviation": "qar",
+        "name": "Qatari Rial"
+    },
+    {
+        "abreviation": "qnt",
+        "name": "Quant"
+    },
+    {
+        "abreviation": "qtum",
+        "name": "QTUM"
+    },
+    {
+        "abreviation": "ron",
+        "name": "Romanian leu"
+    },
+    {
+        "abreviation": "rsd",
+        "name": "Serbian dinar"
+    },
+    {
+        "abreviation": "rub",
+        "name": "Russian ruble"
+    },
+    {
+        "abreviation": "rune",
+        "name": "THORChain (ERC20)"
+    },
+    {
+        "abreviation": "rwf",
+        "name": "Rwandan Franc"
+    },
+    {
+        "abreviation": "sand",
+        "name": "BeachCoin"
+    },
+    {
+        "abreviation": "sar",
+        "name": "Saudi riyal"
+    },
+    {
+        "abreviation": "sbd",
+        "name": "Solomon Islands dollar"
+    },
+    {
+        "abreviation": "scr",
+        "name": "Seychellois rupee"
+    },
+    {
+        "abreviation": "sdg",
+        "name": "Sudanese pound"
+    },
+    {
+        "abreviation": "sek",
+        "name": "Swedish krona"
+    },
+    {
+        "abreviation": "sgd",
+        "name": "Singapore dollar"
+    },
+    {
+        "abreviation": "shib",
+        "name": "Shiba Inu"
+    },
+    {
+        "abreviation": "shp",
+        "name": "Saint Helena pound"
+    },
+    {
+        "abreviation": "sll",
+        "name": "Sierra Leonean leone"
+    },
+    {
+        "abreviation": "sol",
+        "name": "Sola"
+    },
+    {
+        "abreviation": "sos",
+        "name": "Somali shilling"
+    },
+    {
+        "abreviation": "srd",
+        "name": "Surinamese dollar"
+    },
+    {
+        "abreviation": "std",
+        "name": "São Tomé and Príncipe Dobra (pre-2018)"
+    },
+    {
+        "abreviation": "stx",
+        "name": "Stox"
+    },
+    {
+        "abreviation": "svc",
+        "name": "Salvadoran Colón"
+    },
+    {
+        "abreviation": "syp",
+        "name": "Syrian pound"
+    },
+    {
+        "abreviation": "szl",
+        "name": "Swazi lilangeni"
+    },
+    {
+        "abreviation": "thb",
+        "name": "Thai baht"
+    },
+    {
+        "abreviation": "theta",
+        "name": "Theta"
+    },
+    {
+        "abreviation": "tjs",
+        "name": "Tajikistani somoni"
+    },
+    {
+        "abreviation": "tmt",
+        "name": "Turkmenistani manat"
+    },
+    {
+        "abreviation": "tnd",
+        "name": "Tunisian dinar"
+    },
+    {
+        "abreviation": "top",
+        "name": "Tongan Paʻanga"
+    },
+    {
+        "abreviation": "trx",
+        "name": "TRON"
+    },
+    {
+        "abreviation": "try",
+        "name": "Turkish lira"
+    },
+    {
+        "abreviation": "ttd",
+        "name": "Trinidad & Tobago Dollar"
+    },
+    {
+        "abreviation": "ttt",
+        "name": "Tap Project"
+    },
+    {
+        "abreviation": "tusd",
+        "name": "True USD"
+    },
+    {
+        "abreviation": "twd",
+        "name": "New Taiwan dollar"
+    },
+    {
+        "abreviation": "tzs",
+        "name": "Tanzanian shilling"
+    },
+    {
+        "abreviation": "uah",
+        "name": "Ukrainian hryvnia"
+    },
+    {
+        "abreviation": "ugx",
+        "name": "Ugandan shilling"
+    },
+    {
+        "abreviation": "uni",
+        "name": "Universe"
+    },
+    {
+        "abreviation": "usd",
+        "name": "United States dollar"
+    },
+    {
+        "abreviation": "usdc",
+        "name": "USD Coin"
+    },
+    {
+        "abreviation": "usdp",
+        "name": "USDP Stablecoin"
+    },
+    {
+        "abreviation": "usdt",
+        "name": "Tether"
+    },
+    {
+        "abreviation": "uyu",
+        "name": "Uruguayan peso"
+    },
+    {
+        "abreviation": "uzs",
+        "name": "Uzbekistani som"
+    },
+    {
+        "abreviation": "vet",
+        "name": "Vechain"
+    },
+    {
+        "abreviation": "vnd",
+        "name": "Vietnamese dong"
+    },
+    {
+        "abreviation": "vuv",
+        "name": "Vanuatu vatu"
+    },
+    {
+        "abreviation": "waves",
+        "name": "Waves"
+    },
+    {
+        "abreviation": "wbtc",
+        "name": "Wrapped Bitcoin"
+    },
+    {
+        "abreviation": "wemix",
+        "name": "WEMIX"
+    },
+    {
+        "abreviation": "wst",
+        "name": "Samoan tala"
+    },
+    {
+        "abreviation": "xaf",
+        "name": "Central African CFA franc"
+    },
+    {
+        "abreviation": "xag",
+        "name": "Silver Ounce"
+    },
+    {
+        "abreviation": "xau",
+        "name": "XauCoin"
+    },
+    {
+        "abreviation": "xcd",
+        "name": "East Caribbean dollar"
+    },
+    {
+        "abreviation": "xdc",
+        "name": "XDC Network"
+    },
+    {
+        "abreviation": "xdr",
+        "name": "Special Drawing Rights"
+    },
+    {
+        "abreviation": "xec",
+        "name": "Eternal Coin"
+    },
+    {
+        "abreviation": "xem",
+        "name": "NEM"
+    },
+    {
+        "abreviation": "xlm",
+        "name": "Stellar"
+    },
+    {
+        "abreviation": "xmr",
+        "name": "Monero"
+    },
+    {
+        "abreviation": "xof",
+        "name": "West African CFA franc"
+    },
+    {
+        "abreviation": "xpf",
+        "name": "CFP franc"
+    },
+    {
+        "abreviation": "xrp",
+        "name": "XRP"
+    },
+    {
+        "abreviation": "xtz",
+        "name": "Tezos"
+    },
+    {
+        "abreviation": "yer",
+        "name": "Yemeni rial"
+    },
+    {
+        "abreviation": "zar",
+        "name": "South African rand"
+    },
+    {
+        "abreviation": "zec",
+        "name": "ZCash"
+    },
+    {
+        "abreviation": "zil",
+        "name": "Zilliqa"
+    },
+    {
+        "abreviation": "zmk",
+        "name": "Zambian kwacha"
+    },
+    {
+        "abreviation": "zmw",
+        "name": "Zambian Kwacha"
+    },
+    {
+        "abreviation": "zwl",
+        "name": "Zimbabwean Dollar"
+    }
+]
