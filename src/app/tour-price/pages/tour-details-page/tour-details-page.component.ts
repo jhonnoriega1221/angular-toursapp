@@ -26,7 +26,7 @@ export class TourDetailsPageComponent implements OnInit {
     description: '',
     name: '',
     places: [],
-    price: 0,
+    price: '',
     type: '',
     imgURL:'',
     duration:{

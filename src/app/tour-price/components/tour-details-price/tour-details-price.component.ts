@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TourDetailsPriceComponent implements OnInit {
 
-  @Input() price:number = 0;
+  @Input() price:string = '0';
 
   constructor() { }
 

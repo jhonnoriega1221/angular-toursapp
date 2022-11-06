@@ -3,7 +3,7 @@ export interface Tours {
     name:        string;
     type:        string;
     description: string;
-    price:       number;
+    price:       string;
     duration:    Duration;
     places:      Place[];
     route_id:    string;
