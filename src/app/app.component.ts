@@ -19,7 +19,8 @@ export class AppComponent {
     public translate: TranslateService,
     public renderer: Renderer2
   ) {
-    translate.addLangs(['en', 'es']);
+    /* Idiomas: Español: es, Inglés: en, Francés: fr, Portugués: pr, Alemán: ge, Italiano: it, Japonés, jp */
+    translate.addLangs(['en', 'es', 'fr', 'pr', 'ge', 'it', 'jp']);
     this.configDefaultLanguage(localStorage.getItem('app_language'));
     this.configDefaultTheme(localStorage.getItem('app_theme'));
     this.setFirstTime(localStorage.getItem('ft'));

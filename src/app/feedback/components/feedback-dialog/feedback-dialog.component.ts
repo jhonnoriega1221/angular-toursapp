@@ -4,6 +4,7 @@ import { CustomerFeedback } from '../../models/customer-feedback';
 import { CustomerFeedbackService } from '../../services/customer-feedback.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialogRef } from '@angular/material/dialog';
+import { TranslateService } from '@ngx-translate/core';
 
 interface Question {
   question:string;
@@ -26,11 +27,17 @@ export class FeedbackDialogComponent implements OnInit {
   public confirmMessage:string = '';
   public confirmIcon: string = '';
 
+  private confirmMessageText = {
+    message1: '',
+    message2: ''
+  }
+
   constructor( 
     private fb:FormBuilder,
     private customerFeedbackService:CustomerFeedbackService,
     private matSnackBar: MatSnackBar,
-    private dialogRef: MatDialogRef<FeedbackDialogComponent>
+    private dialogRef: MatDialogRef<FeedbackDialogComponent>,
+    private translate: TranslateService
   ) {
     this.feedbackForm = this.fb.group({
       question1: new FormControl('', [Validators.required]),
@@ -43,7 +50,7 @@ export class FeedbackDialogComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
+    this.translatePage();
   }
 
   public questions:Question[] = [
@@ -53,6 +60,23 @@ export class FeedbackDialogComponent implements OnInit {
     { name:'question4', question: '¿Que tan probable es que ecomiendes este aplicativo a otras personas?', answer: '0' },
     { name:'question5', question: '¿Estas de acuerdo que el aplicativo ayuda a mitigar el desconocimiento de precios?', answer: '0' }
   ];
+
+    private translatePage():void {
+    this.translate.get("FEEDBACK")
+    .subscribe( {
+      next: (v) => {
+        this.questions[0].question = v.QUESTIONS.QUESTION_1;
+        this.questions[1].question = v.QUESTIONS.QUESTION_2;
+        this.questions[2].question = v.QUESTIONS.QUESTION_3;
+        this.questions[3].question = v.QUESTIONS.QUESTION_4;
+        this.questions[4].question = v.QUESTIONS.QUESTION_5;
+        this.confirmMessageText = {
+          message1: v.CONFIRM.AGREE_TEXT,
+          message2: v.CONFIRM.CONFIRM_DIALOG
+        }
+      }
+    })
+  }
 
   public submitFeedbackForm(payload:any):void{
 
@@ -64,7 +88,7 @@ export class FeedbackDialogComponent implements OnInit {
 
     if(!this.isAcceptPermissions || payload == null){
       this.isConfirmDialog = false;
-      this.confirmMessage = 'Al enviar el mensaje daria su consentimiento para compartir su ubicación actual.';
+      this.confirmMessage = this.confirmMessageText.message1;
       this.confirmIcon = '../../../../assets/location-permission.svg';
       this.isShowingConfirmWrapper = !this.isShowingConfirmWrapper;
       return;
@@ -92,7 +116,7 @@ export class FeedbackDialogComponent implements OnInit {
       .subscribe({
         next: (v) => {
           this.isConfirmDialog = true;
-          this.confirmMessage = 'Muchas gracias por dar tu opinión, estos comentarios ayudarán a seguir mejorando.';
+          this.confirmMessage = this.confirmMessageText.message2;
           this.confirmIcon = '../../../../assets/happy-face.svg';
           this.isShowingConfirmWrapper = true
         },

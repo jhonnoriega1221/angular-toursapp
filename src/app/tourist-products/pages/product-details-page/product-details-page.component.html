@@ -1,4 +1,4 @@
-<app-back-title-button viewTitle="Detalles del producto"></app-back-title-button>
+<app-back-title-button [viewTitle]="pageTitle"></app-back-title-button>
 <div *ngIf="!isError" class="product-image-details">
 	<app-product-image class="image-side" *skeleton="isLoading; height: '300px'; width: '100%';" [imageURL]="product.imageURL"></app-product-image>
 	<div class="details-side">

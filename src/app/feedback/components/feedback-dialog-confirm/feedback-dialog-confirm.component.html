@@ -1,16 +1,16 @@
 <div class="wrapper">
   <div class="dialog-header">
-    <h2 class="dialog-title">Enviar comentarios</h2>
+    <h2 class="dialog-title">{{"FEEDBACK.DIALOG_TITLE" | translate}}</h2>
   </div>  <div class="dialog-content">
     <img class="permission-icon" [src]="icon">
     <p class="permission-text">{{message}}</p>
   </div>
   <div class="permission-buttons mat-card" style="box-shadow: none;">
-    <button *ngIf="!isConfirmDialog" (click)="acceptLocation(false)" [disabled]="isSearchingLocation" mat-button color="primary" class="permission-button">No acepto</button>
+    <button *ngIf="!isConfirmDialog" (click)="acceptLocation(false)" [disabled]="isSearchingLocation" mat-button color="primary" class="permission-button">{{"MISC.UNAGREE_ACTION_TEXT" | translate}}</button>
     <button *ngIf="!isConfirmDialog" (click)="acceptLocation(true)" [disabled]="isSearchingLocation" mat-raised-button color="primary" class="permission-button">
-      <span *ngIf="!isSearchingLocation">Acepto</span>
+      <span *ngIf="!isSearchingLocation">{{"MISC.AGREE_ACTION_TEXT" | translate}}</span>
       <mat-spinner *ngIf="isSearchingLocation" diameter="24" style="margin: 0 auto"></mat-spinner>
     </button>
-    <button *ngIf="isConfirmDialog" (click)="closeDialog()" mat-raised-button color="primary" class="permission-button">Cerrar</button>
+    <button *ngIf="isConfirmDialog" (click)="closeDialog()" mat-raised-button color="primary" class="permission-button">{{"MISC.CLOSE_ACTION_TEXT" | translate}}</button>
   </div>
 </div>

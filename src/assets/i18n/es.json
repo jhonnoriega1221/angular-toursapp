@@ -10,7 +10,8 @@
   "TOOLBAR": {
     "MORE_OPTIONS": {
       "TITLE": "Más opciones",
-      "SETTINGS": "Ajustes"
+      "SETTINGS": "Ajustes",
+      "SEND_FEEDBACK_TEXT": "Enviar comentarios"
     }
   },
   "HOME": {
@@ -27,7 +28,7 @@
         "UPDATED_AT": "Actualizado el "
       }
     },
-    
+    "TOURIST_SERVICES_TITLE": "Servicios turisticos",
     "SERVICES_BUTTONS": {
       "TITLE": "Servicios turísticos",
       "TRANSPORT_BUTTON": "Transporte",
@@ -46,7 +47,12 @@
       "LANGUAGES_LIST": {
         "AUTO": "Predeterminado",
         "ENGLISH": "Inglés",
-        "SPANISH": "Español"
+        "SPANISH": "Español",
+        "FRENCH": "Francés",
+        "PORTUGAL": "Portugal",
+        "GERMANY": "Alemán",
+        "ITALIAN": "Italiano",
+        "JAPANESE": "Japonés"
       }
     },
     "APPEARANCE":{
@@ -92,7 +98,9 @@
       "PRICE_TEXT_3": "es de ",
       "SELECT_PLACE_TITLE": "Selecciona un lugar",
       "SELECTED_PLACE_LABEL_TEXT": "Lugar seleccionado",
-      "NOTHING_SELECTED_TEXT": "Ninguno"
+      "NOTHING_SELECTED_TEXT": "Ninguno",
+      "PRICE_NOT_FOUND_TEXT": "Lo sentimos, el lugar seleccionado aún no tiene precio establecido.",
+      "MAP_SIDE_PLACEHOLDER_TEXT": "Puedes elegir la opción 'seleccionar un punto en el mapa' para ver los barrios en el mapa."
     },
     "MUSEUM":{
       "LIST": {
@@ -162,13 +170,38 @@
       "ALL": "Todos"
     }
   },
+  "FEEDBACK": {
+    "DIALOG_TITLE": "Enviar comentarios",
+    "QUESTIONS":{
+      "QUESTION_1": "¿Le fué útil este aplicativo para la consulta de precios de los servicios ofrecidos a turistas?",
+      "QUESTION_2": "¿Que tan satisfecho te encuentras con tu experiencia usando el aplicativo?",
+      "QUESTION_3": "¿Que tan probable es que vuelvas a usar el aplicativo?",
+      "QUESTION_4": "¿Que tan probable es que ecomiendes este aplicativo a otras personas?",
+      "QUESTION_5": "¿Estas de acuerdo que el aplicativo ayuda a mitigar el desconocimiento de precios?",
+      "MORE_DETAILS" : "Podrías compartirnos mas detalles"
+    },
+    "CONFIRM": {
+      "AGREE_TEXT": "Al enviar el mensaje daria su consentimiento para compartir su ubicación actual.",
+      "CONFIRM_DIALOG": "Muchas gracias por dar tu opinión, estos comentarios ayudarán a seguir mejorando."
+    }
+  },
   "MISC": {
     "LOAD_MORE_ACTION_TEXT": "Cargar más",
     "CANCEL_ACTION_TEXT": "Cancelar",
     "ACCEPT_ACTION_TEXT": "Aceptar",
+    "CLOSE_ACTION_TEXT": "Cerrar",
     "SUBMIT_ACTION_TEXT": "Enviar",
     "CONTINUE_ACTION_TEXT": "Continuar",
     "SKIP_ACTION_TEXT": "Omitir",
-    "NEXT_ACTION_TEXT": "Siguiente"
+    "NEXT_ACTION_TEXT": "Siguiente",
+    "SEARCHING_LOCATION": "Buscando ubicación",
+    "AGREE_ACTION_TEXT": "De acuerdo",
+    "UNAGREE_ACTION_TEXT": "No estoy de acuerdo",
+    "LOCATION_ERROR": "No se pudo encontrar su ubicación",
+    "GET_DATA_ERROR":{
+      "TITLE": "Oops!",
+      "TEXT":"Algo salió mal mientras se cargaba la ínformación.",
+      "ACTION_TEXT": "Intentar de nuevo"
+    }
   }
 }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../../models/product';
 import { TouristProductService } from '../../services/tourist-product.service';
 import { ActivatedRoute } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-product-details-page',
@@ -13,6 +14,7 @@ export class ProductDetailsPageComponent implements OnInit {
     private productId:string = '';
     public isLoading:boolean = true;
     public isError:boolean = false;
+    public pageTitle:string = '';
 
   public product:Product = {
     _id: '',
@@ -21,13 +23,14 @@ export class ProductDetailsPageComponent implements OnInit {
     prices: []
   }
 
-  constructor( private touristProductService: TouristProductService, private activatedRoute: ActivatedRoute ) { }
+  constructor( private touristProductService: TouristProductService, private activatedRoute: ActivatedRoute, private translate:TranslateService ) { }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe( params => {
       this.productId = params['id'];
       this.getProductInfo();
     })
+    this.translatePage();
   }
 
   public getProductInfo(): void {
@@ -44,5 +47,14 @@ export class ProductDetailsPageComponent implements OnInit {
         }
       );
   }
+
+      private translatePage():void {
+      this.translate.get("TOURIST_PRODUCTS.DETAILS")
+      .subscribe( {
+        next: (v) => {
+            this.pageTitle = v.TITLE;
+        }
+      })
+    }
 
 }

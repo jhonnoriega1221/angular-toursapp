@@ -20,7 +20,7 @@
 
 	<div class="taxi-price-calculator-container" *ngIf="taxiPrice === 'null'">
 		<img class="taxi-icon" src="../../../../assets/page-error.svg">
-		<p class="taxi-text">Lo sentimos, el lugar seleccionado aún no tiene precio establecido.</p>
+		<p class="taxi-text">{{"TOURIST_SERVICES.TRANSPORT.PRICE_NOT_FOUND_TEXT" | translate}}</p>
 	</div>
 
 </div>
@@ -42,7 +42,7 @@
 <div class="map-container-placeholder" *ngIf="!isSelectMode && !isMobile">
 	<img class="placeholder-map" src="../../../../assets/map_placeholder.jpg" alt="" >
 	<mat-icon class="placeholder-icon">lightbulb</mat-icon>
-	<p class="placeholder-text">Puedes elegir la opción "seleccionar un punto en el mapa" para ver los barrios en el mapa.</p>
+	<p class="placeholder-text">{{"TOURIST_SERVICES.TRANSPORT.MAP_SIDE_PLACEHOLDER_TEXT" | translate}}</p>
 </div>
 <app-neighborhoods (selectNeigborhood)="getNeighborhood($event)" *ngIf="isSelectMode" [latLon]="latLonSearch"></app-neighborhoods>
 <app-click-marker *ngIf="isSelectMode" [latLon]="latLonSearch"></app-click-marker>
