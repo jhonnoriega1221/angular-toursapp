@@ -1,0 +1,207 @@
+{
+    "ONBOARDING": {
+        "SLIDE1_TITLE": "価格を知る",
+        "SLIDE1_TEXT": "観光商品・サービスの価値をチェック",
+        "SLIDE2_TITLE": "更新された情報",
+        "SLIDE2_TEXT": "常に更新される価格",
+        "SLIDE3_TITLE": "過剰な請求を避ける",
+        "SLIDE3_TEXT": "カルタヘナの街での滞在をお楽しみください"
+    },
+    "TOOLBAR": {
+        "MORE_OPTIONS": {
+            "TITLE": "より多くのオプション",
+            "SETTINGS": "設定",
+            "SEND_FEEDBACK_TEXT": "コメントを投稿する"
+        }
+    },
+    "HOME": {
+        "GREETINGS": "観光客歓迎！",
+        "TIP": "商品やサービスを利用する前に、こちらで価格を確認してください。",
+        "PRICES_LIST": {
+            "TITLE": "価格表",
+            "PRODUCTS_BUTTON": "製品",
+            "SERVICES_BUTTON": "サービス"
+        },
+        "WIDGETS": {
+            "EXCHANGE_RATE": {
+                "TITLE": "為替",
+                "UPDATED_AT": "更新日"
+            }
+        },
+        "TOURIST_SERVICES_TITLE": "旅行サービス",
+        "SERVICES_BUTTONS": {
+            "TITLE": "旅行サービス",
+            "TRANSPORT_BUTTON": "交通手段",
+            "MUSEUM_BUTTON": "博物館",
+            "BEACH_BUTTON": "ビーチ",
+            "RESTAURANT_BUTTON": "食品",
+            "TRAVELS_RIDES_BUTTON": "散歩と旅行"
+        }
+    },
+    "SETTINGS": {
+        "TITLE": "設定",
+        "LANGUAGE": {
+            "TITLE": "熟語",
+            "LANGUAGE_OPTION_TITLE": "熟語",
+            "LANGUAGE_OPTION_SUBTITLE": "言語を選択してください",
+            "LANGUAGES_LIST": {
+                "AUTO": "所定の",
+                "ENGLISH": "英語",
+                "SPANISH": "スペイン語",
+                "FRENCH": "フランス語",
+                "PORTUGAL": "ポルトガル",
+                "GERMANY": "ドイツ人",
+                "ITALIAN": "イタリアの",
+                "JAPANESE": "日本"
+            }
+        },
+        "APPEARANCE": {
+            "TITLE": "外観",
+            "THEME_OPTION_TITLE": "テーマ",
+            "THEME_OPTION_SUBTITLE": "お好みのテーマを選択してください",
+            "THEMES_LIST": {
+                "AUTO": "システム",
+                "LIGHT": "光",
+                "DARK": "暗い"
+            }
+        },
+        "ABOUT": {
+            "TITLE": "約",
+            "CREATED_BY": "作成者:"
+        }
+    },
+    "TOURIST_PRODUCTS": {
+        "LIST": {
+            "TITLE": "製品",
+            "ANOTHER_PAYED_TEXT": "他の人が支払った"
+        },
+        "DETAILS": {
+            "TITLE": "製品詳細",
+            "STANDARD_PRICE_TEXT": "標準価格",
+            "HAVE_ADQUIRED_ANOTHER_PRICE_QUESTION_TEXT_1": "この商品を別の価格で購入しましたか?",
+            "HAVE_ADQUIRED_ANOTHER_PRICE_QUESTION_TEXT_2": "支払った金額を教えてください。",
+            "INDICATE_PRICE_ACTION_TEXT": "価格を表示",
+            "PRODUCT_PRICE_DIALOG_TITLE": "商品の価格",
+            "PRODUCT_PRICE_DIALOG_BODY_TEXT": "商品代金を教えていただけると助かります。",
+            "PRODUCT_PRICE_DIALOG_INPUT_TEXT": "商品の価格"
+        }
+    },
+    "TOURIST_SERVICES": {
+        "TRANSPORT": {
+            "TITLE": "交通手段",
+            "ORIGIN_PLACE_INPUT_PLACEHOLDER_TEXT": "出身地",
+            "DESTINATION_PLACE_INPUT_PLACEHOLDER_TEXT": "目的地",
+            "TAXI_ICON_TEXT": "出発地と目的地を選択して価格を表示",
+            "SELECT_PLACE_MAP_OPTION_TEXT": "地図上のポイントを選択",
+            "PRICE_TEXT_1": "レースの価格",
+            "PRICE_TEXT_2": "a",
+            "PRICE_TEXT_3": "es de ",
+            "SELECT_PLACE_TITLE": "場所を選択",
+            "SELECTED_PLACE_LABEL_TEXT": "選んだ場所",
+            "NOTHING_SELECTED_TEXT": "なし",
+            "PRICE_NOT_FOUND_TEXT": "申し訳ありませんが、選択した場所にはまだ価格が設定されていません。",
+            "MAP_SIDE_PLACEHOLDER_TEXT": "「マップ上のポイントを選択」オプションを選択して、マップ上の近隣を表示できます。"
+        },
+        "MUSEUM": {
+            "LIST": {
+                "TITLE": "博物館",
+                "EXHIBITIONS_TEXT": "展示品"
+            },
+            "DETAILS": {
+                "TITLE": "美術館情報",
+                "SCHEDULE_SEPARATOR_TEXT": "スケジュール",
+                "PRICES_SEPARATOR_TEXT": "料金",
+                "LOCATION_SEPARATOR_TEXT": "位置",
+                "EXHIBITIONS_SEPARATOR_TEXT": "展示品",
+                "NO_EXHIBITIONS_TEXT": "この美術館には展示物がありません"
+            },
+            "EXHIBITIONS": {
+                "TITLE": "展示品"
+            }
+        },
+        "BEACH": {
+            "LIST": {
+                "TITLE": "ビーチ"
+            },
+            "DETAILS": {
+                "TITLE": "ビーチ情報",
+                "SCHEDULE_SEPARATOR_TEXT": "スケジュール",
+                "SERVICES": {
+                    "SEPARATOR_TEXT": "サービス",
+                    "TENT_SERVICE_TEXT": "テント",
+                    "CHAIR_SERVICE_TEXT": "椅子",
+                    "MASSAGE_SERVICE_TEXT": "マッサージ",
+                    "BRAID_SERVICE_TEXT": "三つ編み",
+                    "JETSKY_SERVICE_TEXT": "ジェットスキー",
+                    "WORM_SERVICE_TEXT": "いも虫",
+                    "BOAT_DISH_SERVICE_TEXT": "ボートディッシュ"
+                },
+                "LOCATION_SEPARATOR_TEXT": "位置"
+            }
+        },
+        "TRAVELS_RIDES": {
+            "LIST": {
+                "TITLE": "散歩と旅行"
+            },
+            "DETAILS": {
+                "TITLE_TOUR": "ツアー情報",
+                "PRICES_SEPARATOR_TEXT": "価格",
+                "ROUTE_SEPARATOR_TEXT": "ルート",
+                "PLACES_SEPARATOR_TEXT": "場所"
+            }
+        },
+        "FOOD": {
+            "LIST": {
+                "TITLE": "食品"
+            },
+            "DETAILS": {
+                "TITLE": "食事の詳細",
+                "PRICES_SEPARATOR_TEXT": "価格"
+            }
+        }
+    },
+    "NAVBAR": {
+        "HOME": "始める",
+        "MAP": "地図"
+    },
+    "FILTER": {
+        "CATEGORIES_TITLE": "カテゴリー",
+        "CATEGORIES_LIST": {
+            "ALL": "全て"
+        }
+    },
+    "FEEDBACK": {
+        "DIALOG_TITLE": "コメントを投稿する",
+        "QUESTIONS": {
+            "QUESTION_1": "このアプリケーションは、観光客に提供されるサービスの価格を調べるのに役立ちましたか?",
+            "QUESTION_2": "アプリケーションの使用経験にどの程度満足していますか?",
+            "QUESTION_3": "アプリを再び使用する可能性はどのくらいありますか?",
+            "QUESTION_4": "このアプリケーションを他の人に勧める可能性はどのくらいありますか?",
+            "QUESTION_5": "アプリケーションが価格の無知を軽減するのに役立つことに同意しますか?",
+            "MORE_DETAILS": "詳細を教えてください。"
+        },
+        "CONFIRM": {
+            "AGREE_TEXT": "メッセージを送信することにより、現在地を共有することに同意したことになります。",
+            "CONFIRM_DIALOG": "ご意見をお寄せいただきありがとうございます。これらのコメントは、今後の改善に役立ちます。"
+        }
+    },
+    "MISC": {
+        "LOAD_MORE_ACTION_TEXT": "もっと読み込む",
+        "CANCEL_ACTION_TEXT": "キャンセル",
+        "ACCEPT_ACTION_TEXT": "受け入れるために",
+        "CLOSE_ACTION_TEXT": "閉じるには",
+        "SUBMIT_ACTION_TEXT": "送信",
+        "CONTINUE_ACTION_TEXT": "継続する",
+        "SKIP_ACTION_TEXT": "スキップ",
+        "NEXT_ACTION_TEXT": "続く",
+        "SEARCHING_LOCATION": "場所を探しています",
+        "AGREE_ACTION_TEXT": "合意の上で",
+        "UNAGREE_ACTION_TEXT": "私は同意しない",
+        "LOCATION_ERROR": "現在地が見つかりませんでした",
+        "GET_DATA_ERROR": {
+            "TITLE": "Oops!",
+            "TEXT": "情報の読み込み中にエラーが発生しました。",
+            "ACTION_TEXT": "再試行"
+        }
+    }
+}

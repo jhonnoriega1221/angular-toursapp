@@ -1,0 +1,207 @@
+{
+    "ONBOARDING": {
+        "SLIDE1_TITLE": "Kenne die Preise",
+        "SLIDE1_TEXT": "Überprüfen Sie den Wert touristischer Produkte und Dienstleistungen",
+        "SLIDE2_TITLE": "Aktualisierte Information",
+        "SLIDE2_TEXT": "Ständig aktualisierte Preise",
+        "SLIDE3_TITLE": "Vermeiden Sie überhöhte Gebühren",
+        "SLIDE3_TEXT": "Genießen Sie Ihren Aufenthalt in der Stadt Cartagena"
+    },
+    "TOOLBAR": {
+        "MORE_OPTIONS": {
+            "TITLE": "Mehr Optionen",
+            "SETTINGS": "Einstellungen",
+            "SEND_FEEDBACK_TEXT": "Kommentar schreiben"
+        }
+    },
+    "HOME": {
+        "GREETINGS": "Willkommen Tourist!",
+        "TIP": "Überprüfen Sie hier den Preis, bevor Sie ein Produkt oder eine Dienstleistung konsumieren.",
+        "PRICES_LIST": {
+            "TITLE": "Preisliste",
+            "PRODUCTS_BUTTON": "Produkte",
+            "SERVICES_BUTTON": "Dienstleistungen"
+        },
+        "WIDGETS": {
+            "EXCHANGE_RATE": {
+                "TITLE": "Geldwechsel",
+                "UPDATED_AT": "Aktualisiert am"
+            }
+        },
+        "TOURIST_SERVICES_TITLE": "Reisedienstleistungen",
+        "SERVICES_BUTTONS": {
+            "TITLE": "Reisedienstleistungen",
+            "TRANSPORT_BUTTON": "Transport",
+            "MUSEUM_BUTTON": "Museen",
+            "BEACH_BUTTON": "Strände",
+            "RESTAURANT_BUTTON": "Lebensmittel",
+            "TRAVELS_RIDES_BUTTON": "Spaziergänge und Ausflüge"
+        }
+    },
+    "SETTINGS": {
+        "TITLE": "Einstellungen",
+        "LANGUAGE": {
+            "TITLE": "Idiom",
+            "LANGUAGE_OPTION_TITLE": "Idiom",
+            "LANGUAGE_OPTION_SUBTITLE": "Wähle deine Sprache",
+            "LANGUAGES_LIST": {
+                "AUTO": "Vorbestimmt",
+                "ENGLISH": "Englisch",
+                "SPANISH": "Spanisch",
+                "FRENCH": "Französisch",
+                "PORTUGAL": "Portugal",
+                "GERMANY": "Deutsch",
+                "ITALIAN": "Italienisch",
+                "JAPANESE": "Japonês"
+            }
+        },
+        "APPEARANCE": {
+            "TITLE": "Aussehen",
+            "THEME_OPTION_TITLE": "Thema",
+            "THEME_OPTION_SUBTITLE": "Wählen Sie Ihr bevorzugtes Thema",
+            "THEMES_LIST": {
+                "AUTO": "System",
+                "LIGHT": "Licht",
+                "DARK": "Dunkel"
+            }
+        },
+        "ABOUT": {
+            "TITLE": "Um",
+            "CREATED_BY": "Erstellt von:"
+        }
+    },
+    "TOURIST_PRODUCTS": {
+        "LIST": {
+            "TITLE": "Produkte",
+            "ANOTHER_PAYED_TEXT": "Andere haben bezahlt"
+        },
+        "DETAILS": {
+            "TITLE": "Produktdetails",
+            "STANDARD_PRICE_TEXT": "Standartpreis",
+            "HAVE_ADQUIRED_ANOTHER_PRICE_QUESTION_TEXT_1": "Haben Sie dieses Produkt zu einem anderen Preis gekauft?",
+            "HAVE_ADQUIRED_ANOTHER_PRICE_QUESTION_TEXT_2": "sagen Sie uns, wie viel Sie bezahlt haben.",
+            "INDICATE_PRICE_ACTION_TEXT": "Preis angeben",
+            "PRODUCT_PRICE_DIALOG_TITLE": "Preis des Produkts",
+            "PRODUCT_PRICE_DIALOG_BODY_TEXT": "Es wäre sehr hilfreich, wenn Sie uns den Preis mitteilen könnten, den Sie für das Produkt bezahlt haben.",
+            "PRODUCT_PRICE_DIALOG_INPUT_TEXT": "Preis des Produkts"
+        }
+    },
+    "TOURIST_SERVICES": {
+        "TRANSPORT": {
+            "TITLE": "Transporte",
+            "ORIGIN_PLACE_INPUT_PLACEHOLDER_TEXT": "Geburtsort",
+            "DESTINATION_PLACE_INPUT_PLACEHOLDER_TEXT": "Bestimmungsort",
+            "TAXI_ICON_TEXT": "Wählen Sie die Herkunfts- und Zielorte aus, um den Preis anzuzeigen",
+            "SELECT_PLACE_MAP_OPTION_TEXT": "Wählen Sie einen Punkt auf der Karte aus",
+            "PRICE_TEXT_1": "Der Preis des Rennens",
+            "PRICE_TEXT_2": "a ",
+            "PRICE_TEXT_3": "es de ",
+            "SELECT_PLACE_TITLE": "Wählen Sie einen Ort aus",
+            "SELECTED_PLACE_LABEL_TEXT": "ausgewählten Ort",
+            "NOTHING_SELECTED_TEXT": "Keiner",
+            "PRICE_NOT_FOUND_TEXT": "Entschuldigung, der ausgewählte Ort hat noch keinen festen Preis.",
+            "MAP_SIDE_PLACEHOLDER_TEXT": "Sie können die Option „Punkt auf der Karte auswählen“ wählen, um die Nachbarschaften auf der Karte anzuzeigen."
+        },
+        "MUSEUM": {
+            "LIST": {
+                "TITLE": "Museen",
+                "EXHIBITIONS_TEXT": "ausstellungen"
+            },
+            "DETAILS": {
+                "TITLE": "Museumsinformationen",
+                "SCHEDULE_SEPARATOR_TEXT": "Zeitlicher Ablauf",
+                "PRICES_SEPARATOR_TEXT": "Preise",
+                "LOCATION_SEPARATOR_TEXT": "Ort",
+                "EXHIBITIONS_SEPARATOR_TEXT": "Ausstellungen",
+                "NO_EXHIBITIONS_TEXT": "Dieses Museum hat keine Ausstellungen"
+            },
+            "EXHIBITIONS": {
+                "TITLE": "Ausstellungen"
+            }
+        },
+        "BEACH": {
+            "LIST": {
+                "TITLE": "Strände"
+            },
+            "DETAILS": {
+                "TITLE": "Informationen zum Strand",
+                "SCHEDULE_SEPARATOR_TEXT": "Zeitlicher Ablauf",
+                "SERVICES": {
+                    "SEPARATOR_TEXT": "Dienstleistungen",
+                    "TENT_SERVICE_TEXT": "Zelte",
+                    "CHAIR_SERVICE_TEXT": "Stühle",
+                    "MASSAGE_SERVICE_TEXT": "Massagen",
+                    "BRAID_SERVICE_TEXT": "Zöpfe",
+                    "JETSKY_SERVICE_TEXT": "Jet Ski",
+                    "WORM_SERVICE_TEXT": "Wurm",
+                    "BOAT_DISH_SERVICE_TEXT": "Boot Gericht"
+                },
+                "LOCATION_SEPARATOR_TEXT": "Ort"
+            }
+        },
+        "TRAVELS_RIDES": {
+            "LIST": {
+                "TITLE": "Spaziergänge und Ausflüge"
+            },
+            "DETAILS": {
+                "TITLE_TOUR": "Tourinformationen",
+                "PRICES_SEPARATOR_TEXT": "Preis",
+                "ROUTE_SEPARATOR_TEXT": "Route",
+                "PLACES_SEPARATOR_TEXT": "Setzt"
+            }
+        },
+        "FOOD": {
+            "LIST": {
+                "TITLE": "Lebensmittel"
+            },
+            "DETAILS": {
+                "TITLE": "Details zum Essen",
+                "PRICES_SEPARATOR_TEXT": "Preis"
+            }
+        }
+    },
+    "NAVBAR": {
+        "HOME": "Anfang",
+        "MAP": "Karte"
+    },
+    "FILTER": {
+        "CATEGORIES_TITLE": "Kategorien",
+        "CATEGORIES_LIST": {
+            "ALL": "Alle"
+        }
+    },
+    "FEEDBACK": {
+        "DIALOG_TITLE": "Kommentar schreiben",
+        "QUESTIONS": {
+            "QUESTION_1": "War diese Anwendung für Sie nützlich, um die Preise der touristischen Dienstleistungen abzurufen?",
+            "QUESTION_2": "Wie zufrieden sind Sie mit Ihrer Erfahrung mit der Anwendung?",
+            "QUESTION_3": "Wie wahrscheinlich ist es, dass Sie die App erneut verwenden werden?",
+            "QUESTION_4": "Wie wahrscheinlich ist es, dass Sie diese Anwendung anderen Personen empfehlen?",
+            "QUESTION_5": "Stimmen Sie zu, dass die Anwendung dazu beiträgt, die Preisunkenntnis zu verringern?",
+            "MORE_DETAILS": "Könntest du mehr Details teilen?"
+        },
+        "CONFIRM": {
+            "AGREE_TEXT": "Durch das Senden der Nachricht erklären Sie sich damit einverstanden, Ihren aktuellen Standort zu teilen.",
+            "CONFIRM_DIALOG": "Vielen Dank für Ihre Meinung. Diese Kommentare helfen uns, uns weiter zu verbessern."
+        }
+    },
+    "MISC": {
+        "LOAD_MORE_ACTION_TEXT": "Mehr laden",
+        "CANCEL_ACTION_TEXT": "Absagen",
+        "ACCEPT_ACTION_TEXT": "Akzeptieren",
+        "CLOSE_ACTION_TEXT": "Schließen",
+        "SUBMIT_ACTION_TEXT": "Senden",
+        "CONTINUE_ACTION_TEXT": "Fortsetzen",
+        "SKIP_ACTION_TEXT": "Überspringen",
+        "NEXT_ACTION_TEXT": "Folgend",
+        "SEARCHING_LOCATION": "in cerca di posizione",
+        "AGREE_ACTION_TEXT": "In Übereinstimmung",
+        "UNAGREE_ACTION_TEXT": "Ich stimme nicht zu",
+        "LOCATION_ERROR": "Ihr Standort konnte nicht gefunden werden",
+        "GET_DATA_ERROR": {
+            "TITLE": "Oops!",
+            "TEXT": "Beim Laden der Informationen ist etwas schief gelaufen.",
+            "ACTION_TEXT": "Versuchen Sie es nochmal"
+        }
+    }
+}

@@ -1,0 +1,207 @@
+{
+    "ONBOARDING": {
+        "SLIDE1_TITLE": "Conosci i prezzi",
+        "SLIDE1_TEXT": "Verificare il valore dei prodotti e servizi turistici",
+        "SLIDE2_TITLE": "Informazioni aggiornate",
+        "SLIDE2_TEXT": "Prezzi costantemente aggiornati",
+        "SLIDE3_TITLE": "Evita addebiti eccessivi",
+        "SLIDE3_TEXT": "Godetevi il vostro soggiorno nella città di Cartagena"
+    },
+    "TOOLBAR": {
+        "MORE_OPTIONS": {
+            "TITLE": "Più opzioni",
+            "SETTINGS": "Impostazioni",
+            "SEND_FEEDBACK_TEXT": "Pubblica commenti"
+        }
+    },
+    "HOME": {
+        "GREETINGS": "Benvenuto turista!",
+        "TIP": "Prima di consumare un prodotto o servizio, controlla il suo prezzo qui.",
+        "PRICES_LIST": {
+            "TITLE": "Listino prezzi",
+            "PRODUCTS_BUTTON": "Prodotti",
+            "SERVICES_BUTTON": "Servizi"
+        },
+        "WIDGETS": {
+            "EXCHANGE_RATE": {
+                "TITLE": "Cambio di valuta",
+                "UPDATED_AT": "Aggiornato il"
+            }
+        },
+        "TOURIST_SERVICES_TITLE": "Servizi di viaggio",
+        "SERVICES_BUTTONS": {
+            "TITLE": "Servizi di viaggio",
+            "TRANSPORT_BUTTON": "Trasporto",
+            "MUSEUM_BUTTON": "Musei",
+            "BEACH_BUTTON": "Spiagge",
+            "RESTAURANT_BUTTON": "Alimenti",
+            "TRAVELS_RIDES_BUTTON": "Passeggiate e gite"
+        }
+    },
+    "SETTINGS": {
+        "TITLE": "Impostazioni",
+        "LANGUAGE": {
+            "TITLE": "Idioma",
+            "LANGUAGE_OPTION_TITLE": "Idioma",
+            "LANGUAGE_OPTION_SUBTITLE": "scegli la tua lingua",
+            "LANGUAGES_LIST": {
+                "AUTO": "Predeterminado",
+                "ENGLISH": "Inglese",
+                "SPANISH": "Spagnolo",
+                "FRENCH": "Francese",
+                "PORTUGAL": "Portogallo",
+                "GERMANY": "Tedesco",
+                "ITALIAN": "Italiano",
+                "JAPANESE": "Giapponese"
+            }
+        },
+        "APPEARANCE": {
+            "TITLE": "Aspetto esteriore",
+            "THEME_OPTION_TITLE": "Tema",
+            "THEME_OPTION_SUBTITLE": "Scegli il tuo tema preferito",
+            "THEMES_LIST": {
+                "AUTO": "Sistema",
+                "LIGHT": "Luce",
+                "DARK": "Scuro"
+            }
+        },
+        "ABOUT": {
+            "TITLE": "Di",
+            "CREATED_BY": "Creato da:"
+        }
+    },
+    "TOURIST_PRODUCTS": {
+        "LIST": {
+            "TITLE": "Prodotti",
+            "ANOTHER_PAYED_TEXT": "Altri hanno pagato"
+        },
+        "DETAILS": {
+            "TITLE": "Dettagli del prodotto",
+            "STANDARD_PRICE_TEXT": "Prezzo standard",
+            "HAVE_ADQUIRED_ANOTHER_PRICE_QUESTION_TEXT_1": "Hai acquistato questo prodotto a un prezzo diverso?",
+            "HAVE_ADQUIRED_ANOTHER_PRICE_QUESTION_TEXT_2": "dicci quanto hai pagato.",
+            "INDICATE_PRICE_ACTION_TEXT": "Indicare il prezzo",
+            "PRODUCT_PRICE_DIALOG_TITLE": "Prezzo del prodotto",
+            "PRODUCT_PRICE_DIALOG_BODY_TEXT": "Sarebbe molto utile se potessi dirci il prezzo che hai pagato per il prodotto.",
+            "PRODUCT_PRICE_DIALOG_INPUT_TEXT": "Prezzo del prodotto"
+        }
+    },
+    "TOURIST_SERVICES": {
+        "TRANSPORT": {
+            "TITLE": "Trasporto",
+            "ORIGIN_PLACE_INPUT_PLACEHOLDER_TEXT": "Luogo di nascita",
+            "DESTINATION_PLACE_INPUT_PLACEHOLDER_TEXT": "Luogo di destinazione",
+            "TAXI_ICON_TEXT": "Seleziona i luoghi di origine e di destinazione per visualizzarne il prezzo",
+            "SELECT_PLACE_MAP_OPTION_TEXT": "Seleziona un punto sulla mappa",
+            "PRICE_TEXT_1": "Il prezzo della gara",
+            "PRICE_TEXT_2": "un",
+            "PRICE_TEXT_3": "es de ",
+            "SELECT_PLACE_TITLE": "Seleziona un luogo",
+            "SELECTED_PLACE_LABEL_TEXT": "Luogo selezionato",
+            "NOTHING_SELECTED_TEXT": "Nessuno",
+            "PRICE_NOT_FOUND_TEXT": "Siamo spiacenti, il luogo selezionato non ha ancora un prezzo fisso.",
+            "MAP_SIDE_PLACEHOLDER_TEXT": "Puoi scegliere l'opzione 'seleziona un punto sulla mappa' per vedere i quartieri sulla mappa."
+        },
+        "MUSEUM": {
+            "LIST": {
+                "TITLE": "Musei",
+                "EXHIBITIONS_TEXT": "mostre"
+            },
+            "DETAILS": {
+                "TITLE": "informazioni sui musei",
+                "SCHEDULE_SEPARATOR_TEXT": "Programma",
+                "PRICES_SEPARATOR_TEXT": "Prezzi",
+                "LOCATION_SEPARATOR_TEXT": "Posizione",
+                "EXHIBITIONS_SEPARATOR_TEXT": "Mostre",
+                "NO_EXHIBITIONS_TEXT": "Questo museo non ha mostre"
+            },
+            "EXHIBITIONS": {
+                "TITLE": "Mostre"
+            }
+        },
+        "BEACH": {
+            "LIST": {
+                "TITLE": "Spiagge"
+            },
+            "DETAILS": {
+                "TITLE": "Informazioni sulla spiaggia",
+                "SCHEDULE_SEPARATOR_TEXT": "Programma",
+                "SERVICES": {
+                    "SEPARATOR_TEXT": "Servizi",
+                    "TENT_SERVICE_TEXT": "Tende",
+                    "CHAIR_SERVICE_TEXT": "Sedie",
+                    "MASSAGE_SERVICE_TEXT": "Massaggi",
+                    "BRAID_SERVICE_TEXT": "Trecce",
+                    "JETSKY_SERVICE_TEXT": "Moto d'acqua",
+                    "WORM_SERVICE_TEXT": "Verme",
+                    "BOAT_DISH_SERVICE_TEXT": "Piatto da barca"
+                },
+                "LOCATION_SEPARATOR_TEXT": "Posizione"
+            }
+        },
+        "TRAVELS_RIDES": {
+            "LIST": {
+                "TITLE": "Passeggiate e gite"
+            },
+            "DETAILS": {
+                "TITLE_TOUR": "Informazioni sul tour",
+                "PRICES_SEPARATOR_TEXT": "Prezzo",
+                "ROUTE_SEPARATOR_TEXT": "Percorso",
+                "PLACES_SEPARATOR_TEXT": "Posti"
+            }
+        },
+        "FOOD": {
+            "LIST": {
+                "TITLE": "Alimenti"
+            },
+            "DETAILS": {
+                "TITLE": "Dettagli del pasto",
+                "PRICES_SEPARATOR_TEXT": "Prezzo"
+            }
+        }
+    },
+    "NAVBAR": {
+        "HOME": "Inizio",
+        "MAP": "Carta geografica"
+    },
+    "FILTER": {
+        "CATEGORIES_TITLE": "Categorie",
+        "CATEGORIES_LIST": {
+            "ALL": "Tutto"
+        }
+    },
+    "FEEDBACK": {
+        "DIALOG_TITLE": "Pubblica commenti",
+        "QUESTIONS": {
+            "QUESTION_1": "Questa applicazione ti è stata utile per consultare i prezzi dei servizi offerti ai turisti?",
+            "QUESTION_2": "Quanto sei soddisfatto della tua esperienza nell'utilizzo dell'applicazione?",
+            "QUESTION_3": "Con quale probabilità utilizzerai di nuovo l'app?",
+            "QUESTION_4": "Con quale probabilità consiglieresti questa applicazione ad altre persone?",
+            "QUESTION_5": "Sei d'accordo sul fatto che l'applicazione aiuta a mitigare l'ignoranza dei prezzi?",
+            "MORE_DETAILS": "Potresti condividere maggiori dettagli?"
+        },
+        "CONFIRM": {
+            "AGREE_TEXT": "Inviando il messaggio acconsenti a condividere la tua posizione attuale.",
+            "CONFIRM_DIALOG": "Grazie mille per aver espresso la tua opinione, questi commenti ci aiuteranno a continuare a migliorare."
+        }
+    },
+    "MISC": {
+        "LOAD_MORE_ACTION_TEXT": "Carica di più",
+        "CANCEL_ACTION_TEXT": "Annulla",
+        "ACCEPT_ACTION_TEXT": "Accettare",
+        "CLOSE_ACTION_TEXT": "Chiudere",
+        "SUBMIT_ACTION_TEXT": "Inviare",
+        "CONTINUE_ACTION_TEXT": "Continua",
+        "SKIP_ACTION_TEXT": "Saltare",
+        "NEXT_ACTION_TEXT": "Seguente",
+        "SEARCHING_LOCATION": "In cerca di posizione",
+        "AGREE_ACTION_TEXT": "In accordo",
+        "UNAGREE_ACTION_TEXT": "Non sono d'accordo",
+        "LOCATION_ERROR": "Impossibile trovare la tua posizione",
+        "GET_DATA_ERROR": {
+            "TITLE": "Oops!",
+            "TEXT": "Qualcosa è andato storto durante il caricamento delle informazioni.",
+            "ACTION_TEXT": "再試行"
+        }
+    }
+}

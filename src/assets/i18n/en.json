@@ -1,0 +1,207 @@
+{
+    "ONBOARDING": {
+        "SLIDE1_TITLE": "Know the prices",
+        "SLIDE1_TEXT": "Check the value of tourist products and services",
+        "SLIDE2_TITLE": "Updated information",
+        "SLIDE2_TEXT": "Prices that are constantly updated",
+        "SLIDE3_TITLE": "Avoid excessive charges",
+        "SLIDE3_TEXT": "Enjoy your stay in the city of Cartagena"
+    },
+    "TOOLBAR": {
+        "MORE_OPTIONS": {
+            "TITLE": "More options",
+            "SETTINGS": "Settings",
+            "SEND_FEEDBACK_TEXT": "Send feedback"
+        }
+    },
+    "HOME": {
+        "GREETINGS": "Welcome tourist!",
+        "TIP": "Before consuming a product or service, check its price here.",
+        "PRICES_LIST": {
+            "TITLE": "Prices list",
+            "PRODUCTS_BUTTON": "Products",
+            "SERVICES_BUTTON": "Services"
+        },
+        "WIDGETS": {
+            "EXCHANGE_RATE": {
+                "TITLE": "Exchange rate",
+                "UPDATED_AT": "Updated at "
+            }
+        },
+        "TOURIST_SERVICES_TITLE": "Tourist services",
+        "SERVICES_BUTTONS": {
+            "TITLE": "Tourist services",
+            "TRANSPORT_BUTTON": "Transport",
+            "MUSEUM_BUTTON": "Museum",
+            "BEACH_BUTTON": "Beaches",
+            "RESTAURANT_BUTTON": "Foods",
+            "TRAVELS_RIDES_BUTTON": "Rides and travels"
+        }
+    },
+    "SETTINGS": {
+        "TITLE": "Settings",
+        "LANGUAGE": {
+            "TITLE": "Language",
+            "LANGUAGE_OPTION_TITLE": "Language",
+            "LANGUAGE_OPTION_SUBTITLE": "Choose your language",
+            "LANGUAGES_LIST": {
+                "AUTO": "Default",
+                "ENGLISH": "English",
+                "SPANISH": "Spanish",
+                "FRENCH": "French",
+                "PORTUGAL": "Portuguese",
+                "GERMANY": "Germany",
+                "ITALIAN": "Italian",
+                "JAPANESE": "Japanese"
+            }
+        },
+        "APPEARANCE": {
+            "TITLE": "Appearance",
+            "THEME_OPTION_TITLE": "Theme",
+            "THEME_OPTION_SUBTITLE": "Choose your preferred theme",
+            "THEMES_LIST": {
+                "AUTO": "System",
+                "LIGHT": "Light",
+                "DARK": "Dark"
+            }
+        },
+        "ABOUT": {
+            "TITLE": "About",
+            "CREATED_BY": "Created by:"
+        }
+    },
+    "TOURIST_PRODUCTS": {
+        "LIST": {
+            "TITLE": "Products",
+            "ANOTHER_PAYED_TEXT": "Others have paid"
+        },
+        "DETAILS": {
+            "TITLE": "Product details",
+            "STANDARD_PRICE_TEXT": "Standard price",
+            "HAVE_ADQUIRED_ANOTHER_PRICE_QUESTION_TEXT_1": "Have you purchased this product at a different price?",
+            "HAVE_ADQUIRED_ANOTHER_PRICE_QUESTION_TEXT_2": "tell us how much you paid.",
+            "INDICATE_PRICE_ACTION_TEXT": "Indicate price",
+            "PRODUCT_PRICE_DIALOG_TITLE": "Price of the product",
+            "PRODUCT_PRICE_DIALOG_BODY_TEXT": "It would be very helpful if you could tell us the price you paid for the product.",
+            "PRODUCT_PRICE_DIALOG_INPUT_TEXT": "Product price"
+        }
+    },
+    "TOURIST_SERVICES": {
+        "TRANSPORT": {
+            "TITLE": "Transport",
+            "ORIGIN_PLACE_INPUT_PLACEHOLDER_TEXT": "Origin place",
+            "DESTINATION_PLACE_INPUT_PLACEHOLDER_TEXT": "Destination place",
+            "TAXI_ICON_TEXT": "Select the places of origin and destination to view its price",
+            "SELECT_PLACE_MAP_OPTION_TEXT": "Select a point on the map",
+            "PRICE_TEXT_1": "The taxi price from ",
+            "PRICE_TEXT_2": "to ",
+            "PRICE_TEXT_3": "is ",
+            "SELECT_PLACE_TITLE": "Select a place",
+            "SELECTED_PLACE_LABEL_TEXT": "Selected place",
+            "NOTHING_SELECTED_TEXT": "None",
+            "PRICE_NOT_FOUND_TEXT": "Sorry, the selected place does not have a set price yet.",
+            "MAP_SIDE_PLACEHOLDER_TEXT": "You can choose the option 'select a point on the map' to see the neighborhoods on the map."
+        },
+        "MUSEUM": {
+            "LIST": {
+                "TITLE": "Museums",
+                "EXHIBITIONS_TEXT": "exhibitions"
+            },
+            "DETAILS": {
+                "TITLE": "Museum information",
+                "SCHEDULE_SEPARATOR_TEXT": "Schedule",
+                "PRICES_SEPARATOR_TEXT": "Prices",
+                "LOCATION_SEPARATOR_TEXT": "Location",
+                "EXHIBITIONS_SEPARATOR_TEXT": "Exhibits",
+                "NO_EXHIBITIONS_TEXT": "This museum has no exhibits"
+            },
+            "EXHIBITIONS": {
+                "TITLE": "Exhibits"
+            }
+        },
+        "BEACH": {
+            "LIST": {
+                "TITLE": "Beaches"
+            },
+            "DETAILS": {
+                "TITLE": "Beach information",
+                "SCHEDULE_SEPARATOR_TEXT": "Schedule",
+                "SERVICES": {
+                    "SEPARATOR_TEXT": "Services",
+                    "TENT_SERVICE_TEXT": "Tents",
+                    "CHAIR_SERVICE_TEXT": "Chairs",
+                    "MASSAGE_SERVICE_TEXT": "Massages",
+                    "BRAID_SERVICE_TEXT": "Braids",
+                    "JETSKY_SERVICE_TEXT": "Jetsky",
+                    "WORM_SERVICE_TEXT": "Worm",
+                    "BOAT_DISH_SERVICE_TEXT": "Boat dish"
+                },
+                "LOCATION_SEPARATOR_TEXT": "Location"
+            }
+        },
+        "TRAVELS_RIDES": {
+            "LIST": {
+                "TITLE": "Travels and rides"
+            },
+            "DETAILS": {
+                "TITLE_TOUR": "Tour information",
+                "PRICES_SEPARATOR_TEXT": "Price",
+                "ROUTE_SEPARATOR_TEXT": "Route",
+                "PLACES_SEPARATOR_TEXT": "Places"
+            }
+        },
+        "FOOD": {
+            "LIST": {
+                "TITLE": "Foods"
+            },
+            "DETAILS": {
+                "TITLE": "Food details",
+                "PRICES_SEPARATOR_TEXT": "Price"
+            }
+        }
+    },
+    "NAVBAR": {
+        "HOME": "Home",
+        "MAP": "Map"
+    },
+    "FILTER": {
+        "CATEGORIES_TITLE": "Categories",
+        "CATEGORIES_LIST": {
+            "ALL": "All"
+        }
+    },
+    "FEEDBACK": {
+        "DIALOG_TITLE": "Send feedback",
+        "QUESTIONS": {
+            "QUESTION_1": "Was this application useful for you to consult the prices of the services offered to tourists?",
+            "QUESTION_2": "How satisfied are you with your experience using the application?",
+            "QUESTION_3": "How likely is it that you will use the app again?",
+            "QUESTION_4": "How likely are you to recommend this application to other people?",
+            "QUESTION_5": "Do you agree that the application helps mitigate price ignorance?",
+            "MORE_DETAILS": "Could you share more details"
+        },
+        "CONFIRM": {
+            "AGREE_TEXT": "By sending the message you consent to share your current location.",
+            "CONFIRM_DIALOG": "Thank you very much for giving your opinion, these comments will help us to continue improving."
+        }
+    },
+    "MISC": {
+        "LOAD_MORE_ACTION_TEXT": "Load more",
+        "CANCEL_ACTION_TEXT": "Cancel",
+        "ACCEPT_ACTION_TEXT": "Accept",
+        "CLOSE_ACTION_TEXT": "Close",
+        "SUBMIT_ACTION_TEXT": "Submit",
+        "CONTINUE_ACTION_TEXT": "Continue",
+        "SKIP_ACTION_TEXT": "Skip",
+        "NEXT_ACTION_TEXT": "Next",
+        "SEARCHING_LOCATION": "Searching location",
+        "AGREE_ACTION_TEXT": "Agree",
+        "UNAGREE_ACTION_TEXT": "Not agree",
+        "LOCATION_ERROR": "Your location could not be found",
+        "GET_DATA_ERROR": {
+            "TITLE": "Oops!",
+            "TEXT": "Something went wrong while loading the information.",
+            "ACTION_TEXT": "Try again"
+        }
+    }
+}

@@ -1,0 +1,207 @@
+{
+    "ONBOARDING": {
+        "SLIDE1_TITLE": "Conheça os preços",
+        "SLIDE1_TEXT": "Verifique o valor dos produtos e serviços turísticos",
+        "SLIDE2_TITLE": "Informação atualizada",
+        "SLIDE2_TEXT": "Preços atualizados constantemente",
+        "SLIDE3_TITLE": "Evite cobranças excessivas",
+        "SLIDE3_TEXT": "Aproveite a sua estadia na cidade de Cartagena"
+    },
+    "TOOLBAR": {
+        "MORE_OPTIONS": {
+            "TITLE": "Mais opções",
+            "SETTINGS": "Definições",
+            "SEND_FEEDBACK_TEXT": "Postar comentários"
+        }
+    },
+    "HOME": {
+        "GREETINGS": "Bem vindo turista!",
+        "TIP": "Antes de consumir um produto ou serviço, verifique seu preço aqui.",
+        "PRICES_LIST": {
+            "TITLE": "Lista de preços",
+            "PRODUCTS_BUTTON": "Produtos",
+            "SERVICES_BUTTON": "Serviços"
+        },
+        "WIDGETS": {
+            "EXCHANGE_RATE": {
+                "TITLE": "Câmbio monetário",
+                "UPDATED_AT": "Atualizado em"
+            }
+        },
+        "TOURIST_SERVICES_TITLE": "Serviços de Viagem",
+        "SERVICES_BUTTONS": {
+            "TITLE": "Serviços de Viagem",
+            "TRANSPORT_BUTTON": "Transporte",
+            "MUSEUM_BUTTON": "Museus",
+            "BEACH_BUTTON": "Praias",
+            "RESTAURANT_BUTTON": "Alimentos",
+            "TRAVELS_RIDES_BUTTON": "Passeios e viagens"
+        }
+    },
+    "SETTINGS": {
+        "TITLE": "Definições",
+        "LANGUAGE": {
+            "TITLE": "Idioma",
+            "LANGUAGE_OPTION_TITLE": "Idioma",
+            "LANGUAGE_OPTION_SUBTITLE": "Escolha seu idioma",
+            "LANGUAGES_LIST": {
+                "AUTO": "Predeterminado",
+                "ENGLISH": "Inglês",
+                "SPANISH": "Espanhol",
+                "FRENCH": "Francês",
+                "PORTUGAL": "Portugal",
+                "GERMANY": "Alemão",
+                "ITALIAN": "Italiano",
+                "JAPANESE": "Japonês"
+            }
+        },
+        "APPEARANCE": {
+            "TITLE": "Aparência",
+            "THEME_OPTION_TITLE": "Tema",
+            "THEME_OPTION_SUBTITLE": "Escolha o seu tema preferido",
+            "THEMES_LIST": {
+                "AUTO": "Sistema",
+                "LIGHT": "Leve",
+                "DARK": "Escuro"
+            }
+        },
+        "ABOUT": {
+            "TITLE": "Sobre",
+            "CREATED_BY": "Criado por:"
+        }
+    },
+    "TOURIST_PRODUCTS": {
+        "LIST": {
+            "TITLE": "Produtos",
+            "ANOTHER_PAYED_TEXT": "Outros pagaram"
+        },
+        "DETAILS": {
+            "TITLE": "Detalhes do produto",
+            "STANDARD_PRICE_TEXT": "Preço padrão",
+            "HAVE_ADQUIRED_ANOTHER_PRICE_QUESTION_TEXT_1": "Você comprou este produto por um preço diferente?",
+            "HAVE_ADQUIRED_ANOTHER_PRICE_QUESTION_TEXT_2": "diga-nos quanto pagou.",
+            "INDICATE_PRICE_ACTION_TEXT": "Indique o preço",
+            "PRODUCT_PRICE_DIALOG_TITLE": "Preço do produto",
+            "PRODUCT_PRICE_DIALOG_BODY_TEXT": "Seria muito útil se você pudesse nos dizer o preço que você pagou pelo produto.",
+            "PRODUCT_PRICE_DIALOG_INPUT_TEXT": "Preço do produto"
+        }
+    },
+    "TOURIST_SERVICES": {
+        "TRANSPORT": {
+            "TITLE": "Transporte",
+            "ORIGIN_PLACE_INPUT_PLACEHOLDER_TEXT": "Lugar de origem",
+            "DESTINATION_PLACE_INPUT_PLACEHOLDER_TEXT": "Local de destino",
+            "TAXI_ICON_TEXT": "Selecione os locais de origem e destino para visualizar seu preço",
+            "SELECT_PLACE_MAP_OPTION_TEXT": "Selecione um ponto no mapa",
+            "PRICE_TEXT_1": "O preço da corrida",
+            "PRICE_TEXT_2": "uma",
+            "PRICE_TEXT_3": "es de ",
+            "SELECT_PLACE_TITLE": "Selecione um lugar",
+            "SELECTED_PLACE_LABEL_TEXT": "Lugar selecionado",
+            "NOTHING_SELECTED_TEXT": "Nenhum",
+            "PRICE_NOT_FOUND_TEXT": "Desculpe, o lugar selecionado ainda não tem um preço definido.",
+            "MAP_SIDE_PLACEHOLDER_TEXT": "Você pode escolher a opção 'selecionar um ponto no mapa' para ver os bairros no mapa."
+        },
+        "MUSEUM": {
+            "LIST": {
+                "TITLE": "Museus",
+                "EXHIBITIONS_TEXT": "exposições"
+            },
+            "DETAILS": {
+                "TITLE": "informações do museu",
+                "SCHEDULE_SEPARATOR_TEXT": "Cronograma",
+                "PRICES_SEPARATOR_TEXT": "Preços",
+                "LOCATION_SEPARATOR_TEXT": "Localização",
+                "EXHIBITIONS_SEPARATOR_TEXT": "Exposições",
+                "NO_EXHIBITIONS_TEXT": "Este museu não tem exposições"
+            },
+            "EXHIBITIONS": {
+                "TITLE": "Exposições"
+            }
+        },
+        "BEACH": {
+            "LIST": {
+                "TITLE": "Praias"
+            },
+            "DETAILS": {
+                "TITLE": "Informações da praia",
+                "SCHEDULE_SEPARATOR_TEXT": "Cronograma",
+                "SERVICES": {
+                    "SEPARATOR_TEXT": "Serviços",
+                    "TENT_SERVICE_TEXT": "Barracas",
+                    "CHAIR_SERVICE_TEXT": "Cadeiras",
+                    "MASSAGE_SERVICE_TEXT": "Massagens",
+                    "BRAID_SERVICE_TEXT": "Tranças",
+                    "JETSKY_SERVICE_TEXT": "Jet ski",
+                    "WORM_SERVICE_TEXT": "Minhoca",
+                    "BOAT_DISH_SERVICE_TEXT": "Prato de barco"
+                },
+                "LOCATION_SEPARATOR_TEXT": "Localização"
+            }
+        },
+        "TRAVELS_RIDES": {
+            "LIST": {
+                "TITLE": "Passeios e viagens"
+            },
+            "DETAILS": {
+                "TITLE_TOUR": "Informações do passeio",
+                "PRICES_SEPARATOR_TEXT": "Preço",
+                "ROUTE_SEPARATOR_TEXT": "Rota",
+                "PLACES_SEPARATOR_TEXT": "Lugares"
+            }
+        },
+        "FOOD": {
+            "LIST": {
+                "TITLE": "Alimentos"
+            },
+            "DETAILS": {
+                "TITLE": "Detalhes da refeição",
+                "PRICES_SEPARATOR_TEXT": "Preço"
+            }
+        }
+    },
+    "NAVBAR": {
+        "HOME": "Começar",
+        "MAP": "Mapa"
+    },
+    "FILTER": {
+        "CATEGORIES_TITLE": "Categorias",
+        "CATEGORIES_LIST": {
+            "ALL": "Tudo"
+        }
+    },
+    "FEEDBACK": {
+        "DIALOG_TITLE": "Postar comentários",
+        "QUESTIONS": {
+            "QUESTION_1": "Este aplicativo foi útil para você consultar os preços dos serviços oferecidos aos turistas?",
+            "QUESTION_2": "Qual é seu nível de satisfação com sua experiência de uso do aplicativo?",
+            "QUESTION_3": "Qual é a probabilidade de você usar o aplicativo novamente?",
+            "QUESTION_4": "Qual a probabilidade de você recomendar este aplicativo para outras pessoas?",
+            "QUESTION_5": "Você concorda que o aplicativo ajuda a mitigar o desconhecimento de preços?",
+            "MORE_DETAILS": "Poderia compartilhar mais detalhes?"
+        },
+        "CONFIRM": {
+            "AGREE_TEXT": "Ao enviar a mensagem, você concorda em compartilhar sua localização atual.",
+            "CONFIRM_DIALOG": "Muito obrigado por dar sua opinião, esses comentários nos ajudarão a continuar melhorando."
+        }
+    },
+    "MISC": {
+        "LOAD_MORE_ACTION_TEXT": "Carregue mais",
+        "CANCEL_ACTION_TEXT": "Cancelar",
+        "ACCEPT_ACTION_TEXT": "Aceitar",
+        "CLOSE_ACTION_TEXT": "Fechar",
+        "SUBMIT_ACTION_TEXT": "Mandar",
+        "CONTINUE_ACTION_TEXT": "Continuar",
+        "SKIP_ACTION_TEXT": "Pular",
+        "NEXT_ACTION_TEXT": "Seguindo",
+        "SEARCHING_LOCATION": "Procurando local",
+        "AGREE_ACTION_TEXT": "De acordo",
+        "UNAGREE_ACTION_TEXT": "Não estou de acordo",
+        "LOCATION_ERROR": "Não foi possível encontrar sua localização",
+        "GET_DATA_ERROR": {
+            "TITLE": "Oops!",
+            "TEXT": "Algo deu errado ao carregar as informações.",
+            "ACTION_TEXT": "Tentar de novo"
+        }
+    }
+}
