@@ -181,7 +181,7 @@
             "MORE_DETAILS": "Pourriez-vous partager plus de détails?"
         },
         "CONFIRM": {
-            "AGREE_TEXT": "En envoyant le message, vous consentez à partager votre position actuelle.",
+            "AGREE_TEXT": "Lors de l'envoi du message, il donnera votre consentement à utiliser les données fournies ainsi que son emplacement actuel à des fins d'enquête, êtes-vous d'accord?",
             "CONFIRM_DIALOG": "Merci beaucoup d'avoir donné votre avis, ces commentaires nous aideront à continuer à nous améliorer."
         }
     },

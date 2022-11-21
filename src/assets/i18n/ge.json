@@ -181,7 +181,7 @@
             "MORE_DETAILS": "Könntest du mehr Details teilen?"
         },
         "CONFIRM": {
-            "AGREE_TEXT": "Durch das Senden der Nachricht erklären Sie sich damit einverstanden, Ihren aktuellen Standort zu teilen.",
+            "AGREE_TEXT": "Stimmen Sie beim Senden der Nachricht beim Senden der Nachricht Ihre Zustimmung zur Verwendung der bereitgestellten Daten sowie des aktuellen Standorts für Ermittlungszwecke ein?",
             "CONFIRM_DIALOG": "Vielen Dank für Ihre Meinung. Diese Kommentare helfen uns, uns weiter zu verbessern."
         }
     },

@@ -181,7 +181,7 @@
             "MORE_DETAILS": "Potresti condividere maggiori dettagli?"
         },
         "CONFIRM": {
-            "AGREE_TEXT": "Inviando il messaggio acconsenti a condividere la tua posizione attuale.",
+            "AGREE_TEXT": "Quando si invia il messaggio, darà il tuo consenso all'utilizzo dei dati forniti e della sua posizione attuale a fini investigativi, sei d'accordo?",
             "CONFIRM_DIALOG": "Grazie mille per aver espresso la tua opinione, questi commenti ci aiuteranno a continuare a migliorare."
         }
     },

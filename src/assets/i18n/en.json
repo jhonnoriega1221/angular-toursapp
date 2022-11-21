@@ -181,7 +181,7 @@
             "MORE_DETAILS": "Could you share more details"
         },
         "CONFIRM": {
-            "AGREE_TEXT": "By sending the message you consent to share your current location.",
+            "AGREE_TEXT": "When sending the message, it will give your consent to use the data provided as well as its current location for investigative purposes, do you agree?",
             "CONFIRM_DIALOG": "Thank you very much for giving your opinion, these comments will help us to continue improving."
         }
     },
