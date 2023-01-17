@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-    apiURL: '/api/',
+    apiURL: 'https://apitoursupp.vercel.app/api/',
     nominatimURL: 'https://nominatim.openstreetmap.org/'
 };
