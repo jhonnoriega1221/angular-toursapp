@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ProductPriceDialogComponent } from '../product-price-dialog/product-price-dialog.component';
+import { SetPriceDialogComponent } from 'src/app/shared/components/set-price-dialog/set-price-dialog.component';
 
 @Component({
   selector: 'app-product-alt-prices-button',
@@ -14,12 +14,9 @@ export class ProductAltPricesButtonComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openDialog() {
-    const dialogRef = this.dialog.open(ProductPriceDialogComponent);
+  public openDialog(){
+    const dialogRef = this.dialog.open( SetPriceDialogComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`)
-    })
   }
 
 }

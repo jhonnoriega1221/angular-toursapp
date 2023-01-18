@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //Componentes
 import { AppToolbarComponent } from './components/app-toolbar/app-toolbar.component';
@@ -26,6 +26,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { TranslateModule } from '@ngx-translate/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 //Directivas
 import { SkeletonLoaderDirective } from './directives/skeleton-loader.directive';
@@ -34,6 +36,9 @@ import { FilterButtonsGroupComponent } from './components/filter-buttons-group/f
 import { ToggleFilterButtonComponent } from './components/toggle-filter-button/toggle-filter-button.component';
 import { DetailsSeparatorComponent } from './components/details-separator/details-separator.component';
 import { DetailsPriceTextComponent } from './components/details-price-text/details-price-text.component';
+import { SetPriceDialogComponent } from './components/set-price-dialog/set-price-dialog.component';
+import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
+import { SetPriceButtonComponent } from './components/set-price-button/set-price-button.component';
 
 
 @NgModule({
@@ -53,6 +58,9 @@ import { DetailsPriceTextComponent } from './components/details-price-text/detai
         DetailsSeparatorComponent,
         DetailsPriceTextComponent,
         StarRatingComponent,
+        SetPriceDialogComponent,
+        ConfirmDialogComponent,
+        SetPriceButtonComponent,
     ],
     imports: [
         CommonModule,
@@ -66,7 +74,10 @@ import { DetailsPriceTextComponent } from './components/details-price-text/detai
         TranslateModule,
         MatDialogModule,
         MatRadioModule,
-        FormsModule
+        FormsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        ReactiveFormsModule
     ],
     exports: [
         BackTitleButtonComponent,
@@ -78,7 +89,9 @@ import { DetailsPriceTextComponent } from './components/details-price-text/detai
         DetailsSeparatorComponent,
         DetailsPriceTextComponent,
         AppToolbarMenuButtonComponent,
-        StarRatingComponent
+        StarRatingComponent,
+        SetPriceDialogComponent,
+        SetPriceButtonComponent
         
     ]
 })

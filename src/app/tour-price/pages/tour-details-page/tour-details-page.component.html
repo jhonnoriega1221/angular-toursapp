@@ -6,6 +6,7 @@
             <app-tour-details-heading *skeleton="isLoading; height: '190px'; repeat: 1; width: '100%';" [name]="tour.name" [type]="tour.type" [description]="tour.description"></app-tour-details-heading>
             <app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';" [title]="separatorText[0].text"></app-details-separator>
             <app-tour-details-price *skeleton="isLoading; height: '20px'; repeat: 1; width: '110px';" [price]="tour.price"></app-tour-details-price>
+            <app-set-price-button *skeleton="isLoading; height: '20px'; repeat: 1; width: '110px';"></app-set-price-button>
             <app-details-separator *skeleton="isLoading; height: '20px'; repeat: 1; width: '60px';" [title]="separatorText[2].text"></app-details-separator>
             <app-tour-details-places *skeleton="isLoading; height: '120px'; repeat: 1; width: '100%';" [places]="tour.places"></app-tour-details-places>
         </div>   

@@ -15,6 +15,8 @@
 	<div *ngIf="taxiPrice !== 'null'">
 		<p class="taxi-price-title">{{ "TOURIST_SERVICES.TRANSPORT.PRICE_TEXT_1" | translate }} {{originPlace}} {{ "TOURIST_SERVICES.TRANSPORT.PRICE_TEXT_2" | translate }} {{destinationPlace}} {{ "TOURIST_SERVICES.TRANSPORT.PRICE_TEXT_3" | translate }} </p>
 		<p class="taxi-price-text">{{taxiPrice}}</p>
+		<app-set-price-button></app-set-price-button>
+
 	</div>
 
 

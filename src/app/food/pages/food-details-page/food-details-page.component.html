@@ -6,6 +6,7 @@
 			<app-food-top-details *skeleton="isLoading; height: '100px'; width: '100%';" [name]=food.name></app-food-top-details>
 			<app-details-separator *skeleton="isLoading; height: '20px'; width: '60px';" [title]=separatorTitles[0].text></app-details-separator>
             <app-details-price-text *ngFor="let price of food.prices" [title]="price.name" [text]="price.amount"></app-details-price-text>
+			<app-set-price-button *skeleton="isLoading; height: '20px'; repeat: 1; width: '110px';"></app-set-price-button>
 		</div>
 	</div>
 	<div class="bottom-info">
